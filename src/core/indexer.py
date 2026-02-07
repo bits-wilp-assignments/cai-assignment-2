@@ -55,9 +55,10 @@ class DataIndexer:
             # Create and save the index
             retriever = bm25s.BM25(k1, b)
             retriever.index(corpus_tokens)
-            # Remove existing index directory if it exists
+            # Create BM25 index directory if it doesn't exist or clear it if it does
             if os.path.exists(self.bm25_path):
                 shutil.rmtree(self.bm25_path)
+            os.makedirs(self.bm25_path, exist_ok=True)
             retriever.save(self.bm25_path, corpus=dict_corpus)
         except Exception as e:
             self.logger.error(f"Error creating BM25 index: {e}")

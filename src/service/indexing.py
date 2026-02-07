@@ -28,6 +28,21 @@ scrapper = WikiPageScrapper(
         **TEXT_CHUNKING_CONFIG
     )
 
+def get_documents_from_wiki_pages(wiki_page_file: str, limit: int = 0):
+    wiki_pages = {}
+    wiki_documents = []
+    with open(wiki_page_file, "r", encoding="utf-8") as f:
+        wiki_pages = json.load(f)
+    for page in wiki_pages['pages'][:limit] if limit else wiki_pages['pages']: # no limit if limit is set to None or 0
+        logger.info(f"Processing page: {page['page_title']} - {page['url']}")
+        documents = scrapper.process_page(
+            page['url'],
+            page['page_title']
+        )
+        wiki_documents.extend(documents)
+        logger.info(f"Created {len(documents)} documents from page: {page['page_title']}")
+    return wiki_documents
+
 
 def triggr_indexing(is_refresh_fixed: bool = False, is_refresh_random: bool = False):
     logger.info("Initializing indexing process for Hybrid RAG system...")
@@ -38,19 +53,10 @@ def triggr_indexing(is_refresh_fixed: bool = False, is_refresh_random: bool = Fa
     )
     logger.info("Data collection completed.")
 
-    wiki_pages = {}
     wiki_documents = []
-    with open(FIXED_WIKI_PAGE_FILE, "r", encoding="utf-8") as f:
-        wiki_pages = json.load(f)
-    for page in wiki_pages['pages'][:10]: # Limiting to first X=10 pages for testing
-        logger.info(f"Processing page: {page['page_title']} - {page['url']}")
-        documents = scrapper.process_page(
-            page['url'],
-            page['page_title']
-        )
-        wiki_documents.extend(documents)
-        logger.info(f"Created {len(documents)} documents from page: {page['page_title']}")
-
+    # Load wiki pages and create documents for fixed and random wiki pages
+    wiki_documents.extend(get_documents_from_wiki_pages(FIXED_WIKI_PAGE_FILE))
+    wiki_documents.extend(get_documents_from_wiki_pages(RANDOM_WIKI_PAGE_FILE))
     logger.info(f"Total documents created: {len(wiki_documents)}")
 
      # Create embedding instance

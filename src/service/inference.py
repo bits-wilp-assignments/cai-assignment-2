@@ -18,9 +18,6 @@ logging.set_verbosity_error()
 # Get logger instance
 logger = get_logger(__name__)
 
-# Get RAG prompt template
-rag_prompt = get_rag_prompt()
-
 # Create LLM instance
 llm_factory = LLMFactory()
 llm_instance = llm_factory.get_instance(
@@ -38,6 +35,10 @@ def perform_rag_inference():
             "question": RunnablePassthrough(),
         }
     )
+
+    # Get RAG prompt template
+    rag_prompt = get_rag_prompt()
+
 
     # Build the chain
     rag_chain = map_input | RunnableParallel(
@@ -67,11 +68,12 @@ def rag_inference(question: str, is_streaming: bool = True):
             if "answer" in chunk:
                 token = chunk["answer"]
                 if token:
-                    print(token, end="", flush=True)
-        print()  # Print a newline after streaming is done
+                    yield token
+        yield "\n"  # Yield a newline after streaming is done
     else:
         response = rag_chain.invoke({"question": question})
         if "answer" in response:
-            print(response["answer"])
+            yield response["answer"]
         else:
             logger.error("RAG inference failed to produce an answer.")
+            yield "I do not have enough info."  # Fallback response if no answer is generated
