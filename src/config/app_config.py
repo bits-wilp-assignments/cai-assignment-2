@@ -1,7 +1,7 @@
 import logging
 
 # -------------------- Logging configuration -------------------
-DEFAULT_LOG_LEVEL = logging.ERROR
+DEFAULT_LOG_LEVEL = logging.INFO
 DEFAULT_LOG_FORMAT = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 DEFAULT_LOG_FILE = None  # e.g. 'logs/app.log'
 
