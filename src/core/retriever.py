@@ -1,3 +1,4 @@
+import os
 import bm25s
 import Stemmer
 import hashlib
@@ -11,13 +12,45 @@ class HybridRetriever:
         self.logger = get_logger(__name__)
         self.vector_store = vector_store
         self.bm25_path = bm25_path
-        self.bm25_index = bm25s.BM25.load(bm25_path, load_corpus=True, mmap=True)
+        self._bm25_index = None  # Lazy loading - load only when needed
         self.reranking = reranking
         if self.reranking:
             if reranker_model is None:
                 raise ValueError("Reranker model must be provided if reranking is enabled.")
             self.reranker_model = reranker_model
-        self.logger.info("HybridRetriever initialized with vector store and BM25 index.")
+        self.logger.info("HybridRetriever initialized with vector store (BM25 will be loaded on-demand).")
+
+    @property
+    def bm25_index(self):
+        """Lazy load BM25 index only when accessed."""
+        if self._bm25_index is None:
+            if self.bm25_exists():
+                self.logger.info(f"Loading BM25 index from: {self.bm25_path}")
+                self._bm25_index = bm25s.BM25.load(self.bm25_path, load_corpus=True, mmap=True)
+                self.logger.info("BM25 index loaded successfully.")
+            else:
+                self.logger.warning(f"BM25 index not found at: {self.bm25_path}. Sparse retrieval will be skipped.")
+        return self._bm25_index
+
+    def bm25_exists(self) -> bool:
+        """Check if BM25 index files exist."""
+        if not os.path.exists(self.bm25_path):
+            return False
+        # Check for essential BM25 index files
+        required_files = ['params.index.json', 'vocab.index.json']
+        return all(os.path.exists(os.path.join(self.bm25_path, f)) for f in required_files)
+
+    def reload_bm25_index(self):
+        """Force reload of BM25 index. Useful after indexing is complete."""
+        self.logger.info("Reloading BM25 index...")
+        self._bm25_index = None  # Clear cached index
+        _ = self.bm25_index  # Trigger lazy loading
+        if self._bm25_index is not None:
+            self.logger.info("BM25 index reloaded successfully.")
+            return True
+        else:
+            self.logger.warning("BM25 index reload failed - index files not found.")
+            return False
 
     def _get_doc_id(self, content: str) -> str:
         normalized = "".join(content.split()).lower()
@@ -45,17 +78,23 @@ class HybridRetriever:
         self.logger.debug(f"Dense scores: {dense_scores}")
         # dense_ranks = np.argsort(np.array(dense_scores))
         # self.logger.debug(f"Dense ranks: {dense_ranks}")
-        # SPARSE RETRIEVAL: Retrieve from BM25
-        query_tokens = bm25s.tokenize(
-                [query],
-                stopwords="en",
-                stemmer=Stemmer.Stemmer("english")
-            )
-        sparse_results, sparse_scores = self.bm25_index.retrieve(query_tokens, k=sparse_top_k)
-        sparse_docs = [Document(page_content=doc["text"], metadata=doc["metadata"]) for doc in sparse_results[0]]
-        sparse_scores = sparse_scores[0]  # Extract scores for the single query
-        self.logger.debug(f"Sparse documents retrieved: {[doc.metadata for doc in sparse_docs]}")
-        self.logger.debug(f"Sparse scores: {sparse_scores}")
+
+        # SPARSE RETRIEVAL: Retrieve from BM25 (if available)
+        sparse_docs = []
+        sparse_scores = []
+        if self.bm25_index is not None:
+            query_tokens = bm25s.tokenize(
+                    [query],
+                    stopwords="en",
+                    stemmer=Stemmer.Stemmer("english")
+                )
+            sparse_results, sparse_scores = self.bm25_index.retrieve(query_tokens, k=sparse_top_k)
+            sparse_docs = [Document(page_content=doc["text"], metadata=doc["metadata"]) for doc in sparse_results[0]]
+            sparse_scores = sparse_scores[0]  # Extract scores for the single query
+            self.logger.debug(f"Sparse documents retrieved: {[doc.metadata for doc in sparse_docs]}")
+            self.logger.debug(f"Sparse scores: {sparse_scores}")
+        else:
+            self.logger.info("BM25 index not available - using dense retrieval only")
         # sparse_ranks = np.argsort(-sparse_scores)
         # self.logger.debug(f"Sparse ranks: {sparse_ranks}")
 
@@ -63,7 +102,8 @@ class HybridRetriever:
         doc_map = {}
         # Add dense and sparse rankings
         self._add_to_rrf(dense_docs, dense_scores, "dense_score", doc_map, rrf_k)
-        self._add_to_rrf(sparse_docs, sparse_scores, "sparse_score", doc_map, rrf_k)
+        if sparse_docs:  # Only add sparse results if available
+            self._add_to_rrf(sparse_docs, sparse_scores, "sparse_score", doc_map, rrf_k)
 
         # Sort doc_map by RRF scores
         final_ranked_docs = sorted(

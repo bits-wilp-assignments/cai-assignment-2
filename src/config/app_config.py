@@ -1,7 +1,7 @@
 import logging
 
 # -------------------- Logging configuration -------------------
-DEFAULT_LOG_LEVEL = logging.DEBUG
+DEFAULT_LOG_LEVEL = logging.ERROR
 DEFAULT_LOG_FORMAT = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 DEFAULT_LOG_FILE = None  # e.g. 'logs/app.log'
 
@@ -67,8 +67,8 @@ CATEGORIES = [
 ]
 
 # File paths for storing wiki page data
-FIXED_WIKI_PAGE_FILE = "data/fixed_wiki_pages.json"
-RANDOM_WIKI_PAGE_FILE = "data/random_wiki_pages.json"
+FIXED_WIKI_PAGE_FILE = "data/corpus/fixed_wiki_pages.json"
+RANDOM_WIKI_PAGE_FILE = "data/corpus/random_wiki_pages.json"
 
 # Configuration for data collection limits
 DATA_COLLECTION_CONFIG = {

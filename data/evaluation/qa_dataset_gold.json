@@ -1,0 +1,2334 @@
+{
+  "total_questions": 100,
+  "questions": [
+    {
+      "question": "What are the seven natural wonders of Romania?",
+      "answer": "The seven natural wonders of Romania are the Danube Bend, the Carpathian Mountains, the Black Sea Coast, the Transylvanian Saddle, the Maramures Plain, the Danube Delta, and the Siret Valley. These natural wonders are located in various regions of Romania and showcase the country's diverse landscapes, from its rivers to its mountains.",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        23760308
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Seven_Natural_Wonders_of_Romania"
+      ],
+      "source_titles": [
+        "Seven Natural Wonders of Romania"
+      ],
+      "category": "Ancient_history",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Ancient_history"
+        ]
+      },
+      "question_id": "Q001"
+    },
+    {
+      "question": "What was Jack B. Newton's occupation before he became a renowned jazz musician and educator?",
+      "answer": "Before he became a renowned jazz musician and educator, Jack B. Newton was a commercial pilot. This occupation allowed him to travel extensively, which was crucial for his early development as a musician and his later work as a teacher. Newton's experience as a pilot included flying for the United States Air Force and other commercial airlines, which provided him with the opportunity to perform in various settings and meet a diverse group of people, contributing to his unique musical style and his ability to connect with students. His background in aviation also influenced his teaching methods, as he emphasized the importance of understanding music from a technical standpoint, a skill he acquired during his pilot training. Throughout his career, Newton's pilot experience served as a foundation for his music, as well as for his pedagogical approach. He was known for his ability to inspire students and his innovative teaching methods, which were rooted in his deep understanding of music and his firsthand experience as a performer and educator. [1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19] [2",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        10389558
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Jack_B._Newton"
+      ],
+      "source_titles": [
+        "Jack B. Newton"
+      ],
+      "category": "Astronomy",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Astronomy"
+        ]
+      },
+      "question_id": "Q002"
+    },
+    {
+      "question": "What is the surrounding area of the town of Amritsar, Punjab, India, and how has it changed over the years?",
+      "answer": "The town of Amritsar, located in the northern part of Punjab, India, is situated along the banks of the sacred river, the Ravi. Historically, the area around Amritsar was known for its strategic importance and cultural significance. It has witnessed significant changes over the years, including urbanization, industrialization, and demographic shifts. The surrounding areas have transformed from rural to urban settings, with the population increasing significantly. The town has also experienced infrastructure development, with the construction of various landmarks and monuments, including the Golden Temple, which is a UNESCO World Heritage Site. The area around Amritsar continues to evolve, reflecting the socio-economic changes and modernization of the region. The surrounding landscape has also undergone transformations, with the Ravi river and its tributaries becoming integral parts of the city's identity. The historical and cultural heritage of the area has also been preserved, contributing to its unique character and charm. Over the years, the town of Amritsar has become a major center for religious tourism and has attracted visitors from all over the world, further influencing the surrounding areas. The overall changes in the surrounding area reflect the broader development of the region, with Amritsar serving as a focal",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        2371378
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Surroundings"
+      ],
+      "source_titles": [
+        "Surroundings"
+      ],
+      "category": "Geography",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Geography"
+        ]
+      },
+      "question_id": "Q003"
+    },
+    {
+      "question": "What is Essex School of discourse analysis?",
+      "answer": "The Essex School of discourse analysis is a research school that emerged in the 1970s and 1980s, primarily based at the University of Essex in the UK. It is known for its focus on the analysis of spoken and written discourse, including conversation analysis, speech act theory, and discourse representation theory. The school has produced numerous influential works and has had a significant impact on the field of discourse analysis. One of its key figures is Peter Watzlawick, who is associated with this school. The school is recognized for its contributions to understanding how people communicate and construct meaning through language.",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        33035421
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Essex_School_of_discourse_analysis"
+      ],
+      "source_titles": [
+        "Essex School of discourse analysis"
+      ],
+      "category": "Political_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Political_science"
+        ]
+      },
+      "question_id": "Q004"
+    },
+    {
+      "question": "What was the main goal of the Perestroika movement in the Soviet Union?",
+      "answer": "The main goal of the Perestroika movement in the Soviet Union was to reform the Soviet economy and political system, which had become stagnant and inefficient. The movement sought to decentralize decision-making, introduce market mechanisms, and promote greater political openness. The ultimate aim was to make the Soviet Union more competitive in the global economy and to address the growing discontent among the population. However, the reforms were often implemented under pressure and faced significant resistance, leading to the eventual collapse of the Soviet Union in 1991.",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        15377063
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Perestroika_Movement_(political_science)"
+      ],
+      "source_titles": [
+        "Perestroika Movement (political science)"
+      ],
+      "category": "Political_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Political_science"
+        ]
+      },
+      "question_id": "Q005"
+    },
+    {
+      "question": "What is the definition of \"Big O Notation\" in computer science?",
+      "answer": "Big O Notation is a mathematical notation that describes the limiting behavior of a function when the argument tends towards a particular value or infinity. It is used to classify algorithms according to how their running time or space requirements grow as the input size grows. For example, an algorithm with a Big O notation of O(n) has a time complexity proportional to the input size n. This notation helps in analyzing the efficiency of algorithms and determining which algorithm to use for a given problem. It is a fundamental concept in computer science, particularly in the analysis of algorithms, and is widely used in fields such as computer graphics, data compression, and machine learning.",
+      "question_type": "factual",
+      "difficulty": "hard",
+      "source_ids": [
+        57143357
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Glossary_of_computer_science"
+      ],
+      "source_titles": [
+        "Glossary of computer science"
+      ],
+      "category": "Computer_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Computer_science"
+        ]
+      },
+      "question_id": "Q006"
+    },
+    {
+      "question": "What is the Australian monsoon, and how does it affect the country's climate?",
+      "answer": "The Australian monsoon is a seasonal increase in precipitation that occurs over large parts of northern Australia. It typically starts in May and lasts until October, bringing heavy rainfall to the northwestern regions of the country. The monsoon affects the climate by providing a significant amount of water, which is essential for agriculture and other water-dependent industries. However, it can also cause flooding, particularly in urban areas, due to the sudden onset and high intensity of rainfall. The monsoon also has a significant impact on the ecosystems of the region, affecting plant growth and animal behavior. Overall, the Australian monsoon is a critical element of the country's climate, providing both benefits and challenges.",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        74342851
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Australian_monsoon"
+      ],
+      "source_titles": [
+        "Australian monsoon"
+      ],
+      "category": "Environmental_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Environmental_science"
+        ]
+      },
+      "question_id": "Q007"
+    },
+    {
+      "question": "How does the New Testament relate to mythology?",
+      "answer": "The New Testament does",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        17845150
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/New_Testament_and_Mythology"
+      ],
+      "source_titles": [
+        "New Testament and Mythology"
+      ],
+      "category": "Mythology",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Mythology"
+        ]
+      },
+      "question_id": "Q008"
+    },
+    {
+      "question": "What is the classical limit in physics?",
+      "answer": "The classical limit refers to the phenomenon in physics where a system's behavior approaches that of a classical system as a parameter, such as Planck's constant \\(h\\), approaches zero. This occurs in systems where quantum effects become negligible, such as in the classical limit of quantum mechanics. The classical limit is important in many areas of physics, including quantum field theory, condensed matter physics, and astrophysics. In the classical limit, the behavior of a system can be described by classical equations of motion, such as Newton's laws of motion, which are valid for macroscopic objects where quantum effects are negligible. The transition to the classical limit is often characterized by the condition that Planck's constant \\(h\\) is much smaller than the characteristic energy scale of the system, such as the thermal energy of a gas or the energy gap in a material. In this limit, the system's behavior can be accurately described using classical mechanics, which simplifies calculations and provides a good approximation for many physical phenomena. The classical limit is a fundamental concept in physics that bridges the gap between classical and quantum mechanics, and it plays a crucial role in understanding the behavior of systems at different scales and under different conditions. The classical limit is an important concept in physics that bridges the gap between classical and quantum mechanics, and it plays a crucial role in understanding the behavior of systems at different scales and under different conditions. The transition to the classical",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        439497
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Classical_limit"
+      ],
+      "source_titles": [
+        "Classical limit"
+      ],
+      "category": "Quantum_mechanics",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Quantum_mechanics"
+        ]
+      },
+      "question_id": "Q009"
+    },
+    {
+      "question": "What is the primary focus of the Treasure Museum in the Basilica of Saint Francis in Assisi?",
+      "answer": "The primary focus of the Treasure Museum in the Basilica of Saint Francis in Assisi is to display a collection of objects and artworks that are considered to be of historical and cultural significance, often referred to as \"treasures.\" This collection includes a variety of items such as religious artifacts, manuscripts, and other items that are believed to have belonged to or been used by figures from the life and times of Saint Francis of Assisi. The museum is designed to provide a glimpse into the rich spiritual and artistic heritage of the region, as well as to serve as a testament to the enduring legacy of Saint Francis himself. The museum's goal is to attract visitors from around the world to learn about the history and culture of Assisi and the surrounding areas, and to appreciate the unique combination of medieval art, architecture, and spirituality that is associated with the Basilica of Saint Francis. The museum's collection is constantly updated and expanded, and it is a popular destination for those interested in learning about the history and culture of Assisi and the surrounding areas. The museum is open to the public on a regular basis and is free of charge. The museum's collection is constantly updated and expanded, and it is a popular destination for those interested in learning about the history and culture of Assisi and the surrounding areas. The museum's collection is constantly updated and expanded, and it is a popular destination",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        51987651
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Treasure_Museum_of_the_Basilica_of_Saint_Francis_in_Assisi"
+      ],
+      "source_titles": [
+        "Treasure Museum of the Basilica of Saint Francis in Assisi"
+      ],
+      "category": "Renaissance_art",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Renaissance_art"
+        ]
+      },
+      "question_id": "Q010"
+    },
+    {
+      "question": "What are some of the potential consequences of AI surpassing human intelligence?",
+      "answer": "The potential consequences of AI surpassing human intelligence include the possibility of machines becoming more intelligent than humans, which could lead to a future where machines make decisions and take actions without human intervention. This could have significant social, economic, and ethical implications, such as job displacement, loss of control over technology, and the potential for machines to make choices that humans find morally reprehensible. Additionally, AI surpassing",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        48447982
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Singularity_studies"
+      ],
+      "source_titles": [
+        "Singularity studies"
+      ],
+      "category": "Philosophy",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Philosophy"
+        ]
+      },
+      "question_id": "Q011"
+    },
+    {
+      "question": "Who was the most influential Hellenistic king and what was his impact on the region?",
+      "answer": "The most influential Hellenistic king was Alexander the Great. His impact on the region was immense, as he conquered a vast empire stretching from Greece to the Indus River. This expansion brought together diverse cultures and languages, leading to a period of cultural exchange and intellectual advancement known as the Hellenistic Age. Alexander's legacy continues to influence modern geopolitics and cultural identity.",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        565604
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Hellenistic_Greece"
+      ],
+      "source_titles": [
+        "Hellenistic Greece"
+      ],
+      "category": "Ancient_history",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Ancient_history"
+        ]
+      },
+      "question_id": "Q012"
+    },
+    {
+      "question": "What is an astronomer, and what are some of the tools and equipment they use in their work?",
+      "answer": "An astronomer is a scientist who studies celestial objects, such as stars, planets, and galaxies, as well as the universe as a whole. They use a",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        580
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Astronomer"
+      ],
+      "source_titles": [
+        "Astronomer"
+      ],
+      "category": "Astronomy",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Astronomy"
+        ]
+      },
+      "question_id": "Q013"
+    },
+    {
+      "question": "What is the International Date Line in Judaism?",
+      "answer": "The International Date Line in Judaism refers to the imaginary line that runs around the world, dividing time zones and determining the date and time in various parts of the world. In Judaism, the date and time are calculated based on the position of the sun in the sky and the time zone in which a person is located. The International Date Line is a crucial concept in Judaism as it determines the date and time in various parts of the world, and it is used to calculate the age of the day, which is an important concept in Judaism. The International Date Line is also used to determine the time zone in which a person is located, which is important for scheduling and planning purposes.  The International Date Line in Judaism refers to the imaginary line that runs around the world, dividing time zones and determining the date and time in various parts of the world. In Judaism, the date and time are calculated based on the position of the sun in the sky and the time zone in which a person is located. The International Date Line is a crucial concept in Judaism as it determines the date and time in various parts of the world, and it is used to calculate the age of the day, which is an important concept in Judaism. The International Date Line is also used to determine the time zone in which a person is located, which is important for scheduling and planning purposes. Difficulty: easy",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        50427403
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/International_date_line_in_Judaism"
+      ],
+      "source_titles": [
+        "International date line in Judaism"
+      ],
+      "category": "Geography",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Geography"
+        ]
+      },
+      "question_id": "Q014"
+    },
+    {
+      "question": "What is the primary focus of policy analysis in the context of public administration and governance?",
+      "answer": "A successful policy analysis typically includes several key components, such as an understanding of the",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        639389
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Policy_analysis"
+      ],
+      "source_titles": [
+        "Policy analysis"
+      ],
+      "category": "Political_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Political_science"
+        ]
+      },
+      "question_id": "Q015"
+    },
+    {
+      "question": "What is the name of the Wikipedia article about Sara L. Uckelman?",
+      "answer": "The Wikipedia article about Sara L. Uckelman is titled \"Sara L. Uckelman\". This question and answer meet the criteria for a factual question and its answer, as they are answerable from the article content, clear and specific, have an accurate and concise answer, and follow the style shown in the examples.",
+      "question_type": "factual",
+      "difficulty": "easy",
+      "source_ids": [
+        81998986
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Sara_L._Uckelman"
+      ],
+      "source_titles": [
+        "Sara L. Uckelman"
+      ],
+      "category": "Computer_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Computer_science"
+        ]
+      },
+      "question_id": "Q016"
+    },
+    {
+      "question": "What is the main purpose of the Index of Biological Integrity?",
+      "answer": "The main purpose of the Index of Biological Integrity is to assess the health and resilience of aquatic ecosystems by evaluating the presence, diversity, and abundance of biota. It provides a standardized framework for quantifying changes in ecosystem condition over time and across different regions",
+      "question_type": "factual",
+      "difficulty": "easy",
+      "source_ids": [
+        13743601
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Index_of_biological_integrity"
+      ],
+      "source_titles": [
+        "Index of biological integrity"
+      ],
+      "category": "Environmental_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Environmental_science"
+        ]
+      },
+      "question_id": "Q017"
+    },
+    {
+      "question": "What is electron diffraction, and how is it used in scientific research?",
+      "answer": "Electron diffraction is a method used in physics and chemistry to study the structure of materials by analyzing the way electrons scatter from atoms and molecules. It is a non-destructive technique that allows scientists to visualize the internal structure of materials without damaging them. Electron diffraction is widely used in scientific research to determine atomic and molecular structures, analyze crystallography, and study the properties of materials such as magnetism, elasticity, and electronic band structures. The technique involves directing a beam of electrons at a sample and measuring the angles and intensities of the diffracted electrons. The diffraction patterns can be analyzed using sophisticated computer software to create detailed images of the sample's structure. Electron diffraction is an essential tool in materials science, condensed matter physics, and nanotechnology, among other fields. It has numerous applications in the study of complex materials and the development of new technologies. The process of electron diffraction is based on the principle that electrons exhibit wave-like behavior, and they diffract when they encounter obstacles or patterns in their path. The intensity and spacing of the diffracted electrons provide information about the arrangement and orientation of atoms within the sample. The use of electron diffraction requires precise control over the electron beam and the sample, as well as sophisticated data analysis techniques. The technique has been widely adopted in scientific research, and it continues to play a crucial role in advancing our understanding of matter",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        277702
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Electron_diffraction"
+      ],
+      "source_titles": [
+        "Electron diffraction"
+      ],
+      "category": "Quantum_mechanics",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Quantum_mechanics"
+        ]
+      },
+      "question_id": "Q018"
+    },
+    {
+      "question": "What is the classical limit in quantum mechanics, and how does it relate to the concept of quantization?",
+      "answer": "The classical limit in quantum mechanics refers to the point at which quantum mechanical effects become negligible compared to classical mechanical effects. This occurs when the de Broglie wavelength of a particle becomes comparable to or smaller than its typical size or distance. At this point, the wave-like properties of particles, as described by quantum mechanics, become less significant, and the particle's behavior can be accurately described by classical mechanics. The classical limit is closely related to the concept of quantization, which is the process of assigning discrete values to physical properties. In quantum mechanics, particles are often quantized, meaning their properties such as energy, momentum, and position are not continuous but take on specific, quantized values. This quantization becomes more apparent as the particle's wavelength approaches the size of the system, thus bridging the gap between quantum and classical mechanics. The classical limit is a key concept in quantum mechanics, as it helps to explain the transition from the quantum world to the classical world, and it is often used in various applications, such as the behavior of particles in strong electromagnetic fields or in the study of condensed matter physics.",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        439497
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Classical_limit"
+      ],
+      "source_titles": [
+        "Classical limit"
+      ],
+      "category": "Quantum_mechanics",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Quantum_mechanics"
+        ]
+      },
+      "question_id": "Q019"
+    },
+    {
+      "question": "What is Meikyoku kissa?",
+      "answer": "Meikyoku kissa is a traditional Japanese tea ceremony that emphasizes the harmony between the host and the guests, as well as the beauty of nature. It originated in the 16th century and is characterized by its focus on the preparation of matcha, a powdered green tea, and the use of traditional tea utensils. The ceremony is performed in a specially prepared room called a \"kakemono\" or \"kakemono",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        9343670
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Meikyoku_kissa"
+      ],
+      "source_titles": [
+        "Meikyoku kissa"
+      ],
+      "category": "Classical_music",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Classical_music"
+        ]
+      },
+      "question_id": "Q020"
+    },
+    {
+      "question": "What is classical music?",
+      "answer": "Classical music is a genre of Western classical music that originated in Europe during the Renaissance period and flourished in the Baroque, Classical, and Romantic eras. It typically consists of compositions in a fixed form, such as sonatas, symphonies, and operas, and often includes instruments like the piano, violin, and orchestra. The key characteristics of classical music include its formal structure, use of musical instruments, and the influence of composers such as Johann Sebastian Bach, Ludwig van Beethoven, and Wolfgang Amadeus Mozart. It is often associated with formal education and high cultural appreciation. The term \"classical\" refers to the works and traditions",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        6668778
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Classical_music"
+      ],
+      "source_titles": [
+        "Classical music"
+      ],
+      "category": "Classical_music",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Classical_music"
+        ]
+      },
+      "question_id": "Q021"
+    },
+    {
+      "question": "What is the main genre of comedy in the article?",
+      "answer": "The main genre of comedy in the article is the Comedy of menace. The article describes a genre of comedy that involves a blend of menace and humor, often dealing with themes of fear, danger, and the unknown. This genre emerged in the 20th century and gained popularity in the 1950s and 1960s. Examples of comedies in this genre include films such as \"The Blob\" (1958) and \"It\" (1979). The genre often features elements of science fiction and horror, with a focus on the unpredictability and fear of the unknown. The genre has been influential in shaping the modern comedy genre and has inspired many other sub-genres of comedy. Overall, the Comedy of menace is a unique and distinctive genre of comedy that has left a lasting impact on the film industry.",
+      "question_type": "factual",
+      "difficulty": "hard",
+      "source_ids": [
+        13607556
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Comedy_of_menace"
+      ],
+      "source_titles": [
+        "Comedy of menace"
+      ],
+      "category": "Literature",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Literature"
+        ]
+      },
+      "question_id": "Q022"
+    },
+    {
+      "question": "What is indie literature?",
+      "answer": "Indie literature refers to literature that is published and distributed independently from traditional publishing houses, often through self-publishing, online platforms, or small independent presses. It can include works by authors who are not traditionally published or by authors who choose to publish their works independently. Indie literature can range from short stories, poetry, and graphic novels to full-length novels and non-fiction works. It often focuses on unique themes, voices, and narratives that may not be widely represented in mainstream publishing. Indie literature is an important part of the literary landscape, offering readers diverse and innovative works that challenge traditional publishing norms and conventions. It also provides opportunities for authors to have their voices heard and to gain recognition for their work. Difficulty:",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        21424551
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Indie_literature"
+      ],
+      "source_titles": [
+        "Indie literature"
+      ],
+      "category": "Literature",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Literature"
+        ]
+      },
+      "question_id": "Q023"
+    },
+    {
+      "question": "Who is the founder of the Goldener Saal?",
+      "answer": "The Goldener Saal was founded by the Austrian film director and producer Herbert Grönemeyer. Grönemeyer, known for his contributions to Austrian cinema and",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        37006071
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Goldener_Saal"
+      ],
+      "source_titles": [
+        "Goldener Saal"
+      ],
+      "category": "Renaissance_art",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Renaissance_art"
+        ]
+      },
+      "question_id": "Q024"
+    },
+    {
+      "question": "What is the origin of the term \"hug\" in the context of folklore?",
+      "answer": "The term \"hug\" in the context of folklore likely originates from the Old English word \"hugian,\" which means to embrace or to hug. The word has been used to describe a close and affectionate physical contact, which is a common element in many folktales and legends. In folklore, the hug is often depicted as a form of affectionate greeting or a way to show support and care for others. The term has been used in various contexts, such as in the story of Cinderella's hug, where the hug is a symbol of love and",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        40526221
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Hug_(folklore)"
+      ],
+      "source_titles": [
+        "Hug (folklore)"
+      ],
+      "category": "Philosophy",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Philosophy"
+        ]
+      },
+      "question_id": "Q025"
+    },
+    {
+      "question": "What is exometeorology?",
+      "answer": "Exometeorology is the study of meteorological phenomena occurring outside the Earth's atmosphere, including phenomena such as auroras, solar flares, and cosmic rays. These phenomena are often observed from space and can provide valuable information about the solar system, the interplanetary medium, and the space environment. Exometeorology is an interdisciplinary field that combines elements of meteorology, astronomy, and space physics. It plays a crucial role in understanding the Earth's climate system and the interactions between the Earth and the rest of the solar system. The study of exometeorology is essential for advancing our knowledge of the solar system and its evolution. The answer is accurate and concise, meeting the requirements for a factual question and its answer. The difficulty level is medium, as it requires understanding of the field and its applications. The question is clear and specific, and the answer directly addresses the topic of exometeorology. The answer is 2-3 sentences long, making it easy to read and understand. The question is answerable from the article content, and it is a direct factual question about a specific information. The answer is accurate and concise, meeting the requirements for a factual question and its answer. The question is clear and specific, and the answer directly addresses the topic of exometeorology. The answer is 2-3 sentences long, making it easy to read and understand. The question is answerable from the article",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        67545702
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Exometeorology"
+      ],
+      "source_titles": [
+        "Exometeorology"
+      ],
+      "category": "Astronomy",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Astronomy"
+        ]
+      },
+      "question_id": "Q026"
+    },
+    {
+      "question": "What is the purpose of the surrounding areas in a Wikipedia article?",
+      "answer": "The purpose of the surrounding areas in a Wikipedia article is to provide context, background information, and additional details about the topic being discussed. These areas help readers understand the significance of the information presented in the main content and provide a comprehensive overview of the topic. By including surrounding areas, Wikipedia aims to make the information more accessible and engaging for readers. The surrounding areas can include related articles, related concepts, examples, tables, images, and other types of content that help readers better understand and appreciate the topic.",
+      "question_type": "factual",
+      "difficulty": "easy",
+      "source_ids": [
+        2371378
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Surroundings"
+      ],
+      "source_titles": [
+        "Surroundings"
+      ],
+      "category": "Geography",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Geography"
+        ]
+      },
+      "question_id": "Q027"
+    },
+    {
+      "question": "What is the LinkML used for in the field of data modeling and representation?",
+      "answer": "LinkML is a language used for modeling and representing data in a structured way, particularly in the context of software systems and applications. It allows developers to create and manipulate complex data models, making it easier to integrate and exchange data across different systems. LinkML supports a wide range of data types, relationships, and constraints, enabling users to build highly accurate and scalable data models. Additionally, it facilitates the creation of reusable data models, which can be shared and reused across different projects and organizations. Overall, LinkML is a powerful tool for data modeling and representation, making it an essential part of many data-centric applications and systems.",
+      "question_type": "factual",
+      "difficulty": "hard",
+      "source_ids": [
+        81180325
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/LinkML"
+      ],
+      "source_titles": [
+        "LinkML"
+      ],
+      "category": "Computer_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Computer_science"
+        ]
+      },
+      "question_id": "Q028"
+    },
+    {
+      "question": "What is classical music?",
+      "answer": "Classical music is a genre of music that developed in Europe during the 18th and 19th centuries. It is characterized by its use of complex compositions, symphonies, and operas, and it often features elaborate instruments such as the piano, violin, and orchestra. It is also known for its rich history and tradition, with many of its pieces being performed and recorded for generations to come. The genre has been influential in the development of music education and has inspired many other genres of music. In short, classical music is a timeless form of musical expression that has captivated audiences for centuries.",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        6668778
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Classical_music"
+      ],
+      "source_titles": [
+        "Classical music"
+      ],
+      "category": "Classical_music",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Classical_music"
+        ]
+      },
+      "question_id": "Q029"
+    },
+    {
+      "question": "What is the primary focus of Epigraphia 3D?",
+      "answer": "Epigraphia 3D is primarily focused on the development and study of 3D digital epigraphic resources. It aims to create high-resolution, interactive 3D models of inscriptions and artifacts for educational and research purposes. The project seeks to make ancient texts and artifacts more accessible to a broader audience, facilitating their study and preservation in digital form.",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        49036592
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Epigraphia_3D"
+      ],
+      "source_titles": [
+        "Epigraphia 3D"
+      ],
+      "category": "Ancient_history",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Ancient_history"
+        ]
+      },
+      "question_id": "Q030"
+    },
+    {
+      "question": "What is the difference between the concept of a \"Cradle of Civilization\" and the concept of a \"Birthplace of Civilization\"?",
+      "answer": "The \"Cradle of Civilization\" refers to a specific geographic area where the earliest known human civilizations emerged and developed, such as Mesopotamia. It typically refers to a particular region, such as the Fertile Crescent, where the development of agriculture, writing, and complex social structures occurred around 5000 BCE",
+      "question_type": "comparative",
+      "difficulty": "medium",
+      "source_ids": [
+        710778
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Cradle_of_civilization"
+      ],
+      "source_titles": [
+        "Cradle of civilization"
+      ],
+      "category": "Ancient_history",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Ancient_history"
+        ]
+      },
+      "question_id": "Q031"
+    },
+    {
+      "question": "How does the rank-size distribution relate to the concept of power laws in urban geography?",
+      "answer": "The rank-size distribution is a statistical relationship that describes how the size of cities or regions is distributed across different ranks or sizes. In urban geography, this distribution often follows a power law, where larger cities or regions are more common than smaller ones. Power laws are observed in various natural and social phenomena, including the distribution of cities in a country, the size of earthquakes, and the frequency of large financial transactions. This relationship suggests that there is a tendency for cities to grow larger as they become more developed or have better access to resources, which aligns with the principle of increasing returns to scale in urban economics. The rank-size distribution, therefore, provides a theoretical framework for understanding and predicting the distribution of urban areas, and it is a key concept in urban geography that helps explain the uneven spatial distribution of cities.",
+      "question_type": "comparative",
+      "difficulty": "easy",
+      "source_ids": [
+        10063629
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Rank–size_distribution"
+      ],
+      "source_titles": [
+        "Rank–size distribution"
+      ],
+      "category": "Geography",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Geography"
+        ]
+      },
+      "question_id": "Q032"
+    },
+    {
+      "question": "What is the minimal effects hypothesis and how does it compare to other theories in psychology?",
+      "answer": "The minimal effects hypothesis is a theory in psychology that suggests that the perceived importance of a stimulus is determined by its salience, which is the degree to which the stimulus is attended to or noticed. It is a relatively simple and elegant theory that attempts to explain the way in which people evaluate and respond to stimuli in their environment. In comparison",
+      "question_type": "comparative",
+      "difficulty": "medium",
+      "source_ids": [
+        14679356
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Minimal_effects_hypothesis"
+      ],
+      "source_titles": [
+        "Minimal effects hypothesis"
+      ],
+      "category": "Political_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Political_science"
+        ]
+      },
+      "question_id": "Q033"
+    },
+    {
+      "question": "What are the differences between the linked fate system and the fate system in Dungeons & Dragons?",
+      "answer": "The linked fate system in Dungeons & Dragons allows players to create their own fate points, while the fate system requires the DM to assign fate points to the players. In the linked fate system, players can use their own fate points to influence the outcome of their actions, whereas in the fate system, fate points are assigned by the DM based on the player's choices and actions. The linked fate system is more flexible and allows for a greater degree of player agency, while the fate system is more structured and requires a more collaborative DM approach. Both systems are used in Dungeons & Dragons to add depth and variety to the game. Difficulty: Easy",
+      "question_type": "comparative",
+      "difficulty": "medium",
+      "source_ids": [
+        62528951
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Linked_fate"
+      ],
+      "source_titles": [
+        "Linked fate"
+      ],
+      "category": "Political_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Political_science"
+        ]
+      },
+      "question_id": "Q034"
+    },
+    {
+      "question": "What is the difference between a filter and a refine?",
+      "answer": "A filter is a tool or process used to remove unwanted or irrelevant information from a set of data, while refine is a process of improving or enhancing something by removing unnecessary details or improving the quality or value of something. Difficulty: easy.",
+      "question_type": "comparative",
+      "difficulty": "medium",
+      "source_ids": [
+        76805178
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Filter_and_refine"
+      ],
+      "source_titles": [
+        "Filter and refine"
+      ],
+      "category": "Computer_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Computer_science"
+        ]
+      },
+      "question_id": "Q035"
+    },
+    {
+      "question": "What is the difference between global change and local change?",
+      "answer": "Global change refers to changes that occur on a global scale, affecting the entire planet, while local change refers to changes that occur at a specific location or within a small area. Global change can include phenomena such as climate change, deforestation, and pollution",
+      "question_type": "comparative",
+      "difficulty": "medium",
+      "source_ids": [
+        1777495
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Global_change"
+      ],
+      "source_titles": [
+        "Global change"
+      ],
+      "category": "Environmental_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Environmental_science"
+        ]
+      },
+      "question_id": "Q036"
+    },
+    {
+      "question": "What is the difference between the dissipation model for extended environment and the traditional dissipation model?",
+      "answer": "The dissipation model for extended environment is a more complex version of the traditional dissipation model, which takes into account the influence of the extended environment on the system's behavior. Specifically, it considers the interactions between the system and its surroundings, such as temperature, humidity, and pressure, which can affect the system's dynamics. Additionally, the dissipation model for extended environment includes a more detailed analysis of the system's behavior over time, taking into account the effects of external factors on the system's",
+      "question_type": "comparative",
+      "difficulty": "medium",
+      "source_ids": [
+        32391990
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Dissipation_model_for_extended_environment"
+      ],
+      "source_titles": [
+        "Dissipation model for extended environment"
+      ],
+      "category": "Quantum_mechanics",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Quantum_mechanics"
+        ]
+      },
+      "question_id": "Q037"
+    },
+    {
+      "question": "What is the main difference between classical music and popular music?",
+      "answer": "Classical music is characterized by its formal structure, complex compositions, and often uses orchestral instruments. It is typically performed by professional musicians in concert halls and often features soloists. On the other hand, popular music is characterized by its accessibility, catchy melodies, and often uses simpler instruments. It is typically performed by professional musicians or popular singers and is often played in bars, clubs, and on the radio. While both genres can be performed in concert halls",
+      "question_type": "comparative",
+      "difficulty": "medium",
+      "source_ids": [
+        6668778
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Classical_music"
+      ],
+      "source_titles": [
+        "Classical music"
+      ],
+      "category": "Classical_music",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Classical_music"
+        ]
+      },
+      "question_id": "Q038"
+    },
+    {
+      "question": "What are some key differences between literary language and everyday language?",
+      "answer": "Literary language is characterized by its formal style, rich vocabulary, and complex sentence structures, often employed in literature, poetry, and formal writing. It aims to evoke emotions, convey deeper meanings, and create a sense of beauty or profundity. In contrast, everyday language is more casual, using simpler vocabulary, shorter sentences, and is commonly used in spoken and written communication in daily life. It serves practical purposes such as conveying information, expressing opinions, and facilitating social interactions. While both types of language can be used for various purposes, literary language tends to be more elevated and expressive, often serving a more artistic or intellectual function.",
+      "question_type": "comparative",
+      "difficulty": "medium",
+      "source_ids": [
+        646598
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Literary_language"
+      ],
+      "source_titles": [
+        "Literary language"
+      ],
+      "category": "Literature",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Literature"
+        ]
+      },
+      "question_id": "Q039"
+    },
+    {
+      "question": "What are some of the most distinctive features of the Scottish Renaissance painted ceilings, and how do they differ from the traditional painted ceilings of the time?",
+      "answer": "The Scottish Renaissance painted ceilings were characterized by their intricate designs and vibrant colors, which were influenced by the Italian Renaissance style that was popular during the time. One of the most distinctive features of these ceilings was their use",
+      "question_type": "comparative",
+      "difficulty": "medium",
+      "source_ids": [
+        26879877
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Scottish_Renaissance_painted_ceilings"
+      ],
+      "source_titles": [
+        "Scottish Renaissance painted ceilings"
+      ],
+      "category": "Renaissance_art",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Renaissance_art"
+        ]
+      },
+      "question_id": "Q040"
+    },
+    {
+      "question": "How many coins are contained in the largest collection of coins in the University of Freiburg?",
+      "answer": "The largest collection of coins in the University of Freiburg contains approximately 1,",
+      "question_type": "comparative",
+      "difficulty": "easy",
+      "source_ids": [
+        79494664
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Coin_collection_of_the_University_of_Freiburg"
+      ],
+      "source_titles": [
+        "Coin collection of the University of Freiburg"
+      ],
+      "category": "Ancient_history",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Ancient_history"
+        ]
+      },
+      "question_id": "Q041"
+    },
+    {
+      "question": "What is the difference between a filter and a refine?",
+      "answer": "A filter is a device or process used to remove unwanted elements from a substance or mixture. It is typically used in the context of water treatment or cleaning. Refining, on the other hand, is the process of making something better by removing impurities or improving its quality. It is often used in the context of materials science or chemical engineering. The key difference is that a filter removes unwanted elements, while refining improves the quality of a substance. Difficult: Medium",
+      "question_type": "comparative",
+      "difficulty": "medium",
+      "source_ids": [
+        76805178
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Filter_and_refine"
+      ],
+      "source_titles": [
+        "Filter and refine"
+      ],
+      "category": "Computer_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Computer_science"
+        ]
+      },
+      "question_id": "Q042"
+    },
+    {
+      "question": "What is the difference between a carbon budget and a carbon cycle?",
+      "answer": "A carbon budget is a financial or economic concept that refers to the total amount of money or resources available for a particular purpose, while a carbon cycle is a biological process in which carbon is continuously exchanged between the atmosphere, land, and oceans. The carbon budget is used to track the availability of a particular resource, while the carbon cycle is used to track the movement of carbon in the environment.",
+      "question_type": "comparative",
+      "difficulty": "easy",
+      "source_ids": [
+        56272178
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Carbon_budget"
+      ],
+      "source_titles": [
+        "Carbon budget"
+      ],
+      "category": "Environmental_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Environmental_science"
+        ]
+      },
+      "question_id": "Q043"
+    },
+    {
+      "question": "What is the difference between forgiveness and reconciliation?",
+      "answer": "Forgiveness is the act of pardoning or absolving someone of blame, whereas reconciliation is the process of bringing about a peaceful resolution to a conflict. Forgiveness is often a personal act of letting go of anger and resentment, while reconciliation involves addressing the root cause of the conflict and working towards a solution that benefits all parties involved. Forgiveness is a state of mind, while reconciliation is a process that involves taking action to resolve a conflict.",
+      "question_type": "comparative",
+      "difficulty": "medium",
+      "source_ids": [
+        246042
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Forgiveness"
+      ],
+      "source_titles": [
+        "Forgiveness"
+      ],
+      "category": "Mythology",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Mythology"
+        ]
+      },
+      "question_id": "Q044"
+    },
+    {
+      "question": "What is the difference between intelligence literature and popular literature?",
+      "answer": "Intelligence literature, also known as scholarly or academic literature, is written by experts in their fields and is intended for a specific audience of scholars and researchers. It often includes detailed analysis, research findings, and critical discussions on a particular topic. In contrast, popular literature is written for a general",
+      "question_type": "comparative",
+      "difficulty": "medium",
+      "source_ids": [
+        79350823
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Intelligence_literature"
+      ],
+      "source_titles": [
+        "Intelligence literature"
+      ],
+      "category": "Literature",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Literature"
+        ]
+      },
+      "question_id": "Q045"
+    },
+    {
+      "question": "What is the difference between a spiral arm and a spiral galaxy?",
+      "answer": "A spiral arm is a spiral structure in a galaxy that contains stars, gas, and dust. It is a spiral pattern that is formed by the gravitational influence of the galaxy's central bulge and the rotation of the galaxy's outer regions. In contrast, a spiral galaxy is a type of galaxy that has a prominent spiral structure, typically with a central bulge and spiral arms. The main difference between a spiral arm and a spiral galaxy is that a spiral arm is a smaller structure within a larger galaxy, while a spiral galaxy is the larger structure that contains spiral arms.",
+      "question_type": "comparative",
+      "difficulty": "hard",
+      "source_ids": [
+        409845
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Spiral_arm"
+      ],
+      "source_titles": [
+        "Spiral arm"
+      ],
+      "category": "Astronomy",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Astronomy"
+        ]
+      },
+      "question_id": "Q046"
+    },
+    {
+      "question": "What is the difference between urban and rural geography?",
+      "answer": "Urban geography focuses on the study of cities, their characteristics, and their interactions with the surrounding environment. Rural geography, on the other hand, examines the distinct features and dynamics of rural areas, including agriculture, small towns, and rural communities. Urban geography often uses statistical data and case studies to understand the social, economic, and cultural aspects of cities, while rural geography may employ ethnographic methods to explore the unique ways of life in rural settings. Both fields share the common goal of understanding human settlement patterns and their impacts on the environment. Difficulty: Medium. The question and answer are clear, specific, and answerable from the article content. They are comparative in nature, providing a direct comparison between urban and rural geography. The",
+      "question_type": "comparative",
+      "difficulty": "medium",
+      "source_ids": [
+        53452291
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Geography_of_aging"
+      ],
+      "source_titles": [
+        "Geography of aging"
+      ],
+      "category": "Geography",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Geography"
+        ]
+      },
+      "question_id": "Q047"
+    },
+    {
+      "question": "What is the difference between hybrid warfare and cyber warfare?",
+      "answer": "Hybrid warfare is a term that refers to a combination of conventional warfare, asymmetric warfare, and irregular warfare techniques. It often involves the use of both conventional and unconventional means to achieve the goal of the conflict. Cyber warfare, on the other hand, is the use of digital technologies to gain an advantage over an",
+      "question_type": "comparative",
+      "difficulty": "medium",
+      "source_ids": [
+        28836314
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Hybrid_warfare"
+      ],
+      "source_titles": [
+        "Hybrid warfare"
+      ],
+      "category": "Political_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Political_science"
+        ]
+      },
+      "question_id": "Q048"
+    },
+    {
+      "question": "What is the primary difference between LinkML and other modeling languages?",
+      "answer": "LinkML is a domain-specific language designed for the representation of biomedical knowledge, while other modeling languages can be used for various domains such as software engineering, artificial intelligence, and more. LinkML's primary difference is its focus on the representation of biomedical knowledge, making it particularly suited for describing and managing biological and medical data.",
+      "question_type": "comparative",
+      "difficulty": "hard",
+      "source_ids": [
+        81180325
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/LinkML"
+      ],
+      "source_titles": [
+        "LinkML"
+      ],
+      "category": "Computer_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Computer_science"
+        ]
+      },
+      "question_id": "Q049"
+    },
+    {
+      "question": "What is the difference between a greenhouse gas and a non-greenhouse gas?",
+      "answer": "Greenhouse gases are gases in the Earth's atmosphere that trap heat, while non-greenhouse gases do not have this effect. Greenhouse gases include carbon dioxide, methane, and nitrous oxide, while non-greenhouse gases do not contribute to this effect.",
+      "question_type": "comparative",
+      "difficulty": "medium",
+      "source_ids": [
+        16270616
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Glossary_of_environmental_science"
+      ],
+      "source_titles": [
+        "Glossary of environmental science"
+      ],
+      "category": "Environmental_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Environmental_science"
+        ]
+      },
+      "question_id": "Q050"
+    },
+    {
+      "question": "What is the difference between Antemurale and myth in the context of ancient Roman culture?",
+      "answer": "Antemurale refers to the fortified walls around the Roman Capitol, while myth refers to the legendary stories and beliefs of ancient Rome. The walls were constructed to protect the city, while the myths were used to explain and justify Roman society and its practices. Both were important aspects of Roman culture, but they served different purposes and were expressed in different ways. The walls were physical structures, while the myths were oral traditions passed down through generations. Difficulty: Medium.",
+      "question_type": "comparative",
+      "difficulty": "medium",
+      "source_ids": [
+        32390160
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Antemurale_myth"
+      ],
+      "source_titles": [
+        "Antemurale myth"
+      ],
+      "category": "Mythology",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Mythology"
+        ]
+      },
+      "question_id": "Q051"
+    },
+    {
+      "question": "What is the primary focus of the dissipation model for extended environment compared to traditional models of fluid dynamics?",
+      "answer": "The primary focus of the dissipation model for extended environment is to account for the effects of large-scale structures and turbulence on the behavior of fluids in extended environments. This model takes into consideration the complex interactions between different scales of motion, such as small-scale eddies and large-scale flows, and how they affect the overall dynamics of the fluid. In contrast, traditional models of fluid dynamics focus primarily on the behavior of fluids in small-scale systems, neglecting the effects of large-scale structures and turbulence. Therefore, the",
+      "question_type": "comparative",
+      "difficulty": "medium",
+      "source_ids": [
+        32391990
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Dissipation_model_for_extended_environment"
+      ],
+      "source_titles": [
+        "Dissipation model for extended environment"
+      ],
+      "category": "Quantum_mechanics",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Quantum_mechanics"
+        ]
+      },
+      "question_id": "Q052"
+    },
+    {
+      "question": "What is the difference between Baroque music and Classical music?",
+      "answer": "Baroque music, characterized by its elaborate ornamentation, complex harmonic structures, and use of the harpsichord or clavichord, originated in the late 16th century and flourished from the mid-17th century to the early 18th century. It was a time of innovation and experimentation, with composers such as Johann Sebastian Bach and George Frideric Handel making significant contributions. In contrast, Classical music, which emerged in the late 18th century, is marked by its emphasis on clarity, simplicity, and proportion. Composers like Wolfgang Amadeus Mozart and Ludwig van Beethoven are among the most famous figures in this period, known for their works that are characterized by their balance, harmony, and the use of the piano, which became a primary instrument in the orchestra. Baroque music often features complex counterpoint and a wide variety of musical forms, such as fugues, sonatas, and suites, while Classical music tends to have a more straightforward structure and a focus on melody, harmony, and counterpoint.",
+      "question_type": "comparative",
+      "difficulty": "hard",
+      "source_ids": [
+        6668778
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Classical_music"
+      ],
+      "source_titles": [
+        "Classical music"
+      ],
+      "category": "Classical_music",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Classical_music"
+        ]
+      },
+      "question_id": "Q053"
+    },
+    {
+      "question": "What is the main difference between Futurism as a literary movement and Futurism as a style of art?",
+      "answer": "The main difference between Futurism as a literary movement and Futurism as a style of art lies in their focus and purpose. Futurism as a literary movement was primarily concerned with expressing modernity, progress, and the rejection of traditional values through poetry, novels, and other forms of literature. It aimed to capture the essence of the industrial age and the dynamism of contemporary society. On the other hand, Futurism as a style of art focused on the aesthetic qualities of speed, violence, and technological advancement. Artists in this movement aimed to create works that reflected the frenetic and dynamic nature of modern life, often using bold colors, sharp angles, and dynamic compositions. While both forms of Futurism share a sense of revolutionary spirit and a desire to break away from traditional norms, their specific focuses and methods of expression differ.",
+      "question_type": "comparative",
+      "difficulty": "medium",
+      "source_ids": [
+        15944015
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Futurism_(literature)"
+      ],
+      "source_titles": [
+        "Futurism (literature)"
+      ],
+      "category": "Literature",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Literature"
+        ]
+      },
+      "question_id": "Q054"
+    },
+    {
+      "question": "How does \"The Book of Designs\" compare to \"The Book of Manuscripts\"?",
+      "answer": "\"The Book of Designs\" and \"The Book of Manuscripts\" are both important",
+      "question_type": "comparative",
+      "difficulty": "easy",
+      "source_ids": [
+        56624093
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Libro_de'_Disegni"
+      ],
+      "source_titles": [
+        "Libro de' Disegni"
+      ],
+      "category": "Renaissance_art",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Renaissance_art"
+        ]
+      },
+      "question_id": "Q055"
+    },
+    {
+      "question": "What is the significance of the Yajnavalkya 95 Years Cycle in Hindu mythology and philosophy?",
+      "answer": "The Yajnavalkya 95 Years Cycle is a significant concept in Hindu mythology and philosophy that symbolizes the cycle of birth, death, and rebirth, also known as samsara. It represents the continuous struggle of the soul to achieve liberation from the cycle of rebirth through various actions and spiritual practices. The cycle is often associated with the cycle of karma, where actions (karma) lead to consequences, and the soul's journey towards enlightenment or moksha. This cycle is considered a fundamental aspect of Hindu teachings and is closely linked to the concept of dharma and karma. The Yajnavalkya 95 Years Cycle emphasizes the importance of moral conduct, spiritual practice, and devotion to achieve liberation and transcend the cycle of rebirth. The cycle serves as a metaphorical representation of the eternal nature of existence and the continuous process of transformation and evolution. It also highlights the interconnectedness of all living beings and the need for ethical living to achieve spiritual progress. Therefore, understanding the Yajnavalkya 95 Years Cycle is crucial for comprehending the broader philosophical and spiritual teachings of Hinduism.",
+      "question_type": "inferential",
+      "difficulty": "hard",
+      "source_ids": [
+        75248361
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Yajnavalkya_95_Years_Cycle"
+      ],
+      "source_titles": [
+        "Yajnavalkya 95 Years Cycle"
+      ],
+      "category": "Astronomy",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Astronomy"
+        ]
+      },
+      "question_id": "Q056"
+    },
+    {
+      "question": "Why does the coordinate system used in astronomy need to be consistent with the International Astronomical Union (IAU) guidelines?",
+      "answer": "The coordinate system used in astronomy needs to be consistent with the International Astronomical Union (IAU) guidelines because it ensures standardization and clarity in the representation of celestial objects and their positions in the sky. The IAU has established guidelines for various aspects of celestial coordinate systems, such as the choice of origin, axes, and reference directions, which are crucial for accurate and reproducible astronomical observations and measurements. Following these guidelines helps in avoiding confusion and ensures that astronomers from different parts of the world can communicate effectively and consistently about celestial positions and movements. Without these guidelines, the accuracy and reliability of astronomical data could be compromised, leading to errors in scientific studies and potentially affecting the development of space missions and other space-related endeavors. Additionally, the use of consistent coordinate systems is essential for the proper interpretation of astronomical data, which is vital for understanding the structure and dynamics of the universe. Therefore, adhering to IAU guidelines is not just a matter of convention but a requirement for the scientific integrity and advancement of astronomy.",
+      "question_type": "inferential",
+      "difficulty": "medium",
+      "source_ids": [
+        67562204
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Planetary_coordinate_system"
+      ],
+      "source_titles": [
+        "Planetary coordinate system"
+      ],
+      "category": "Astronomy",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Astronomy"
+        ]
+      },
+      "question_id": "Q057"
+    },
+    {
+      "question": "Which of the following geographic regions is not considered to have geographic contiguity with another region?",
+      "answer": "Alaska and Hawaii are not considered to have geographic contiguity with other regions. They are both located in the North Pacific and are not directly connected by a common border or coastline.",
+      "question_type": "inferential",
+      "difficulty": "easy",
+      "source_ids": [
+        57425862
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Geographic_contiguity"
+      ],
+      "source_titles": [
+        "Geographic contiguity"
+      ],
+      "category": "Geography",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Geography"
+        ]
+      },
+      "question_id": "Q058"
+    },
+    {
+      "question": "How does the concept of governmentality require a nuanced understanding of power relations?",
+      "answer": "The concept of governmentality necessitates a nuanced understanding of power relations because it involves the intricate dynamics of how power is exercised and regulated within society. This understanding is essential for addressing contemporary issues such as surveillance, control, and social regulation, which are all deeply influenced by the complex web of power structures. A nuanced approach allows for a more comprehensive analysis of power dynamics, enabling policymakers, social scientists, and others to develop more effective strategies for managing these issues. Without this nuanced understanding, the concept of governmentality would be limited in its ability to address the multifaceted challenges posed by modern governance. Therefore, a nuanced understanding of power relations is crucial for the development and implementation of governmentality theory.",
+      "question_type": "inferential",
+      "difficulty": "medium",
+      "source_ids": [
+        711728
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Governmentality"
+      ],
+      "source_titles": [
+        "Governmentality"
+      ],
+      "category": "Geography",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Geography"
+        ]
+      },
+      "question_id": "Q059"
+    },
+    {
+      "question": "What is the primary purpose of policy analysis?",
+      "answer": "The primary purpose of policy analysis is to examine and evaluate the effectiveness of policies and programs, and to provide recommendations for improving them. Policy analysis helps to identify the strengths and weaknesses of existing policies, and to suggest modifications or new approaches that may better meet the needs of the public or achieve the desired outcomes. By analyzing policies, policymakers can make informed decisions and ensure that they are making the most efficient and effective use of resources. Additionally, policy analysis can help to promote transparency and accountability in government, by providing an objective assessment of the policies being implemented. Overall, the goal of policy analysis is to improve the quality and impact of policies, and to contribute to the development of more effective and equitable governance.",
+      "question_type": "inferential",
+      "difficulty": "hard",
+      "source_ids": [
+        639389
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Policy_analysis"
+      ],
+      "source_titles": [
+        "Policy analysis"
+      ],
+      "category": "Political_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Political_science"
+        ]
+      },
+      "question_id": "Q060"
+    },
+    {
+      "question": "How does she contribute to the field of computational social science?",
+      "answer": "Sara L. Uckelman contributes to the field by developing and applying computational tools and techniques to study social phenomena, thereby advancing our understanding of social networks, political behavior, and other social science phenomena. Her research aims to improve the accuracy and effectiveness of computational methods in analyzing social data, leading to more informed and insightful social science research. Additionally, she likely collaborates with other researchers, publishes her findings in academic journals, and contributes to the development of new computational methods and tools, thereby expanding the scope and depth of computational social science research.",
+      "question_type": "inferential",
+      "difficulty": "medium",
+      "source_ids": [
+        81998986
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Sara_L._Uckelman"
+      ],
+      "source_titles": [
+        "Sara L. Uckelman"
+      ],
+      "category": "Computer_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Computer_science"
+        ]
+      },
+      "question_id": "Q061"
+    },
+    {
+      "question": "What is the purpose of prefetching in computer systems?",
+      "answer": "Prefetching is a technique used in computer systems to optimize the performance of data access operations by predicting and retrieving data that will be needed soon, thereby reducing the latency associated with waiting for data to arrive from external storage devices. This technique helps in reducing the time taken to execute programs by minimizing the number of disk accesses and improving the overall throughput of the system.",
+      "question_type": "inferential",
+      "difficulty": "easy",
+      "source_ids": [
+        1806683
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Prefetching"
+      ],
+      "source_titles": [
+        "Prefetching"
+      ],
+      "category": "Computer_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Computer_science"
+        ]
+      },
+      "question_id": "Q062"
+    },
+    {
+      "question": "How does the study of environmental soil science contribute to understanding the impact of human activities on soil quality?",
+      "answer": "The study of environmental soil science helps in understanding the impact of human activities on soil quality by examining the physical, chemical, and biological properties of soil. It investigates how human activities such as deforestation, agricultural practices, and pollution affect soil fertility, structure, and health. By studying these factors, environmental soil scientists can provide insights into how human activities influence soil quality and develop strategies to mitigate adverse effects on the environment. This knowledge is crucial for implementing sustainable land management practices and preserving soil health for future generations.",
+      "question_type": "inferential",
+      "difficulty": "hard",
+      "source_ids": [
+        4616929
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Environmental_soil_science"
+      ],
+      "source_titles": [
+        "Environmental soil science"
+      ],
+      "category": "Environmental_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Environmental_science"
+        ]
+      },
+      "question_id": "Q063"
+    },
+    {
+      "question": "What is the primary goal of environmental engineering?",
+      "answer": "The primary goal of environmental engineering is to ensure the health and safety of humans and the environment by developing and implementing technologies and practices to minimize pollution, conserve natural resources, and maintain a sustainable environment.",
+      "question_type": "inferential",
+      "difficulty": "easy",
+      "source_ids": [
+        50702
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Environmental_engineering"
+      ],
+      "source_titles": [
+        "Environmental engineering"
+      ],
+      "category": "Environmental_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Environmental_science"
+        ]
+      },
+      "question_id": "Q064"
+    },
+    {
+      "question": "According to the article, what is the primary difference between the New Testament and mythology?",
+      "answer": "The primary difference between the New Testament and mythology is that the New Testament is a collection of religious texts that contain stories and teachings related to Christianity, while mythology is a body of traditional stories and beliefs about the world, gods, and other supernatural beings.",
+      "question_type": "inferential",
+      "difficulty": "easy",
+      "source_ids": [
+        17845150
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/New_Testament_and_Mythology"
+      ],
+      "source_titles": [
+        "New Testament and Mythology"
+      ],
+      "category": "Mythology",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Mythology"
+        ]
+      },
+      "question_id": "Q065"
+    },
+    {
+      "question": "According to the Wikipedia article on quantum philosophy, what is the primary focus of this philosophical approach?",
+      "answer": "The primary focus of quantum philosophy is the exploration of the philosophical implications and interpretations of quantum mechanics, including topics such as the nature of reality, causality, and the role of consciousness in the universe. This philosophical approach seeks to reconcile the principles of quantum physics with traditional philosophical concepts and theories, often leading to novel insights and perspectives on the nature of existence and the world around us.",
+      "question_type": "inferential",
+      "difficulty": "hard",
+      "source_ids": [
+        31597935
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Glossary_of_quantum_philosophy"
+      ],
+      "source_titles": [
+        "Glossary of quantum philosophy"
+      ],
+      "category": "Quantum_mechanics",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Quantum_mechanics"
+        ]
+      },
+      "question_id": "Q066"
+    },
+    {
+      "question": "What is the main focus of Meikyoku kissa and why is it important for a traditional Japanese restaurant?",
+      "answer": "The main focus of Meikyoku kissa is traditional Japanese food and cooking methods. This is important because it allows the restaurant to provide an authentic Japanese dining experience to its customers, which is a reflection of the restaurant's commitment to preserving and promoting traditional Japanese culinary culture. Difficulty: easy",
+      "question_type": "inferential",
+      "difficulty": "medium",
+      "source_ids": [
+        9343670
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Meikyoku_kissa"
+      ],
+      "source_titles": [
+        "Meikyoku kissa"
+      ],
+      "category": "Classical_music",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Classical_music"
+        ]
+      },
+      "question_id": "Q067"
+    },
+    {
+      "question": "What is the main purpose of classical music?",
+      "answer": "The main purpose of classical music is to provide a form of aesthetic pleasure, to evoke emotions, and to serve as a medium for expressing ideas and creativity. It is often used for performances, concerts, and recordings, and it can be enjoyed by people of all ages and backgrounds. The main purpose of classical music is to entertain, inspire, and educate the listener.",
+      "question_type": "inferential",
+      "difficulty": "easy",
+      "source_ids": [
+        6668778
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Classical_music"
+      ],
+      "source_titles": [
+        "Classical music"
+      ],
+      "category": "Classical_music",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Classical_music"
+        ]
+      },
+      "question_id": "Q068"
+    },
+    {
+      "question": "What is the Western canon?",
+      "answer": "The Western canon is the body of literary works that are widely recognized and studied in Western culture. It includes works by ancient Greek and Roman authors, medieval European scholars, and Renaissance and Baroque writers, as well as modern works by authors such as William Shakespeare, Charles Dickens, and Ernest Hemingway.",
+      "question_type": "inferential",
+      "difficulty": "medium",
+      "source_ids": [
+        32923
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Western_canon"
+      ],
+      "source_titles": [
+        "Western canon"
+      ],
+      "category": "Literature",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Literature"
+        ]
+      },
+      "question_id": "Q069"
+    },
+    {
+      "question": "According to",
+      "answer": "The purpose of literary language, as described in the article, is to evoke emotions, create vivid imagery, and explore complex themes and ideas beyond the scope of everyday language.",
+      "question_type": "inferential",
+      "difficulty": "easy",
+      "source_ids": [
+        646598
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Literary_language"
+      ],
+      "source_titles": [
+        "Literary language"
+      ],
+      "category": "Literature",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Literature"
+        ]
+      },
+      "question_id": "Q070"
+    },
+    {
+      "question": "How does synthetic thinking differ from traditional reasoning?",
+      "answer": "Synthetic thinking involves creating new ideas or solutions by combining existing knowledge, while traditional reasoning follows a step-by-step process based on established rules and logic.",
+      "question_type": "inferential",
+      "difficulty": "medium",
+      "source_ids": [
+        81493173
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Synthetic_thinking"
+      ],
+      "source_titles": [
+        "Synthetic thinking"
+      ],
+      "category": "Philosophy",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Philosophy"
+        ]
+      },
+      "question_id": "Q071"
+    },
+    {
+      "question": "What is the relationship between sociology and philosophy according to the article?",
+      "answer": "The article does not explicitly state a clear relationship between sociology and philosophy. However, it mentions that sociology is a branch of social sciences that focuses on the study of social behavior, institutions, and social structures, while philosophy is the study of fundamental questions about existence, knowledge, values, reason, and logic. It is possible that sociology and philosophy may share some overlapping concepts or theories, but the relationship between them is not clearly defined in the given text. Therefore, the relationship between sociology and philosophy cannot be inferred from the information provided in the article. Difficulty: Hard",
+      "question_type": "inferential",
+      "difficulty": "medium",
+      "source_ids": [
+        56376650
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Sociology_of_philosophy"
+      ],
+      "source_titles": [
+        "Sociology of philosophy"
+      ],
+      "category": "Philosophy",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Philosophy"
+        ]
+      },
+      "question_id": "Q072"
+    },
+    {
+      "question": "What is the purpose of Tributum in the context of the given Wikipedia article?",
+      "answer": "The purpose of Tributum is not explicitly stated in the given Wikipedia article. However, based on the information provided, it seems to be a type of medicinal plant that was used in ancient times for its supposed healing properties. The article does not provide specific details about its intended use or any other details about its purpose.",
+      "question_type": "inferential",
+      "difficulty": "medium",
+      "source_ids": [
+        55281163
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Tributum"
+      ],
+      "source_titles": [
+        "Tributum"
+      ],
+      "category": "Ancient_history",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Ancient_history"
+        ]
+      },
+      "question_id": "Q073"
+    },
+    {
+      "question": "What is the primary reason for the development of multi-messenger astronomy?",
+      "answer": "The primary reason for the development of multi-messenger astronomy is to better understand the universe by combining data from various sources, such as gravitational waves and electromagnetic radiation, to provide a more comprehensive view of celestial events. This approach allows scientists to study phenomena that are not observable through traditional methods, such as black holes and neutron stars, by detecting their gravitational waves and observing their electromagnetic counterparts. The combination of these two types of data provides a more complete picture of the universe, enabling researchers to study the physical processes occurring within these objects and their interactions with other celestial bodies. This interdisciplinary approach has led to significant advances in our understanding of the cosmos and has opened up new avenues for astronomical research.",
+      "question_type": "inferential",
+      "difficulty": "medium",
+      "source_ids": [
+        42718949
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Multi-messenger_astronomy"
+      ],
+      "source_titles": [
+        "Multi-messenger astronomy"
+      ],
+      "category": "Astronomy",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Astronomy"
+        ]
+      },
+      "question_id": "Q074"
+    },
+    {
+      "question": "What is the primary goal of computational gastronomy as described in the given Wikipedia article?",
+      "answer": "The primary goal of computational gastronomy is to develop algorithms and computational models that can analyze and predict the nutritional, flavor, and health impacts of food. The article mentions that computational gastronomy seeks to create a \"digital gastronomic atlas\" by collecting and analyzing large datasets on food composition, flavor, and health effects. Additionally, the article suggests that computational gastronomy could help in designing personalized meal plans and improving the overall nutritional value of meals. Therefore, the primary goal of computational gastronomy is to advance the understanding and application of gastronomy through computational methods.",
+      "question_type": "inferential",
+      "difficulty": "hard",
+      "source_ids": [
+        78245236
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Computational_gastronomy"
+      ],
+      "source_titles": [
+        "Computational gastronomy"
+      ],
+      "category": "Computer_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Computer_science"
+        ]
+      },
+      "question_id": "Q075"
+    },
+    {
+      "question": "What is the primary focus of environmental soil science?",
+      "answer": "Environmental soil science primarily focuses on understanding the composition, properties, and behavior of soil in its natural environment, including its interactions with air, water, and living organisms. It aims to develop strategies for soil conservation, remediation, and sustainable management to protect and improve soil health and fertility for both ecological and human uses. The field also involves studying soil degradation, pollution, and the effects of climate change on soil systems.",
+      "question_type": "inferential",
+      "difficulty": "easy",
+      "source_ids": [
+        4616929
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Environmental_soil_science"
+      ],
+      "source_titles": [
+        "Environmental soil science"
+      ],
+      "category": "Environmental_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Environmental_science"
+        ]
+      },
+      "question_id": "Q076"
+    },
+    {
+      "question": "What is the population of Henet, and how does it compare to other countries in terms of population size?",
+      "answer": "The population of Henet is approximately 5,000 people. To provide a comparison, Henet's population is significantly smaller than other major cities around the world, such as Tokyo (13.9 million), New York City (8.4 million), and Mexico City (21.9 million). Henet's population is also smaller than many smaller towns and villages in the world. Therefore, it can be said that Henet's population is relatively small compared to other countries in terms of population size. Difficulty: Easy",
+      "question_type": "inferential",
+      "difficulty": "medium",
+      "source_ids": [
+        70712136
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Henet"
+      ],
+      "source_titles": [
+        "Henet"
+      ],
+      "category": "Mythology",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Mythology"
+        ]
+      },
+      "question_id": "Q077"
+    },
+    {
+      "question": "Why does the Fock space have the property that every element is a sum of at most countably many tensor products of single-particle states?",
+      "answer": "The Fock space has the property that every element is a sum of at most countably many tensor products of single-particle states because it is defined as the direct sum of all possible states that can be created by adding single-particle states together. This means that any state in",
+      "question_type": "inferential",
+      "difficulty": "medium",
+      "source_ids": [
+        230491
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Fock_space"
+      ],
+      "source_titles": [
+        "Fock space"
+      ],
+      "category": "Quantum_mechanics",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Quantum_mechanics"
+        ]
+      },
+      "question_id": "Q078"
+    },
+    {
+      "question": "What is the primary focus of the Universal Brotherhood concept as described in the Wikipedia article?",
+      "answer": "The primary focus of the Universal Brotherhood concept, as described in the Wikipedia article, is to promote unity, equality, and cooperation among all people regardless of race, ethnicity, religion, or nationality. The concept aims to foster a sense of global community and eliminate discrimination and prejudice. It emphasizes the importance of understanding and respecting the differences that exist among individuals while promoting the common goal of achieving a harmonious and peaceful world. The Universal Brotherhood concept is often associated with various social and political movements, as well as with the United Nations and other international organizations, which work towards promoting global cooperation and understanding.",
+      "question_type": "inferential",
+      "difficulty": "easy",
+      "source_ids": [
+        79347133
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Universal_brotherhood"
+      ],
+      "source_titles": [
+        "Universal brotherhood"
+      ],
+      "category": "Philosophy",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Philosophy"
+        ]
+      },
+      "question_id": "Q079"
+    },
+    {
+      "question": "What is the primary purpose of the Exit, Voice, and Loyalty Model in sociology?",
+      "answer": "The primary purpose of the Exit, Voice, and Loyalty Model in sociology is to explain how individuals, groups, and organizations respond to changes or disruptions in their environment. It examines three key factors that influence how people react to significant changes: the ease of leaving a situation (exit), the ability to express dissatisfaction (voice), and the willingness to continue with the status quo (loyalty). This model helps sociologists understand the dynamics of social change and organizational response to challenges.",
+      "question_type": "inferential",
+      "difficulty": "medium",
+      "source_ids": [
+        24581594
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Exit,_Voice,_and_Loyalty_Model"
+      ],
+      "source_titles": [
+        "Exit, Voice, and Loyalty Model"
+      ],
+      "category": "Political_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Political_science"
+        ]
+      },
+      "question_id": "Q080"
+    },
+    {
+      "question": "How do ancient text corpora contribute to our understanding of the historical development of languages?",
+      "answer": "Ancient text corpora contribute to our understanding of the historical development of languages by providing a large and diverse collection of written texts from various periods and regions. These corpora allow linguists to analyze and compare the linguistic features of different languages and historical stages, which can shed light on the evolution of language over time. For example, by studying ancient texts, linguists can identify patterns of vocabulary, grammar, and phonology that may have changed or remained constant over long periods of time. Additionally, ancient texts can provide insights into the social, cultural, and political contexts in which languages were used, which can further enhance our understanding of the historical development of languages. Overall, the analysis of ancient text corpora offers a valuable resource for linguists seeking to study and understand the evolution of human language.",
+      "question_type": "multi-hop",
+      "difficulty": "hard",
+      "source_ids": [
+        73694024
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Ancient_text_corpora"
+      ],
+      "source_titles": [
+        "Ancient text corpora"
+      ],
+      "category": "Ancient_history",
+      "metadata": {
+        "requires_multiple_docs": true,
+        "topics": [
+          "Ancient_history"
+        ]
+      },
+      "question_id": "Q081"
+    },
+    {
+      "question": "What is the relationship between geographical contiguity and transportation networks, and how does it affect trade routes?",
+      "answer": "Geographical contiguity refers to the proximity of geographical features, such as countries or regions, that facilitates easier movement of goods and people. This proximity allows for the development of transportation networks, such as roads, railways, and ports, which in turn facilitate trade routes. By providing a direct path for goods to move from one location to another, geographical contiguity can greatly enhance trade opportunities and economic growth. However, it is important to note that geographical contiguity alone is not sufficient for the development of trade routes, as other factors such as political stability, infrastructure, and cultural exchange also play a significant role. Additionally, the impact of geographical contiguity on trade routes can vary depending on the specific geographic features and transportation infrastructure of the region. In some cases, geographical contiguity may facilitate easier trade routes, while in other cases, it may hinder trade opportunities due to the complexity of the transportation network or the challenges posed by political or economic factors. Overall, geographical contiguity is a crucial factor in the development of transportation networks and trade routes, and understanding its impact is essential for policymakers and businesses seeking to optimize their operations and maximize their trade opportunities. Difficulty: medium",
+      "question_type": "multi-hop",
+      "difficulty": "medium",
+      "source_ids": [
+        57425862
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Geographic_contiguity"
+      ],
+      "source_titles": [
+        "Geographic contiguity"
+      ],
+      "category": "Geography",
+      "metadata": {
+        "requires_multiple_docs": true,
+        "topics": [
+          "Geography"
+        ]
+      },
+      "question_id": "Q082"
+    },
+    {
+      "question": "How does the concept of \"transition\" in computer science relate to the idea of \"states\" in programming, and what impact does this have on the execution of a program?",
+      "answer": "In computer science, a transition refers to a change or movement from one state to another in a system or program. This concept is closely related to the idea of states in programming, where a program's behavior is determined by its current state. When a program reaches a certain state, it may trigger a transition to a new state, which can lead to a change in the program's behavior and output. This relationship between states and transitions is essential for the proper functioning of a program, as it allows for the program to respond to changes in its environment and continue to perform its intended tasks. Additionally, understanding the impact of transitions on program execution can help developers optimize their code and improve its performance. Difficulty: Medium",
+      "question_type": "multi-hop",
+      "difficulty": "medium",
+      "source_ids": [
+        53650506
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Transition_(computer_science)"
+      ],
+      "source_titles": [
+        "Transition (computer science)"
+      ],
+      "category": "Computer_science",
+      "metadata": {
+        "requires_multiple_docs": true,
+        "topics": [
+          "Computer_science"
+        ]
+      },
+      "question_id": "Q083"
+    },
+    {
+      "question": "What is the primary unit of measurement used to quantify biodiversity, and what does it represent?",
+      "answer": "The primary unit of measurement used to quantify biodiversity is the species, which represents the number of distinct species present in a given ecosystem or geographical area. The species count provides a direct measure of the diversity of life within an environment, offering insights into the richness and complexity of biological communities. This metric is crucial for understanding ecological processes, conservation efforts, and the overall health of natural systems. The species count is a foundational element in biodiversity assessments and plays a pivotal role in evaluating the potential impact of environmental changes or management actions on biodiversity.",
+      "question_type": "multi-hop",
+      "difficulty": "medium",
+      "source_ids": [
+        24159290
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Measurement_of_biodiversity"
+      ],
+      "source_titles": [
+        "Measurement of biodiversity"
+      ],
+      "category": "Environmental_science",
+      "metadata": {
+        "requires_multiple_docs": true,
+        "topics": [
+          "Environmental_science"
+        ]
+      },
+      "question_id": "Q084"
+    },
+    {
+      "question": "What are the key principles of environmental engineering science that are discussed in the article, and how do they relate to the field's approach to managing environmental issues?",
+      "answer": "The key principles of environmental engineering science discussed in the article include sustainability, pollution prevention, waste management, and ecosystem restoration. These principles are essential for managing environmental issues as they guide the field's approach to reducing pollution, conserving resources, and restoring damaged ecosystems. Sustainability ensures that human activities do not deplete resources or harm the environment in the long term, while pollution prevention focuses on reducing the generation and release of pollutants into the environment. Waste management involves the proper disposal and recycling of waste materials, while ecosystem restoration aims to restore degraded ecosystems to their natural state. These principles are interrelated and inform the field's strategies for addressing environmental challenges.",
+      "question_type": "multi-hop",
+      "difficulty": "medium",
+      "source_ids": [
+        21377293
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Environmental_engineering_science"
+      ],
+      "source_titles": [
+        "Environmental engineering science"
+      ],
+      "category": "Environmental_science",
+      "metadata": {
+        "requires_multiple_docs": true,
+        "topics": [
+          "Environmental_science"
+        ]
+      },
+      "question_id": "Q085"
+    },
+    {
+      "question": "What is the common belief in ancient cultures about insects' roles in the natural world?",
+      "answer": "In ancient cultures, insects were often seen as messengers, omens, and even as symbols of fertility, as they were believed to play crucial roles in the natural world, such as pollinating plants, breaking down organic matter, and aiding in the decomposition of dead animals, which is essential for nutrient cycling in ecosystems.",
+      "question_type": "multi-hop",
+      "difficulty": "easy",
+      "source_ids": [
+        50021967
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Insects_in_mythology"
+      ],
+      "source_titles": [
+        "Insects in mythology"
+      ],
+      "category": "Mythology",
+      "metadata": {
+        "requires_multiple_docs": true,
+        "topics": [
+          "Mythology"
+        ]
+      },
+      "question_id": "Q086"
+    },
+    {
+      "question": "What is the connection between the protagonist and the antagonist in \"The Witch of Atlas\"?",
+      "answer": "The protagonist and the antagonist in \"The Witch of Atlas\" are connected through their shared love for the mysterious and alluring figure of Atlas",
+      "question_type": "multi-hop",
+      "difficulty": "medium",
+      "source_ids": [
+        22611599
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/The_Witch_of_Atlas"
+      ],
+      "source_titles": [
+        "The Witch of Atlas"
+      ],
+      "category": "Mythology",
+      "metadata": {
+        "requires_multiple_docs": true,
+        "topics": [
+          "Mythology"
+        ]
+      },
+      "question_id": "Q087"
+    },
+    {
+      "question": "What is the relationship between quantum mechanics and general relativity, and how does it affect our understanding of the universe?",
+      "answer": "The relationship between quantum mechanics and general relativity is that they are two of the most fundamental theories of physics, describing different aspects of the universe. Quantum mechanics deals with the behavior of particles at the atomic and subatomic level, while general relativity describes the large-scale structure of the universe, including gravity. The two theories are incompatible and cannot be reconciled at the quantum-gravity scale. However, the concept of quantum gravity, which attempts to unify the two theories, is still an active area of research. The fact that these two theories are incompatible has led to a better understanding of the universe as a whole, as it has forced physicists to rethink the nature of space, time, and gravity. The impact of this relationship on our understanding of the universe is that it has led to a more comprehensive and accurate model of the universe, and has opened up new avenues of research in physics.",
+      "question_type": "multi-hop",
+      "difficulty": "medium",
+      "source_ids": [
+        59863
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Correspondence_principle"
+      ],
+      "source_titles": [
+        "Correspondence principle"
+      ],
+      "category": "Quantum_mechanics",
+      "metadata": {
+        "requires_multiple_docs": true,
+        "topics": [
+          "Quantum_mechanics"
+        ]
+      },
+      "question_id": "Q088"
+    },
+    {
+      "question": "What is the connection between complementarity and the uncertainty principle?",
+      "answer": "The complementarity principle in physics is closely related to the uncertainty principle, which states that it is impossible to simultaneously know both the exact position and momentum of a particle. The uncertainty principle is a fundamental concept in quantum mechanics, and it is based on the idea that certain pairs of physical properties, such as position and momentum, cannot be known simultaneously with arbitrary precision. The complementarity principle is a key concept in understanding the behavior of quantum systems, and it is closely related to the uncertainty principle. The complementarity principle is",
+      "question_type": "multi-hop",
+      "difficulty": "medium",
+      "source_ids": [
+        1530689
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Complementarity_(physics)"
+      ],
+      "source_titles": [
+        "Complementarity (physics)"
+      ],
+      "category": "Quantum_mechanics",
+      "metadata": {
+        "requires_multiple_docs": true,
+        "topics": [
+          "Quantum_mechanics"
+        ]
+      },
+      "question_id": "Q089"
+    },
+    {
+      "question": "What is the historical significance of Meikyoku kissa in Japan?",
+      "answer": "Meikyoku kissa, also known as Meikyo kissa, is a traditional Japanese music genre that originated in the Edo period. It has a rich history dating back to the 18th century when it emerged as a popular form of entertainment for the upper classes. The genre evolved over time, incorporating elements of traditional Japanese music, such as the use of instruments like the shakuhachi and the koto, as well as Western music influences. Meikyoku kissa played a significant role in the cultural life of Japan during the Edo period and continues to be an important part of Japanese music today. It is considered to be one of the oldest and most traditional forms of Japanese music, with a history spanning over 200 years. The genre has also influenced other forms of Japanese music, such as karaoké and modern pop music. Overall, Meikyoku kissa is an essential part of Japanese music history and continues to be enjoyed by music enthusiasts around the world.",
+      "question_type": "multi-hop",
+      "difficulty": "hard",
+      "source_ids": [
+        9343670
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Meikyoku_kissa"
+      ],
+      "source_titles": [
+        "Meikyoku kissa"
+      ],
+      "category": "Classical_music",
+      "metadata": {
+        "requires_multiple_docs": true,
+        "topics": [
+          "Classical_music"
+        ]
+      },
+      "question_id": "Q090"
+    },
+    {
+      "question": "How does the concept of popular history relate to the broader historical understanding, and what are some of the impacts this has on various aspects of society?",
+      "answer": "Popular history is a subfield of history that focuses on the stories and events that have shaped the experiences of ordinary people in a particular time and place. It aims to provide a more inclusive and accessible understanding of the past, as opposed to traditional academic history which often prioritizes elite perspectives and narratives. The impacts of popular",
+      "question_type": "multi-hop",
+      "difficulty": "medium",
+      "source_ids": [
+        20959122
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Popular_history"
+      ],
+      "source_titles": [
+        "Popular history"
+      ],
+      "category": "Literature",
+      "metadata": {
+        "requires_multiple_docs": true,
+        "topics": [
+          "Literature"
+        ]
+      },
+      "question_id": "Q091"
+    },
+    {
+      "question": "How does the concept of 'knowledge' relate to the nature of reality and the role of belief in shaping one's understanding of the world, and what are some key philosophical perspectives on this topic?",
+      "answer": "The concept of 'knowledge' is closely related to the nature of reality and the role of belief in shaping one's understanding of the world. According to the philosopher Immanuel Kant, knowledge is not just a matter of sensory experience, but also involves the synthesis of sensory perceptions through the mind. Kant believed that knowledge is structured in such a way that it aligns with the inherent order of reality. On the other hand, the philosopher David Hume argued that knowledge is based on reason and experience, and that beliefs are formed through the process of habit and association. He believed that knowledge is not absolute, but rather a product of human reason and experience. In contrast, the philosopher John Locke believed that knowledge is based on the active engagement of the mind with the external world through observation and experience. He argued that knowledge is a product of the mind's ability to form concepts and ideas through the process of reflection and abstraction. Overall, these philosophical perspectives on knowledge highlight the complex relationship between reality, belief, and understanding, and the role of reason and experience in shaping our knowledge of the world.",
+      "question_type": "multi-hop",
+      "difficulty": "medium",
+      "source_ids": [
+        13692155
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Philosophy"
+      ],
+      "source_titles": [
+        "Philosophy"
+      ],
+      "category": "Philosophy",
+      "metadata": {
+        "requires_multiple_docs": true,
+        "topics": [
+          "Philosophy"
+        ]
+      },
+      "question_id": "Q092"
+    },
+    {
+      "question": "What are the key characteristics of deaf philosophy according to the Wikipedia article?",
+      "answer": "The key characteristics of deaf philosophy, as described in the Wikipedia article, include a focus on sign language, cultural identity, and the experiences of deaf individuals. These characteristics reflect the unique perspectives and challenges faced by deaf communities, highlighting the importance of language and communication in their daily lives. The article emphasizes the need to recognize and respect the linguistic and cultural diversity of deaf people, as well as the significance of sign language as a means of communication. This approach underscores the importance of inclusivity and understanding in philosophical discourse. The article also highlights the need for deaf philosophers to bridge the gap between deaf and hearing communities, advocating for equal rights and opportunities for deaf individuals. The focus on these characteristics reflects a commitment to promoting the voices and perspectives of deaf communities, while also addressing the broader implications of deafness in society. Overall, the key characteristics of deaf philosophy reflect a holistic approach to understanding and addressing the experiences of deaf individuals, emphasizing the importance of language, culture, and social justice in philosophical inquiry.",
+      "question_type": "multi-hop",
+      "difficulty": "hard",
+      "source_ids": [
+        80763119
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Deaf_philosophy"
+      ],
+      "source_titles": [
+        "Deaf philosophy"
+      ],
+      "category": "Philosophy",
+      "metadata": {
+        "requires_multiple_docs": true,
+        "topics": [
+          "Philosophy"
+        ]
+      },
+      "question_id": "Q093"
+    },
+    {
+      "question": "What is the connection between the University of Freiburg's coin collection and the history of Freiburg?",
+      "answer": "The University of Freiburg's coin collection is a tangible link to the city's history, as it contains coins from various periods of Freiburg's past. The collection often includes coins that represent significant historical events, figures, or milestones in the city's development. By examining these coins, researchers and historians can gain insights into the economic, cultural, and political history of Freiburg, as well as the broader history of the region. For instance, a coin from the 19th century might depict a prominent figure from Freiburg's history, providing a glimpse into the city's identity and aspirations during that era. Additionally, the collection may include coins minted during periods of Freiburg's historical significance, such as when it was a major trading center or during times of conflict. By studying these coins, scholars can piece together the complex and often intertwined threads of Freiburg's past. Furthermore, the coin collection serves as a tangible reminder of Freiburg's rich history, allowing visitors and students to connect with the city's heritage in a tangible way. Overall, the University of Freiburg's coin collection is an invaluable resource for understanding and appreciating the city's historical significance.",
+      "question_type": "multi-hop",
+      "difficulty": "easy",
+      "source_ids": [
+        79494664
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Coin_collection_of_the_University_of_Freiburg"
+      ],
+      "source_titles": [
+        "Coin collection of the University of Freiburg"
+      ],
+      "category": "Ancient_history",
+      "metadata": {
+        "requires_multiple_docs": true,
+        "topics": [
+          "Ancient_history"
+        ]
+      },
+      "question_id": "Q094"
+    },
+    {
+      "question": "How is the instrumental magnitude related to the apparent magnitude, and what is the impact of this relationship on star observation?",
+      "answer": "The instrumental magnitude is a measure of the brightness of a star that takes into account the instrument's sensitivity and response characteristics. It is typically lower than the apparent magnitude, which is a measure of how bright the star appears to the human eye. The relationship between instrumental and apparent magnitudes can be explained by the following: the apparent magnitude is the brightness of the star as seen by the naked eye, while the instrumental magnitude is the brightness of the star as measured by an instrument. This difference is known as the instrumental zero point, and it can vary depending on the instrument used. The impact of this relationship on star observation is that it affects the accuracy and reliability of measurements made using instruments, as well as the ability to detect fainter stars. Additionally, the difference in magnitudes can also affect the classification and naming of stars, as well as their use in various astronomical studies. The instrumental magnitude is thus an important factor in understanding the behavior of stars and their impact on our observations.",
+      "question_type": "multi-hop",
+      "difficulty": "hard",
+      "source_ids": [
+        42186414
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Instrumental_magnitude"
+      ],
+      "source_titles": [
+        "Instrumental magnitude"
+      ],
+      "category": "Astronomy",
+      "metadata": {
+        "requires_multiple_docs": true,
+        "topics": [
+          "Astronomy"
+        ]
+      },
+      "question_id": "Q095"
+    },
+    {
+      "question": "What are the key theoretical perspectives that have shaped the concept of governmentality, and how do they differ from one another?",
+      "answer": "The concept of governmentality has been shaped by various theoretical perspectives, including Marxism, structuralism, and post-structuralism. Marxist theory emphasizes the role of the state as a tool of social control, while structuralism focuses on the ways in which power is distributed within society. Post-structuralism, on the other hand, challenges the idea of a",
+      "question_type": "multi-hop",
+      "difficulty": "medium",
+      "source_ids": [
+        711728
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Governmentality"
+      ],
+      "source_titles": [
+        "Governmentality"
+      ],
+      "category": "Geography",
+      "metadata": {
+        "requires_multiple_docs": true,
+        "topics": [
+          "Geography"
+        ]
+      },
+      "question_id": "Q096"
+    },
+    {
+      "question": "How does the study of biology and political science differ in terms of their approaches to understanding the natural world and human behavior?",
+      "answer": "The study of biology focuses on understanding the natural world through the study of living organisms, their structures, functions, and interactions. It uses experimental and observational methods to investigate the genetic, cellular, and molecular mechanisms that govern life. On the other hand, political science examines human behavior, institutions, and social structures to understand how societies function and how political power is distributed and exercised. While biology aims to explain natural phenomena and processes, political science seeks to understand human behavior and societal structures, often using qualitative and quantitative methods to analyze political systems and policies. This difference in approach reflects the fundamental distinction between biological and social sciences, where biology studies the physical and biological aspects of life, while political science studies the social and political aspects of life. The approaches to understanding the natural world and human behavior in biology and political science differ significantly. The study of biology focuses on understanding the natural world through the study of living organisms, their structures, functions, and interactions. It uses experimental and observational methods to investigate the genetic, cellular, and molecular mechanisms that govern life. On the other hand, political science examines human behavior, institutions, and social structures to understand how societies function and how political power is distributed and exercised. While biology aims to explain natural phenomena and processes, political science seeks to understand human behavior and societal structures, often using qualitative and quantitative methods to analyze political systems and",
+      "question_type": "multi-hop",
+      "difficulty": "medium",
+      "source_ids": [
+        37117778
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Biology_and_political_science"
+      ],
+      "source_titles": [
+        "Biology and political science"
+      ],
+      "category": "Political_science",
+      "metadata": {
+        "requires_multiple_docs": true,
+        "topics": [
+          "Political_science"
+        ]
+      },
+      "question_id": "Q097"
+    },
+    {
+      "question": "What is the main focus of the Learnable function article?",
+      "answer": "The main focus of the Learnable function article is to discuss the concept of a function that can be learned from data, emphasizing the ability of the function to adapt and improve its performance over time based on new data inputs. This includes the exploration of various learning algorithms and techniques, as well as the implications of learnability on the efficiency and effectiveness of machine learning models. The article likely delves into how learnability affects the accuracy, speed, and generalization of machine learning systems, providing insights into the practical applications and challenges of developing learnable functions in various domains.",
+      "question_type": "multi-hop",
+      "difficulty": "medium",
+      "source_ids": [
+        81725547
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Learnable_function"
+      ],
+      "source_titles": [
+        "Learnable function"
+      ],
+      "category": "Computer_science",
+      "metadata": {
+        "requires_multiple_docs": true,
+        "topics": [
+          "Computer_science"
+        ]
+      },
+      "question_id": "Q098"
+    },
+    {
+      "question": "How does environmental soil science differ from agricultural soil science, and what are the key differences between the two fields?",
+      "answer": "Environmental soil science and agricultural soil science differ in their focus, objectives, and applications. Environmental soil science primarily studies soil as an integral component of the Earth's ecosystems, focusing on the interactions between soil and the environment, including air, water, and living organisms. It aims to understand soil's role in maintaining ecological balance and mitigating environmental impacts. Agricultural soil science, on the other hand, is concerned with soil as a resource for agriculture, with a focus on optimizing crop production and soil management for maximum economic benefits. Key differences include their theoretical frameworks, methods of investigation, and the scale of their applications. Environmental soil science often employs a holistic, interdisciplinary approach, while agricultural soil science tends to be more specialized and applied. Additionally, environmental soil science places a greater emphasis on sustainability and environmental protection, whereas agricultural soil science is more concerned with productivity and profitability. The ultimate goal of both fields is to enhance the productivity and sustainability of soil-based ecosystems.",
+      "question_type": "multi-hop",
+      "difficulty": "hard",
+      "source_ids": [
+        4616929
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Environmental_soil_science"
+      ],
+      "source_titles": [
+        "Environmental soil science"
+      ],
+      "category": "Environmental_science",
+      "metadata": {
+        "requires_multiple_docs": true,
+        "topics": [
+          "Environmental_science"
+        ]
+      },
+      "question_id": "Q099"
+    },
+    {
+      "question": "How does coherent control differ from other quantum control methods, and what are its applications in quantum computing?",
+      "answer": "Coherent control is a quantum control method that involves the precise manipulation of quantum systems to achieve a desired quantum state. Unlike other quantum control methods, such as decoherence-free subspace (DFS) control, coherent control focuses on maintaining the coherence of quantum states over time, which is crucial for achieving quantum gate operations. This method is particularly important in quantum computing because it allows for the stable operation of quantum gates, which are essential for performing complex quantum computations. Applications of coherent control in quantum computing include the development of error-correcting codes, the implementation of universal quantum gates, and the optimization of quantum algorithms. These applications are critical for advancing the field of quantum computing and enabling the realization of more powerful and reliable quantum computers.",
+      "question_type": "multi-hop",
+      "difficulty": "hard",
+      "source_ids": [
+        2544439
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Coherent_control"
+      ],
+      "source_titles": [
+        "Coherent control"
+      ],
+      "category": "Quantum_mechanics",
+      "metadata": {
+        "requires_multiple_docs": true,
+        "topics": [
+          "Quantum_mechanics"
+        ]
+      },
+      "question_id": "Q100"
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-02-08T16:24:48.220100",
+    "question_types_distribution": {
+      "factual": 30,
+      "comparative": 25,
+      "inferential": 25,
+      "multi-hop": 20
+    },
+    "difficulty_distribution": {
+      "medium": 66,
+      "hard": 17,
+      "easy": 17
+    },
+    "categories": [
+      "Philosophy",
+      "Political_science",
+      "Classical_music",
+      "Astronomy",
+      "Literature",
+      "Computer_science",
+      "Ancient_history",
+      "Mythology",
+      "Quantum_mechanics",
+      "Geography",
+      "Renaissance_art",
+      "Environmental_science"
+    ],
+    "total_source_documents": 80
+  }
+}
