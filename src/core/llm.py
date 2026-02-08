@@ -21,6 +21,7 @@ class LLMFactory:
         self,
         model_name: str,
         task: str = "text-generation",
+        local_files_only: bool = True,
         max_new_tokens: int = 500,
         temperature: float = 0.001,
         repetition_penalty=1.0,
@@ -43,14 +44,14 @@ class LLMFactory:
 
         try:
             # Load tokenizer
-            tokenizer = AutoTokenizer.from_pretrained(model_name, local_files_only=True)
+            tokenizer = AutoTokenizer.from_pretrained(model_name, local_files_only=local_files_only)
             # Set pad token if not set
             if tokenizer.pad_token is None:
                 tokenizer.pad_token = tokenizer.eos_token
 
             # Load model using AutoModelForCausalLM
             model = AutoModelForCausalLM.from_pretrained(
-                model_name, torch_dtype=torch_dtype, device_map=device_map, local_files_only=True
+                model_name, torch_dtype=torch_dtype, device_map=device_map, local_files_only=local_files_only
             )
 
             # Initialize the streamer for text generation

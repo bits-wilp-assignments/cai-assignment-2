@@ -18,7 +18,7 @@ class RerankerFactory:
         return cls._instance
 
 
-    def get_instance(self, model_name: str, device: str = None) -> HuggingFaceCrossEncoder:
+    def get_instance(self, model_name: str, device: str = None, local_files_only: bool = True) -> HuggingFaceCrossEncoder:
         """
         Get or create a singleton cross-encoder reranker instance for the given configuration.
 
@@ -50,7 +50,7 @@ class RerankerFactory:
         self.logger.info(f"Creating new reranker instance for: {model_name} on {device}")
         reranker_instance = HuggingFaceCrossEncoder(
             model_name=model_name,
-            model_kwargs={"device": device, "local_files_only": True}
+            model_kwargs={"device": device, "local_files_only": local_files_only}
         )
 
         # Store and return

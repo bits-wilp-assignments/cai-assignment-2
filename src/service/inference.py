@@ -1,5 +1,5 @@
 from src.util.logging_util import get_logger
-from src.config.app_config import LLM_MODEL_TASK, LLM_MODEL, LLM_CONFIG
+from src.config.app_config import LLM_MODEL_TASK, LLM_MODEL, LLM_CONFIG, MODEL_LOCAL_FILES_ONLY
 from src.core.prompt import format_context, get_rag_prompt, format_context
 from src.core.llm import LLMFactory
 from .retrieval import retrieve_contexts
@@ -23,11 +23,12 @@ llm_factory = LLMFactory()
 llm_instance = llm_factory.get_instance(
     model_name=LLM_MODEL,
     task=LLM_MODEL_TASK,
+    local_files_only=MODEL_LOCAL_FILES_ONLY,
     **LLM_CONFIG
 )
 
 
-def perform_rag_inference():
+def get_rag_chain():
     # Setup the input data
     map_input = RunnableParallel(
         {
@@ -38,7 +39,6 @@ def perform_rag_inference():
 
     # Get RAG prompt template
     rag_prompt = get_rag_prompt()
-
 
     # Build the chain
     rag_chain = map_input | RunnableParallel(
@@ -62,7 +62,7 @@ def perform_rag_inference():
     return rag_chain
 
 def rag_inference(question: str, is_streaming: bool = True):
-    rag_chain = perform_rag_inference()
+    rag_chain = get_rag_chain()
     if is_streaming:
         for chunk in rag_chain.stream({"question": question}):
             if "answer" in chunk:

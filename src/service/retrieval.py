@@ -15,6 +15,8 @@ embeddding_factory = EmbeddingFactory()
 # Get embedding instance for token model
 embedding_instance = embeddding_factory.get_instance(
     model_name=EMBEDDING_MODEL,
+    norm_embeddings=IS_NORM_EMBEDDINGS_ENABLED,
+    local_files_only=MODEL_LOCAL_FILES_ONLY,
 )
 
 # Create vector store instance
@@ -29,6 +31,7 @@ vector_store_instance = vector_store.get_instance()
 reranker_factory = RerankerFactory()
 reranker_instance = reranker_factory.get_instance(
     model_name=RERANKER_MODEL,
+    local_files_only=MODEL_LOCAL_FILES_ONLY
 )
 
 # Create retriever and perform retrieval

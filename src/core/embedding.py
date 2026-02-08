@@ -18,7 +18,7 @@ class EmbeddingFactory:
         return cls._instance
 
 
-    def get_instance(self, model_name: str, device: str = None, norm_embeddings: bool = False) -> HuggingFaceEmbeddings:
+    def get_instance(self, model_name: str, device: str = None, norm_embeddings: bool = False, local_files_only: bool = True) -> HuggingFaceEmbeddings:
         """
         Get or create a singleton embedding model instance for the given configuration.
 
@@ -51,7 +51,7 @@ class EmbeddingFactory:
         self.logger.info(f"Creating new embedding instance for: {model_name} on {device}")
         embedding_instance = HuggingFaceEmbeddings(
             model_name=model_name,
-            model_kwargs={"device": device, "local_files_only": True},
+            model_kwargs={"device": device, "local_files_only": local_files_only},
             encode_kwargs={"normalize_embeddings": norm_embeddings},
         )
 

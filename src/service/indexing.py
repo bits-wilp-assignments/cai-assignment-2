@@ -28,7 +28,7 @@ scrapper = WikiPageScrapper(
         **TEXT_CHUNKING_CONFIG
     )
 
-def get_documents_from_wiki_pages(wiki_page_file: str, limit: int = 0):
+def get_documents_from_wiki_pages(wiki_page_file: str, limit: int = None):
     wiki_pages = {}
     wiki_documents = []
     with open(wiki_page_file, "r", encoding="utf-8") as f:
@@ -44,7 +44,7 @@ def get_documents_from_wiki_pages(wiki_page_file: str, limit: int = 0):
     return wiki_documents
 
 
-def triggr_indexing(is_refresh_fixed: bool = False, is_refresh_random: bool = False):
+def triggr_indexing(is_refresh_fixed: bool = False, is_refresh_random: bool = False, limit: int = None):
     logger.info("Initializing indexing process for Hybrid RAG system...")
     logger.info("Starting data collection...")
     collector.collect_data(
@@ -55,8 +55,8 @@ def triggr_indexing(is_refresh_fixed: bool = False, is_refresh_random: bool = Fa
 
     wiki_documents = []
     # Load wiki pages and create documents for fixed and random wiki pages
-    wiki_documents.extend(get_documents_from_wiki_pages(FIXED_WIKI_PAGE_FILE))
-    wiki_documents.extend(get_documents_from_wiki_pages(RANDOM_WIKI_PAGE_FILE))
+    wiki_documents.extend(get_documents_from_wiki_pages(FIXED_WIKI_PAGE_FILE, limit=limit))
+    wiki_documents.extend(get_documents_from_wiki_pages(RANDOM_WIKI_PAGE_FILE, limit=limit))
     logger.info(f"Total documents created: {len(wiki_documents)}")
 
      # Create embedding instance
@@ -65,6 +65,8 @@ def triggr_indexing(is_refresh_fixed: bool = False, is_refresh_random: bool = Fa
     # Get embedding instance for token model
     embedding_instance = embeddding_factory.get_instance(
         model_name=EMBEDDING_MODEL,
+        norm_embeddings=IS_NORM_EMBEDDINGS_ENABLED,
+        local_files_only=MODEL_LOCAL_FILES_ONLY
     )
 
     # Create vector store instance
@@ -83,12 +85,12 @@ def triggr_indexing(is_refresh_fixed: bool = False, is_refresh_random: bool = Fa
         bm25_path=BM25_INDEX_PATH
     )
     logger.info("--------------- Starting dense vector indexing... ---------------")
-    result = indexer.dense_vector_sync(
+    dense_result = indexer.dense_vector_sync(
         documents=wiki_documents,
         cleanup=CLEAN_UP_STRATEGY,
         doc_metadata_source_id_key=DOC_METADATA_SOURCE_ID_KEY
     )
-    logger.info(f"Dense Vector indexing result: {result}")
+    logger.info(f"Dense Vector indexing result: {dense_result}")
     logger.info("--------------- Dense vector indexing completed ---------------")
     logger.info("--------------- Starting sparse vector indexing... ---------------")
     sparse_result = indexer.sparse_vector_sync(
@@ -98,3 +100,5 @@ def triggr_indexing(is_refresh_fixed: bool = False, is_refresh_random: bool = Fa
     )
     logger.info(f"Sparse Vector indexing result: {sparse_result}")
     logger.info("--------------- Sparse vector indexing completed ---------------")
+
+    return (dense_result, sparse_result)

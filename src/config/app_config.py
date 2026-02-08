@@ -1,14 +1,19 @@
 import logging
 
+from chromadb.utils.embedding_functions import instructor_embedding_function
+
 # -------------------- Logging configuration -------------------
 DEFAULT_LOG_LEVEL = logging.DEBUG
 DEFAULT_LOG_FORMAT = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 DEFAULT_LOG_FILE = None  # e.g. 'logs/app.log'
 
 # ------------------- Model configuration -------------------
+MODEL_LOCAL_FILES_ONLY = False  # Set to True to avoid downloading models from HuggingFace
 EMBEDDING_MODEL = "sentence-transformers/all-mpnet-base-v2"
+IS_NORM_EMBEDDINGS_ENABLED = False
 RERANKER_MODEL = "cross-encoder/ms-marco-MiniLM-L-6-v2"
 LLM_MODEL = "Qwen/Qwen2.5-1.5B-Instruct"
+# LLM_MODEL = "Qwen/Qwen2.5-3B-Instruct"
 LLM_MODEL_TASK = "text-generation"
 LLM_CONFIG = {
     "max_new_tokens": 500,
