@@ -1,0 +1,101 @@
+{
+  "summary": {
+    "total_questions": 5,
+    "overall_mrr": null,
+    "overall_exact_match": 0.0,
+    "overall_f1": 0.030848326976627916,
+    "overall_bleu": 0.007184440125144613,
+    "overall_rouge_l": 0.030848326976627916,
+    "overall_semantic_similarity": 0.3749146936977166,
+    "answer_evaluation_enabled": true,
+    "answer_only_mode": true,
+    "metrics_by_question_type": {
+      "factual": {
+        "count": 5,
+        "exact_match": 0.0,
+        "f1_score": 0.030848326976627916,
+        "bleu_score": 0.007184440125144613,
+        "rouge_l": 0.030848326976627916,
+        "semantic_similarity": 0.3749146936977166
+      }
+    }
+  },
+  "individual_results": [
+    {
+      "question_id": "Q001",
+      "question": "Who is Maijastina Kahlos? Answer: Maijastina Kahlos is a Finnish artist known for her innovative and experimental approach to art, which has significantly impacted the field of contemporary art. Her work often explores themes of nature, mythology, and the human experience, and she has been recognized for her contributions to the development of contemporary art. Her use of materials and techniques, such as found objects and mixed media, has influenced artists worldwide, and her influence can be seen in the work of many contemporary artists. Kahlos' legacy lies in her ability to create art that is both visually striking and intellectually stimulating, and her work continues to be celebrated and studied by art historians and students alike. Difficulty:",
+      "question_type": "factual",
+      "ground_truth_urls": [
+        "https://en.wikipedia.org/wiki/Maijastina_Kahlos"
+      ],
+      "generated_answer": "Maijastina Kahlos is a Finnish classicist who specializes in migration and mobility in the late antique Mediterranean, everyday life in ancient Rome, and ancient religions. They are a Docent of Latin and Roman literature at the University of Helsinki and a Life Member of Clare Hall, University of Cambridge. Kahlos received her PhD from the University of Helsinki in 1998 and her master's degree from Helsinki. [Source 1](https://en.wikipedia.org/wiki/Maijastina_Kahlos).\n",
+      "ground_truth_answer": "<write the answer here>",
+      "exact_match": 0.0,
+      "f1_score": 0.027777777777777776,
+      "bleu_score": 0.014705882352941176,
+      "rouge_l": 0.027777777777777776,
+      "semantic_similarity": 0.07155567973474455
+    },
+    {
+      "question_id": "Q002",
+      "question": "What is the first Iron Age state mentioned in the article?",
+      "question_type": "factual",
+      "ground_truth_urls": [
+        "https://en.wikipedia.org/wiki/List_of_Iron_Age_states"
+      ],
+      "generated_answer": "The first Iron Age state mentioned in the article is the Alaknanda Galaxy. [Source 1](https://en.wikipedia.org/wiki/List_of_Iron_Age_states).\n",
+      "ground_truth_answer": "The first Iron Age state mentioned in the article is the Hittite Empire, which emerged in the 14th century BC. It was a significant power in the region and played a crucial role in the history of the Near East. The Hittite Empire was centered in Anatolia and was a major player in the interactions between the East and the West during the Iron Age. It is considered one of the most important states of the period, as it was involved in numerous conflicts with other powers and played a significant role in the development of the Iron Age. The Hittite Empire's rise and fall is a key part of the history of the Iron Age and is well-documented in archaeological and historical records. The empire was eventually conquered by the Assyrians in 1207 BC, marking the end of the Hittite Empire and the beginning of the Late Bronze Age. The Hittite Empire was a significant influence on the development of the Iron Age and is considered one of the most important states of the period. The empire's influence extended to its neighboring regions, and it played a crucial role in the interactions between the East and the West during the Iron Age. The empire's decline was marked by a series of invasions and conflicts, which ultimately led to its downfall. The Hittite Empire was a significant power in the region and played a crucial role in the history of the Iron",
+      "exact_match": 0.0,
+      "f1_score": 0.08560311284046694,
+      "bleu_score": 1.9632620270011646e-07,
+      "rouge_l": 0.08560311284046694,
+      "semantic_similarity": 0.5448829253940023
+    },
+    {
+      "question_id": "Q003",
+      "question": "<write the question here>",
+      "question_type": "factual",
+      "ground_truth_urls": [
+        "https://en.wikipedia.org/wiki/Planetary_coordinate_system"
+      ],
+      "generated_answer": "I'm not sure. I'm not sure that the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the\n",
+      "ground_truth_answer": "<write the answer here>",
+      "exact_match": 0.0,
+      "f1_score": 0.003992015968063873,
+      "bleu_score": 0.002012072434607646,
+      "rouge_l": 0.003992015968063873,
+      "semantic_similarity": 0.21329590250584282
+    },
+    {
+      "question_id": "Q004",
+      "question": "<write the question here>",
+      "question_type": "factual",
+      "ground_truth_urls": [
+        "https://en.wikipedia.org/wiki/SN_1990E"
+      ],
+      "generated_answer": "I'm not sure. I'm not sure that the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the difference of the\n",
+      "ground_truth_answer": "<write the answer here>",
+      "exact_match": 0.0,
+      "f1_score": 0.003992015968063873,
+      "bleu_score": 0.002012072434607646,
+      "rouge_l": 0.003992015968063873,
+      "semantic_similarity": 0.21329590250584282
+    },
+    {
+      "question_id": "Q005",
+      "question": "What are some of the key concepts or ideas explored in Internet geography?",
+      "question_type": "factual",
+      "ground_truth_urls": [
+        "https://en.wikipedia.org/wiki/Internet_geography"
+      ],
+      "generated_answer": "Internet geography, also called cybergeography, is a subdiscipline of geography that studies the spatial organization of the Internet from social, economic, cultural, and technological perspectives. The core assumption of Internet geography is that the location of servers, websites, data, services, and infrastructure is key to understanding the development and dynamics of the Internet. For instance, the Internet's topology may be mapped by determining how fast data is transmitted between points using methods such as ping. One topic covered by this discipline is information geography. For example, programs that connect are based on the spatial data, such as the Internet, such geographers, such as the spatial, such geographers, such spatial geographers, the Internet, the spatial geographers, the Internet, the spatial geographers, the spatial, the Internet, the spatial geographers, the Internet, the spatial, the Internet, the spatial geographers, the Internet, the spatial geographers, the spatial, the Internet, the spatial, the spatial, the Internet, the spatial, the spatial, the Internet, the spatial geographers, the spatial, the Internet, the spatial geographers, the spatial, the Internet, the spatial, the Internet, the spatial, the spatial, the spatial, the Internet, the spatial, the spatial, the Internet, the spatial, the Internet, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the Internet, the spatial, the spatial, the spatial, the Internet, the spatial, the spatial, the spatial, the Internet, the spatial, the spatial, the Internet, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial, the spatial\n",
+      "ground_truth_answer": "Some of the key concepts or ideas explored in Internet geography include the digital divide, network",
+      "exact_match": 0.0,
+      "f1_score": 0.03287671232876712,
+      "bleu_score": 0.017191977077363897,
+      "rouge_l": 0.03287671232876712,
+      "semantic_similarity": 0.8315430583481505
+    }
+  ],
+  "evaluated_at": "2026-02-08T14:31:11.914952"
+}

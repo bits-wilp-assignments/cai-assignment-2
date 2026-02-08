@@ -108,21 +108,74 @@ uvicorn hybrid_rag_app:app --port 8001
 - Increase `reranker_top_k` to 3-4
 - Adjust `temperature` to 0.1-0.3
 
+## Evaluation System
+
+This project includes a comprehensive evaluation framework to assess RAG system performance using automatically generated Q&A pairs and industry-standard metrics.
+
+### Quick Evaluation
+
+```bash
+# Generate 100 Q&A pairs and evaluate
+python run_evaluation.py full --total-questions 100
+
+# Generate Q&A dataset only
+python run_evaluation.py generate --total-questions 100
+
+# Evaluate with existing dataset
+python run_evaluation.py evaluate --dataset-file qa_dataset_*.json
+
+# List available datasets
+python run_evaluation.py list
+```
+
+### Key Metrics
+
+- **Mean Reciprocal Rank (MRR)**: Measures how quickly the system finds the correct source URL
+- **Precision@K**: Fraction of retrieved documents that are relevant
+- **Recall@K**: Fraction of relevant documents that are retrieved
+- **Hit Rate@K**: Whether at least one relevant document is in top K
+
+### Documentation
+
+- **[EVALUATION_README.md](EVALUATION_README.md)**: Comprehensive guide to the evaluation system
+- **[EVALUATION_QUICKSTART.md](EVALUATION_QUICKSTART.md)**: Quick reference and common commands
+- **[example_evaluation.py](example_evaluation.py)**: Python API usage examples
+
+### Question Types
+
+The evaluation system generates four types of questions:
+
+1. **Factual**: Direct questions (What, When, Where, Who)
+2. **Comparative**: Comparison questions (differences, similarities)
+3. **Inferential**: Reasoning questions (Why, How, implications)
+4. **Multi-hop**: Complex questions requiring multiple sources
+
+For more details, see [EVALUATION_README.md](EVALUATION_README.md)
+
 ## Project Structure
 
-```
+```text
 hybrid-rag-system/
 ├── hybrid_rag_app.py          # FastAPI backend
 ├── ui_app.py                  # Streamlit frontend
+├── run_evaluation.py          # Evaluation CLI
+├── example_evaluation.py      # Example usage
 ├── requirements.txt           # Dependencies
+├── EVALUATION_README.md       # Evaluation guide
+├── EVALUATION_QUICKSTART.md   # Quick reference
 ├── data/                      # Data storage
 │   ├── chroma_db/            # Vector database
 │   ├── bm25_index/           # BM25 index
+│   ├── evaluation/           # Q&A datasets and results
 │   ├── fixed_wiki_pages.json
 │   └── random_wiki_pages.json
 ├── src/
 │   ├── config/               # Configuration
 │   ├── core/                 # Core components
+│   ├── evaluation/           # Evaluation framework
+│   │   ├── qa_generator.py  # Q&A generation
+│   │   ├── evaluator.py     # Metrics calculation
+│   │   └── qa_storage.py    # Storage & validation
 │   ├── service/              # Business logic
 │   ├── util/                 # Utilities
 │   └── wiki/                 # Wikipedia scraping

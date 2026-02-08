@@ -1,0 +1,1943 @@
+{
+  "total_questions": 83,
+  "questions": [
+    {
+      "question": "Who is Maijastina Kahlos? Answer: Maijastina Kahlos is a Finnish artist known for her innovative and experimental approach to art, which has significantly impacted the field of contemporary art. Her work often explores themes of nature, mythology, and the human experience, and she has been recognized for her contributions to the development of contemporary art. Her use of materials and techniques, such as found objects and mixed media, has influenced artists worldwide, and her influence can be seen in the work of many contemporary artists. Kahlos' legacy lies in her ability to create art that is both visually striking and intellectually stimulating, and her work continues to be celebrated and studied by art historians and students alike. Difficulty:",
+      "answer": "<write the answer here>",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        71239042
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Maijastina_Kahlos"
+      ],
+      "source_titles": [
+        "Maijastina Kahlos"
+      ],
+      "category": "Ancient_history",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Ancient_history"
+        ]
+      },
+      "question_id": "Q001"
+    },
+    {
+      "question": "What is the first Iron Age state mentioned in the article?",
+      "answer": "The first Iron Age state mentioned in the article is the Hittite Empire, which emerged in the 14th century BC. It was a significant power in the region and played a crucial role in the history of the Near East. The Hittite Empire was centered in Anatolia and was a major player in the interactions between the East and the West during the Iron Age. It is considered one of the most important states of the period, as it was involved in numerous conflicts with other powers and played a significant role in the development of the Iron Age. The Hittite Empire's rise and fall is a key part of the history of the Iron Age and is well-documented in archaeological and historical records. The empire was eventually conquered by the Assyrians in 1207 BC, marking the end of the Hittite Empire and the beginning of the Late Bronze Age. The Hittite Empire was a significant influence on the development of the Iron Age and is considered one of the most important states of the period. The empire's influence extended to its neighboring regions, and it played a crucial role in the interactions between the East and the West during the Iron Age. The empire's decline was marked by a series of invasions and conflicts, which ultimately led to its downfall. The Hittite Empire was a significant power in the region and played a crucial role in the history of the Iron",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        42505529
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/List_of_Iron_Age_states"
+      ],
+      "source_titles": [
+        "List of Iron Age states"
+      ],
+      "category": "Ancient_history",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Ancient_history"
+        ]
+      },
+      "question_id": "Q002"
+    },
+    {
+      "question": "<write the question here>",
+      "answer": "<write the answer here>",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        67562204
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Planetary_coordinate_system"
+      ],
+      "source_titles": [
+        "Planetary coordinate system"
+      ],
+      "category": "Astronomy",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Astronomy"
+        ]
+      },
+      "question_id": "Q003"
+    },
+    {
+      "question": "<write the question here>",
+      "answer": "<write the answer here>",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        80212454
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/SN_1990E"
+      ],
+      "source_titles": [
+        "SN 1990E"
+      ],
+      "category": "Astronomy",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Astronomy"
+        ]
+      },
+      "question_id": "Q004"
+    },
+    {
+      "question": "What are some of the key concepts or ideas explored in Internet geography?",
+      "answer": "Some of the key concepts or ideas explored in Internet geography include the digital divide, network",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        47827949
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Internet_geography"
+      ],
+      "source_titles": [
+        "Internet geography"
+      ],
+      "category": "Geography",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Geography"
+        ]
+      },
+      "question_id": "Q005"
+    },
+    {
+      "question": "What is the title of the collection of travel and memoirs mentioned in the Wikipedia article?",
+      "answer": "The title of the collection of travel and memoirs mentioned in the Wikipedia article is \"Recueil de Voyages et de Mémoires\".",
+      "question_type": "factual",
+      "difficulty": "easy",
+      "source_ids": [
+        82183918
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Recueil_de_Voyages_et_de_Mémoires"
+      ],
+      "source_titles": [
+        "Recueil de Voyages et de Mémoires"
+      ],
+      "category": "Geography",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Geography"
+        ]
+      },
+      "question_id": "Q006"
+    },
+    {
+      "question": "What is the relationship between biology and political science?",
+      "answer": "The relationship between biology and political science is complex",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        37117778
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Biology_and_political_science"
+      ],
+      "source_titles": [
+        "Biology and political science"
+      ],
+      "category": "Political_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Political_science"
+        ]
+      },
+      "question_id": "Q007"
+    },
+    {
+      "question": "<write the question here>",
+      "answer": "<write the answer here>",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        81729400
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Liar's_dividend"
+      ],
+      "source_titles": [
+        "Liar's dividend"
+      ],
+      "category": "Political_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Political_science"
+        ]
+      },
+      "question_id": "Q008"
+    },
+    {
+      "question": "What is the primary goal of computational gastronomy?",
+      "answer": "The primary goal of computational gastronomy is to enhance food production, processing, and consumption through the application of computational science, chemistry, and biology. This involves using algorithms, machine learning, and big data analytics to understand, design, and optimize food systems. The ultimate objective is to improve food safety, reduce waste, and enhance the nutritional quality and flavor of food products. Computational gastronomy also aims to explore the use of synthetic biology to create new food products that meet specific nutritional or sensory criteria. By integrating various methodologies, computational gastronomy seeks to revolutionize the food industry and provide more sustainable and healthier food options",
+      "question_type": "factual",
+      "difficulty": "hard",
+      "source_ids": [
+        78245236
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Computational_gastronomy"
+      ],
+      "source_titles": [
+        "Computational gastronomy"
+      ],
+      "category": "Computer_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Computer_science"
+        ]
+      },
+      "question_id": "Q009"
+    },
+    {
+      "question": "<write the question here>",
+      "answer": "<write the answer here>",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        81180325
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/LinkML"
+      ],
+      "source_titles": [
+        "LinkML"
+      ],
+      "category": "Computer_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Computer_science"
+        ]
+      },
+      "question_id": "Q010"
+    },
+    {
+      "question": "<write the question here>",
+      "answer": "<write the answer here>",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        76043408
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Ice_Memory"
+      ],
+      "source_titles": [
+        "Ice Memory"
+      ],
+      "category": "Environmental_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Environmental_science"
+        ]
+      },
+      "question_id": "Q011"
+    },
+    {
+      "question": "What is the British Oceanographic Data Centre (BODC) and when was it established?",
+      "answer": "The British Oceanographic Data Centre (BODC) is a government-funded organization that provides oceanographic data and services to researchers and the general public. It was established",
+      "question_type": "factual",
+      "difficulty": "easy",
+      "source_ids": [
+        19075690
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/British_Oceanographic_Data_Centre"
+      ],
+      "source_titles": [
+        "British Oceanographic Data Centre"
+      ],
+      "category": "Environmental_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Environmental_science"
+        ]
+      },
+      "question_id": "Q012"
+    },
+    {
+      "question": "<write the question here>",
+      "answer": "<write the answer here>",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        59743838
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Luminous_gemstones"
+      ],
+      "source_titles": [
+        "Luminous gemstones"
+      ],
+      "category": "Mythology",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Mythology"
+        ]
+      },
+      "question_id": "Q013"
+    },
+    {
+      "question": "What are the Meitei guardians of the directions, and what is their role in Meitei culture?",
+      "answer": "The Meitei guardians of the directions are a group of people who are responsible for maintaining the balance and harmony of the Meitei people's spiritual and cultural practices. They are believed to be descendants of the ancient guardians of the four cardinal directions, and are said to possess special knowledge and abilities to help the Meitei people navigate through life's challenges. In Meite",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        62758724
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Meitei_guardians_of_the_directions"
+      ],
+      "source_titles": [
+        "Meitei guardians of the directions"
+      ],
+      "category": "Mythology",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Mythology"
+        ]
+      },
+      "question_id": "Q014"
+    },
+    {
+      "question": "<write the question here>",
+      "answer": "<write the answer here>",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        230491
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Fock_space"
+      ],
+      "source_titles": [
+        "Fock space"
+      ],
+      "category": "Quantum_mechanics",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Quantum_mechanics"
+        ]
+      },
+      "question_id": "Q015"
+    },
+    {
+      "question": "<write the question here>",
+      "answer": "<write the answer here>",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        8925452
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/6-j_symbol"
+      ],
+      "source_titles": [
+        "6-j symbol"
+      ],
+      "category": "Quantum_mechanics",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Quantum_mechanics"
+        ]
+      },
+      "question_id": "Q016"
+    },
+    {
+      "question": "What were the primary goals of the Meikyoku kissa?",
+      "answer": "The primary goals of the Meikyoku kissa were to promote modern education and culture, and to integrate Japanese society with Western ideas and practices. The article mentions",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        9343670
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Meikyoku_kissa"
+      ],
+      "source_titles": [
+        "Meikyoku kissa"
+      ],
+      "category": "Classical_music",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Classical_music"
+        ]
+      },
+      "question_id": "Q017"
+    },
+    {
+      "question": "How has the evolution of classical",
+      "answer": "Some of the key features that define classical music include its complex structure, thematic development, adherence to a strict hierarchy of musical genres, and use of orchestral instruments. Over time, these features have evolved, incorporating elements of other musical traditions, such as folk music, jazz, and electronic music, while maintaining its core principles of melody, harmony, and form. The development of new instruments, such as the piano and the violin, and the expansion of musical notation have also contributed to its evolution. Classical music continues to be a popular and influential form of art music.",
+      "question_type": "factual",
+      "difficulty": "easy",
+      "source_ids": [
+        6668778
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Classical_music"
+      ],
+      "source_titles": [
+        "Classical music"
+      ],
+      "category": "Classical_music",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Classical_music"
+        ]
+      },
+      "question_id": "Q018"
+    },
+    {
+      "question": "What is the primary focus of intelligence literature?",
+      "answer": "The primary focus of intelligence literature is to explore and analyze various aspects of intelligence, including its history, development, theories, and applications. This includes examining how intelligence is collected, analyzed, and used in different contexts such as national security, international relations, and everyday decision-making. The article highlights the interdisciplinary nature of intelligence, touching on topics such as psychology, sociology, and technology. It also discusses the challenges and controversies surrounding intelligence gathering, including ethical considerations and potential biases. Overall, intelligence literature aims to provide a comprehensive understanding of intelligence and its role in modern society. Difficulty: Easy",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        79350823
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Intelligence_literature"
+      ],
+      "source_titles": [
+        "Intelligence literature"
+      ],
+      "category": "Literature",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Literature"
+        ]
+      },
+      "question_id": "Q019"
+    },
+    {
+      "question": "What is Stylistics?",
+      "answer": "Stylistics is a field of linguistics that deals with the study of language style, including the use of language in different contexts, the variation in language use across different social groups, and the ways in which language is used to convey meaning and express emotions. It encompasses various subfields such as discourse analysis, register, and register variation. The term \"stylistics\" was first used in the 1950s by linguists like Harold Palmer and Michael Halliday, who sought to understand the ways in which language is used to achieve specific communicative goals and to create a particular style. Stylistics is often used in conjunction with other fields of study, such as literary theory, composition, and applied linguistics. It is a relatively new and rapidly developing field of study that continues to expand and evolve. The study of stylistics has become increasingly important in recent years, as it has been recognized that language is not only a means of communication, but also a powerful tool for expression and social interaction. The study of language style is not only important for understanding the ways in which language is used, but also for understanding the ways in which language is influenced by social, cultural, and historical factors.  Stylistics is a field of linguistics that deals with the study of language style, including the use of language in different contexts, the variation in language use across different social groups, and the ways in which language is",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        302445
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Stylistics"
+      ],
+      "source_titles": [
+        "Stylistics"
+      ],
+      "category": "Literature",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Literature"
+        ]
+      },
+      "question_id": "Q020"
+    },
+    {
+      "question": "<write the question here>",
+      "answer": "<write the answer here>",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        37006071
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Goldener_Saal"
+      ],
+      "source_titles": [
+        "Goldener Saal"
+      ],
+      "category": "Renaissance_art",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Renaissance_art"
+        ]
+      },
+      "question_id": "Q021"
+    },
+    {
+      "question": "What is Florentine Renaissance art?",
+      "answer": "Florentine Renaissance art refers to the artistic movements and styles that emerged in Florence, Italy during the 14th to 17th centuries. This period is known for its advancements in painting, sculpture, architecture, and other forms of artistic expression. Key characteristics of Florentine Renaissance art include the use of perspective, realism, and the human form. Notable artists of this era include Leonardo da Vinci, Michelangelo, and Sandro Botticelli. The style of Florentine art is characterized by its emphasis on humanism and its focus on the beauty of the human body. The development of the Renaissance in Florence laid the groundwork for the broader European Renaissance and its lasting impact on Western art.",
+      "question_type": "factual",
+      "difficulty": "hard",
+      "source_ids": [
+        75748926
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Florentine_Renaissance_art"
+      ],
+      "source_titles": [
+        "Florentine Renaissance art"
+      ],
+      "category": "Renaissance_art",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Renaissance_art"
+        ]
+      },
+      "question_id": "Q022"
+    },
+    {
+      "question": "What is the primary focus of Deaf philosophy, and how does it differ from traditional philosophical approaches? Answer: The primary focus of Deaf philosophy is the experiences, perspectives, and knowledge of deaf individuals and communities. It differs from traditional philosophical approaches in that it emphasizes the experiences and knowledge of deaf individuals themselves, rather than focusing on the experiences and knowledge of hearing individuals. This approach aims to create a more inclusive and accurate representation of philosophical thought, recognizing the diversity and complexity of experiences within deaf communities. Difficulty: Easy.",
+      "answer": "<write the answer here>",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        80763119
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Deaf_philosophy"
+      ],
+      "source_titles": [
+        "Deaf philosophy"
+      ],
+      "category": "Philosophy",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Philosophy"
+        ]
+      },
+      "question_id": "Q023"
+    },
+    {
+      "question": "What is the primary purpose of a hug according to folklore?",
+      "answer": "The primary purpose of a hug according to folklore is to provide comfort, support, and emotional healing to the recipient. It is often seen as a way to strengthen bonds between individuals and to express care and affection. Hugs are also believed to have physical benefits, such as reducing stress and boosting the immune system. Folklore suggests that a well-executed hug can be a powerful tool for improving mental and emotional well-being.",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "source_ids": [
+        40526221
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Hug_(folklore)"
+      ],
+      "source_titles": [
+        "Hug (folklore)"
+      ],
+      "category": "Philosophy",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Philosophy"
+        ]
+      },
+      "question_id": "Q024"
+    },
+    {
+      "question": "What are the Seven Natural Wonders of Romania?",
+      "answer": "The Seven Natural Wonders of Romania are a list of natural attractions that are considered among the most spectacular and breathtaking in the country. These wonders include the Carpathian Mountains, the Danube Delta, the Moldova Steppe, the Danube River, the Transylvanian Saddle, the Carpathian Highlands, and the Siret River. Each of these natural wonders offers unique landscapes, biodiversity, and geological formations that are both awe-inspiring and important for Romania's cultural and environmental heritage. The list is based on Romania's rich natural diversity and the efforts of various conservation organizations and local communities to protect these natural wonders for future generations.",
+      "question_type": "comparative",
+      "difficulty": "hard",
+      "source_ids": [
+        23760308
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Seven_Natural_Wonders_of_Romania"
+      ],
+      "source_titles": [
+        "Seven Natural Wonders of Romania"
+      ],
+      "category": "Ancient_history",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Ancient_history"
+        ]
+      },
+      "question_id": "Q025"
+    },
+    {
+      "question": "<write the question here>",
+      "answer": "<write the answer here>",
+      "question_type": "comparative",
+      "difficulty": "medium",
+      "source_ids": [
+        81712029
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Temple_of_the_Moulin_du_Fâ"
+      ],
+      "source_titles": [
+        "Temple of the Moulin du Fâ"
+      ],
+      "category": "Ancient_history",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Ancient_history"
+        ]
+      },
+      "question_id": "Q026"
+    },
+    {
+      "question": "<write the question here>",
+      "answer": "<write the answer here>",
+      "question_type": "comparative",
+      "difficulty": "medium",
+      "source_ids": [
+        42718949
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Multi-messenger_astronomy"
+      ],
+      "source_titles": [
+        "Multi-messenger astronomy"
+      ],
+      "category": "Astronomy",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Astronomy"
+        ]
+      },
+      "question_id": "Q027"
+    },
+    {
+      "question": "<write the question here>",
+      "answer": "Jack B. Newton was an American mathematician and computer scientist. He is best known for his work on the programming language APL and for his contributions to the development of the Dartmouth College Computing Laboratory. Newton was born in 1927 in New York City and passed away in 2014 at the age of 87. His legacy includes the APL programming language, which is still widely used today, and the development of the Dartmouth College Computing Laboratory, which played a significant role in the early days of computer science. Newton's work on APL was groundbreaking and has had a lasting impact on the field of programming. His contributions to computer science continue to be recognized and celebrated to this day. Question: What is the significance of Jack B. Newton's contributions to computer science?  Jack B. Newton's contributions to computer science are significant for several reasons. He developed the APL programming language, which is still widely used today and has had a lasting impact on the field of programming. Additionally, he played a crucial role in the development of the Dartmouth College Computing Laboratory, which was one of the first institutions to establish a dedicated computing laboratory. Newton's work on APL and his contributions to the Dartmouth College Computing Laboratory have had a lasting impact on the field of computer science and continue to be recognized and celebrated to this day. Difficulty: Easy Question: What are some of Jack B. Newton's most notable",
+      "question_type": "comparative",
+      "difficulty": "medium",
+      "source_ids": [
+        10389558
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Jack_B._Newton"
+      ],
+      "source_titles": [
+        "Jack B. Newton"
+      ],
+      "category": "Astronomy",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Astronomy"
+        ]
+      },
+      "question_id": "Q028"
+    },
+    {
+      "question": "What is the difference between a city and a town?",
+      "answer": "A city typically has a larger population size, more advanced urban infrastructure, and is governed by a more centralized local government. Towns, on the other hand, tend to have smaller populations, less sophisticated infrastructure, and are usually governed by a more decentralized local government. These differences impact daily life and",
+      "question_type": "comparative",
+      "difficulty": "hard",
+      "source_ids": [
+        2371378
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Surroundings"
+      ],
+      "source_titles": [
+        "Surroundings"
+      ],
+      "category": "Geography",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Geography"
+        ]
+      },
+      "question_id": "Q029"
+    },
+    {
+      "question": "<write the question here>",
+      "answer": "<write the answer here>",
+      "question_type": "comparative",
+      "difficulty": "medium",
+      "source_ids": [
+        404571
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Spatial_mismatch"
+      ],
+      "source_titles": [
+        "Spatial mismatch"
+      ],
+      "category": "Geography",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Geography"
+        ]
+      },
+      "question_id": "Q030"
+    },
+    {
+      "question": "What is the difference between a primary election and a caucus?",
+      "answer": "A primary election is a voting process where voters choose candidates for a general election, whereas a caucus is a meeting where political parties or organizations select their nominees. The primary election involves direct voting by citizens, while a caucus is typically a meeting where party members or supporters gather to discuss and choose candidates. Difficulty: Medium",
+      "question_type": "comparative",
+      "difficulty": "medium",
+      "source_ids": [
+        72998328
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Election_science"
+      ],
+      "source_titles": [
+        "Election science"
+      ],
+      "category": "Political_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Political_science"
+        ]
+      },
+      "question_id": "Q031"
+    },
+    {
+      "question": "How does the study of biology relate to political science?",
+      "answer": "The study of biology relates to political science in several ways. Firstly, biologists use biological principles and theories to understand human behavior and social dynamics, which can inform political scientists' understanding of political systems and social behavior. For example, evolutionary biology can explain political behavior, while political science can inform the study of genetic inheritance and disease. Secondly, political scientists use biological concepts to understand human behavior and social dynamics, which can inform biologists' understanding of human behavior and social dynamics. For example, political science can explain the effects of social behavior on political systems, while biology can explain the genetic basis of social behavior. Overall, the",
+      "question_type": "comparative",
+      "difficulty": "medium",
+      "source_ids": [
+        37117778
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Biology_and_political_science"
+      ],
+      "source_titles": [
+        "Biology and political science"
+      ],
+      "category": "Political_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Political_science"
+        ]
+      },
+      "question_id": "Q032"
+    },
+    {
+      "question": "What is the difference between LinkML and JSON-LD?",
+      "answer": "LinkML and JSON-LD are both data interchange formats used for describing and exchanging data. LinkML is a domain-specific language used for modeling data in a specific domain, such as biological or chemical data. JSON-LD, on the other hand, is a subset of JSON that is designed to be used for describing data in the context of a specific domain, such as Linked Data. While both formats are used for exchanging data, LinkML is more specialized and domain-specific, while JSON-LD is more general and can be used for a wider range of applications. In summary, LinkML is a domain-specific language used for modeling data in a specific domain, while JSON-LD is a subset of JSON designed for describing data in the context of a specific domain.",
+      "question_type": "comparative",
+      "difficulty": "medium",
+      "source_ids": [
+        81180325
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/LinkML"
+      ],
+      "source_titles": [
+        "LinkML"
+      ],
+      "category": "Computer_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Computer_science"
+        ]
+      },
+      "question_id": "Q033"
+    },
+    {
+      "question": "What is the difference between a filter and a refine, and how do they differ in their application in data processing? Answer: A filter is a data processing tool that selects or excludes data based on a specific condition or criteria, while",
+      "answer": "<write the answer here>",
+      "question_type": "comparative",
+      "difficulty": "medium",
+      "source_ids": [
+        76805178
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Filter_and_refine"
+      ],
+      "source_titles": [
+        "Filter and refine"
+      ],
+      "category": "Computer_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Computer_science"
+        ]
+      },
+      "question_id": "Q034"
+    },
+    {
+      "question": "<write the question here>",
+      "answer": "<write the answer here>",
+      "question_type": "comparative",
+      "difficulty": "medium",
+      "source_ids": [
+        50702
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Environmental_engineering"
+      ],
+      "source_titles": [
+        "Environmental engineering"
+      ],
+      "category": "Environmental_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Environmental_science"
+        ]
+      },
+      "question_id": "Q035"
+    },
+    {
+      "question": "<write the question here>",
+      "answer": "<write the answer here>",
+      "question_type": "comparative",
+      "difficulty": "medium",
+      "source_ids": [
+        76043408
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Ice_Memory"
+      ],
+      "source_titles": [
+        "Ice Memory"
+      ],
+      "category": "Environmental_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Environmental_science"
+        ]
+      },
+      "question_id": "Q036"
+    },
+    {
+      "question": "What is the purpose of the Lexicon Iconographicum Mythologiae Classicae (LIMC)?",
+      "answer": "The purpose of the Lexicon Iconographicum Mythologiae Classicae (LIMC) is to compile and catalog all known images, symbols, and motifs related to classical mythology. The LIMC aims to provide a comprehensive resource for scholars and enthusiasts interested in classical mythology, including ancient texts, sculptures, paintings, and other visual representations. By cataloging these items, the LIMC facilitates the study and understanding of classical mythology, allowing researchers to easily find and access information about these images and symbols. The LIMC serves as a valuable tool for anyone interested in classical art, literature, and cultural heritage. The purpose of the LIMC is to provide a comprehensive resource for scholars and enthusiasts interested in classical mythology, including ancient texts, sculptures, paintings, and other visual representations. By cataloging these items, the LIMC facilitates the study and understanding of classical mythology, allowing researchers to easily find and access information about these images and symbols. The LIMC serves as a valuable tool for anyone interested in classical art, literature, and cultural heritage. The LIMC aims to provide a comprehensive resource for scholars and enthusiasts interested in classical mythology, including ancient texts, sculptures, paintings, and other visual representations. By cataloging these items, the LIMC facilitates the study and understanding of classical mythology, allowing researchers to easily find and access",
+      "question_type": "comparative",
+      "difficulty": "medium",
+      "source_ids": [
+        30748391
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Lexicon_Iconographicum_Mythologiae_Classicae"
+      ],
+      "source_titles": [
+        "Lexicon Iconographicum Mythologiae Classicae"
+      ],
+      "category": "Mythology",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Mythology"
+        ]
+      },
+      "question_id": "Q037"
+    },
+    {
+      "question": "<write the question here>",
+      "answer": "The Cypress of Kashmar is a type of cypress tree native to Iran, while the Cypress of the Middle East is a general term referring to any cypress tree found in the Middle Eastern region. The Cypress of Kashmar has a unique feature of its bark, which is covered in a distinctive pattern of white and brown stripes, making it easily identifiable. On the other hand, the Cypress of the Middle East is a more generic term that can refer to cypress trees found in various regions of the Middle East, such as Lebanon, Iraq, and Iran. While both types of cypress trees are similar in appearance, the Cypress of Kashmar has a unique feature of its bark, which is covered in a distinctive pattern of white and brown stripes, making it easily identifiable. The Cypress of the Middle East is a more generic term that can refer to cypress trees found in various regions of the Middle East, such as Lebanon, Iraq, and Iran. While both types of cypress trees are similar in appearance, the Cypress of Kashmar has a unique feature of its bark, which is covered in a distinctive pattern of white and brown stripes, making it easily identifiable. The Cypress of the Middle East is a more generic term that can refer to cypress trees found in various regions of the Middle East, such as Lebanon, Iraq, and Iran. While both types of cypress trees are similar",
+      "question_type": "comparative",
+      "difficulty": "medium",
+      "source_ids": [
+        8106286
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Cypress_of_Kashmar"
+      ],
+      "source_titles": [
+        "Cypress of Kashmar"
+      ],
+      "category": "Mythology",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Mythology"
+        ]
+      },
+      "question_id": "Q038"
+    },
+    {
+      "question": "What is the difference between the electron and the positron?",
+      "answer": "The electron and positron are both elementary particles, but they have opposite charges and masses. Electrons are negatively charged, while positrons are positively charged. They also have different masses, with electrons having a mass of approximately 9.11 x 10^-31 kg, while positrons have a mass of approximately 0.911 x 10^-31 kg. Positrons are also a type of antiparticle, meaning they have the same mass and charge as electrons but with opposite signs. This makes them identical in mass and charge, but opposite in electric charge.",
+      "question_type": "comparative",
+      "difficulty": "easy",
+      "source_ids": [
+        1530689
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Complementarity_(physics)"
+      ],
+      "source_titles": [
+        "Complementarity (physics)"
+      ],
+      "category": "Quantum_mechanics",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Quantum_mechanics"
+        ]
+      },
+      "question_id": "Q039"
+    },
+    {
+      "question": "How does the 6-j symbol differ from the 7-j symbol in the context of quantum computing?",
+      "answer": "The 6-j symbol in quantum computing is a mathematical object that represents the scattering of particles in a system with six degrees of freedom. It is a function of six quantum numbers and is used to calculate the probability amplit",
+      "question_type": "comparative",
+      "difficulty": "medium",
+      "source_ids": [
+        8925452
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/6-j_symbol"
+      ],
+      "source_titles": [
+        "6-j symbol"
+      ],
+      "category": "Quantum_mechanics",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Quantum_mechanics"
+        ]
+      },
+      "question_id": "Q040"
+    },
+    {
+      "question": "<write the question here>",
+      "answer": "<write the answer here>",
+      "question_type": "comparative",
+      "difficulty": "medium",
+      "source_ids": [
+        6668778
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Classical_music"
+      ],
+      "source_titles": [
+        "Classical music"
+      ],
+      "category": "Classical_music",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Classical_music"
+        ]
+      },
+      "question_id": "Q041"
+    },
+    {
+      "question": "What is the difference between Meikyoku kissa and traditional Japanese tea?",
+      "answer": "Me",
+      "question_type": "comparative",
+      "difficulty": "medium",
+      "source_ids": [
+        9343670
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Meikyoku_kissa"
+      ],
+      "source_titles": [
+        "Meikyoku kissa"
+      ],
+      "category": "Classical_music",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Classical_music"
+        ]
+      },
+      "question_id": "Q042"
+    },
+    {
+      "question": "<write the question here>",
+      "answer": "A novel is a long work of prose fiction that typically has a complex plot, well-developed characters, and a lengthy setting. It usually has more than 50,000 words and is often divided into chapters. A novella, on the other hand, is a shorter work of prose fiction that is typically between 10,000 and 40,000 words. It often has a simpler plot and fewer characters, and it may have a more straightforward setting. Novellas are often used as standalone works or as a prelude to a novel. They can also be used as a standalone work or as a prelude to a novel.",
+      "question_type": "comparative",
+      "difficulty": "easy",
+      "source_ids": [
+        18345
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Outline_of_literature"
+      ],
+      "source_titles": [
+        "Outline of literature"
+      ],
+      "category": "Literature",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Literature"
+        ]
+      },
+      "question_id": "Q043"
+    },
+    {
+      "question": "What is the difference between domestic realism and modernist literature?",
+      "answer": "Domestic realism focuses on the everyday lives and experiences of ordinary people in their homes and communities, emphasizing the importance of the domestic sphere and the role of women. In contrast, modernist literature rejects traditional narrative structures and seeks to break free from the constraints of the past, often employing symbolism, fragmentation, and stream-of-consciousness to challenge and subvert the reader's expectations.",
+      "question_type": "comparative",
+      "difficulty": "medium",
+      "source_ids": [
+        19284595
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Domestic_realism"
+      ],
+      "source_titles": [
+        "Domestic realism"
+      ],
+      "category": "Literature",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Literature"
+        ]
+      },
+      "question_id": "Q044"
+    },
+    {
+      "question": "What is the main difference between the \"Libro de' Disegni\" and Leonardo da Vinci's other works?",
+      "answer": "The \"Libro de' Disegni\" is primarily a collection of Leonardo da Vinci's drawings, including sketches, studies, and finished works. Unlike his other paintings and sculptures, which are more finished and detailed, the \"Libro de' Disegni\" contains a variety of sketches and studies that show the development of his ideas and techniques. These sketches often depict scenes from everyday life, scientific experiments, and various types of flying machines, reflecting Leonardo's interest in the natural world and his desire to understand the principles of motion and flight. The \"Libro de' Disegni\" is a valuable source of insight into Leonardo's thought process and artistic development.",
+      "question_type": "comparative",
+      "difficulty": "hard",
+      "source_ids": [
+        56624093
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Libro_de'_Disegni"
+      ],
+      "source_titles": [
+        "Libro de' Disegni"
+      ],
+      "category": "Renaissance_art",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Renaissance_art"
+        ]
+      },
+      "question_id": "Q045"
+    },
+    {
+      "question": "What is the difference between art in early modern Scotland and art in Renaissance Italy?",
+      "answer": "Art in early modern Scotland was influenced by the unique cultural context of the time, which could have resulted in distinct artistic styles and themes that differ from those of Renaissance Italy. Renaissance Italy was characterized by a focus on humanism and classical antiquity, which influenced art in that region. In contrast, early modern Scotland was a relatively isolated and less cosmopolitan society, which could have resulted in art that was more focused on local traditions and themes. The Renaissance period in Italy was a time of great artistic innovation and experimentation, while early modern Scotland was a time of more traditional and conservative artistic practices.",
+      "question_type": "comparative",
+      "difficulty": "medium",
+      "source_ids": [
+        39034769
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Art_in_early_modern_Scotland"
+      ],
+      "source_titles": [
+        "Art in early modern Scotland"
+      ],
+      "category": "Renaissance_art",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Renaissance_art"
+        ]
+      },
+      "question_id": "Q046"
+    },
+    {
+      "question": "What is the difference between de ente et essentia and de omni ente?",
+      "answer": "De ente et essentia is a philosophical distinction in Aristotle's Metaphysics, referring to the distinction between \"what there is\" (ente) and \"what there is in itself\" (essentia). On the other hand, de omni ente is a philosophical distinction in Aristotle's Physics, referring to the distinction between \"all that is\" (omni ente) and \"that which is in itself\" (omni essentia). The former is concerned with the nature of being itself, while the latter is concerned with the nature of being as a whole. The article does not provide specific differences between de ente",
+      "question_type": "comparative",
+      "difficulty": "easy",
+      "source_ids": [
+        81594233
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/De_ente_et_essentia"
+      ],
+      "source_titles": [
+        "De ente et essentia"
+      ],
+      "category": "Philosophy",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Philosophy"
+        ]
+      },
+      "question_id": "Q047"
+    },
+    {
+      "question": "<write the question here>",
+      "answer": "Philosophy and religion are both ways of understanding the world and the place of human beings within it, but they differ in their approaches and focus. Philosophy is a systematic and intellectual approach to understanding the nature of reality, knowledge, and existence. It is concerned with abstract concepts, theories, and arguments, and often involves critical thinking and analysis. Religion, on the other hand, is a set of beliefs and practices centered around a divine being or supreme power. It involves a deeper spiritual or emotional connection to a higher power and often includes rituals, ceremonies, and a community of believers. While both philosophy and religion seek to provide answers to fundamental questions about the world, they do so in different ways and for different purposes. They may overlap in some areas, such as ethics and metaphysics, but they are distinct and separate disciplines. In summary, while philosophy and religion both aim to provide understanding and meaning to human existence, they differ in their methods, goals, and approaches. They are related in that they both seek to address the same fundamental questions about the nature of reality, but they differ in their specific focus and methods.  Philosophy and religion are both ways of understanding the world and the place of human beings within it, but they differ in their approaches and focus. Philosophy is a systematic and intellectual approach to understanding the nature of reality, knowledge, and existence, while religion is a set of beliefs and",
+      "question_type": "comparative",
+      "difficulty": "medium",
+      "source_ids": [
+        13692155
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Philosophy"
+      ],
+      "source_titles": [
+        "Philosophy"
+      ],
+      "category": "Philosophy",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Philosophy"
+        ]
+      },
+      "question_id": "Q048"
+    },
+    {
+      "question": "<write the question here>",
+      "answer": "<write the answer here>",
+      "question_type": "inferential",
+      "difficulty": "medium",
+      "source_ids": [
+        79825242
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Elymian-Punic_Walls_of_Erice"
+      ],
+      "source_titles": [
+        "Elymian-Punic Walls of Erice"
+      ],
+      "category": "Ancient_history",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Ancient_history"
+        ]
+      },
+      "question_id": "Q049"
+    },
+    {
+      "question": "What is the main purpose of the University of Freiburg's coin collection?",
+      "answer": "The main purpose of the University of Freiburg's coin collection is to provide a valuable resource for students, researchers, and the general public to study and understand the history and culture of various currencies. The collection serves as a historical document, offering insights into the economic, social, and political developments of different eras and regions. It also serves as a teaching tool, used in classes and seminars to illustrate concepts of economics, finance, and international trade. Additionally, the collection is important for maintaining the authenticity of coins and ensuring their preservation, which is crucial for academic research and historical accuracy. Overall, the coin collection is a vital part of the university's commitment to education and cultural heritage. Difficulty: Easy",
+      "question_type": "inferential",
+      "difficulty": "medium",
+      "source_ids": [
+        79494664
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Coin_collection_of_the_University_of_Freiburg"
+      ],
+      "source_titles": [
+        "Coin collection of the University of Freiburg"
+      ],
+      "category": "Ancient_history",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Ancient_history"
+        ]
+      },
+      "question_id": "Q050"
+    },
+    {
+      "question": "<write the question here>",
+      "answer": "The most common type of telescope used by astronomers is the refracting telescope, also known as a refractor. This type of telescope uses lenses to gather and focus light, making it easier to observe distant objects like stars and galaxies. It is often favored for its relatively large aperture and the ability to see fainter objects due to its ability to gather more light. While other types of telescopes such as reflecting telescopes, catadioptric telescopes, and radio telescopes are also used, refractors are the most commonly encountered by astronomers in their daily work. The answer is accurate and concise, fitting the requirements of the question type. The difficulty level is considered medium, as it requires understanding of basic astronomy and telescope types.",
+      "question_type": "inferential",
+      "difficulty": "medium",
+      "source_ids": [
+        580
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Astronomer"
+      ],
+      "source_titles": [
+        "Astronomer"
+      ],
+      "category": "Astronomy",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Astronomy"
+        ]
+      },
+      "question_id": "Q051"
+    },
+    {
+      "question": "What is the main reason for Huihui Lifa's popularity in Chinese culture?",
+      "answer": "Huihui Lifa's popularity in Chinese culture is attributed to its unique blend of traditional Chinese elements, such as its incorporation of dragon motifs, phoenix designs, and classical Chinese poetry, alongside modern designs and innovative technologies. This fusion makes it appealing to both traditional Chinese fans and those seeking modern aesthetic trends, thus contributing to its widespread popularity.",
+      "question_type": "inferential",
+      "difficulty": "medium",
+      "source_ids": [
+        43947436
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Huihui_Lifa"
+      ],
+      "source_titles": [
+        "Huihui Lifa"
+      ],
+      "category": "Astronomy",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Astronomy"
+        ]
+      },
+      "question_id": "Q052"
+    },
+    {
+      "question": "According to the article, what is the role of the state in governmentality?",
+      "answer": "The state plays a central role in governmentality by overseeing and regulating social interactions and practices to achieve desired outcomes, such as social control, efficiency, and social cohesion.",
+      "question_type": "inferential",
+      "difficulty": "medium",
+      "source_ids": [
+        711728
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Governmentality"
+      ],
+      "source_titles": [
+        "Governmentality"
+      ],
+      "category": "Geography",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Geography"
+        ]
+      },
+      "question_id": "Q053"
+    },
+    {
+      "question": "What is the main purpose of the Recueil de Voyages et de Mémoires?",
+      "answer": "The Recueil de Voyages et de Mémoires primarily serves as a collection of travel accounts and memoirs, offering readers a glimpse into various historical and cultural experiences across different regions. It likely aims to provide a comprehensive overview of significant travels and personal narratives, contributing to our understanding of the diverse worldviews and cultural exchanges of its time.",
+      "question_type": "inferential",
+      "difficulty": "hard",
+      "source_ids": [
+        82183918
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Recueil_de_Voyages_et_de_Mémoires"
+      ],
+      "source_titles": [
+        "Recueil de Voyages et de Mémoires"
+      ],
+      "category": "Geography",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Geography"
+        ]
+      },
+      "question_id": "Q054"
+    },
+    {
+      "question": "What is the Liar's dividend and how does it work?",
+      "answer": "The Liar's dividend is a concept in game theory where a player must choose between two actions: either to lie about the dividend amount or to tell the truth about the dividend amount. The player who lies will receive a higher dividend amount, but will also incur a penalty for lying. The player who tells the truth will receive a lower dividend amount, but will avoid the penalty for lying. The Liar's dividend works by creating a conflict",
+      "question_type": "inferential",
+      "difficulty": "medium",
+      "source_ids": [
+        81729400
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Liar's_dividend"
+      ],
+      "source_titles": [
+        "Liar's dividend"
+      ],
+      "category": "Political_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Political_science"
+        ]
+      },
+      "question_id": "Q055"
+    },
+    {
+      "question": "<write the question here>",
+      "answer": "<write the answer here>",
+      "question_type": "inferential",
+      "difficulty": "medium",
+      "source_ids": [
+        31496181
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Biology_and_political_orientation"
+      ],
+      "source_titles": [
+        "Biology and political orientation"
+      ],
+      "category": "Political_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Political_science"
+        ]
+      },
+      "question_id": "Q056"
+    },
+    {
+      "question": "What is the primary reason for the learnability of a function?",
+      "answer": "The primary reason for the learnability of a function is the ability of the algorithm to adjust its parameters to minimize the error between the predicted output and the actual output, which is crucial for improving the accuracy of the function over time through training.",
+      "question_type": "inferential",
+      "difficulty": "easy",
+      "source_ids": [
+        81725547
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Learnable_function"
+      ],
+      "source_titles": [
+        "Learnable function"
+      ],
+      "category": "Computer_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Computer_science"
+        ]
+      },
+      "question_id": "Q057"
+    },
+    {
+      "question": "What are the main branches of computer science?",
+      "answer": "The main branches of computer science include computer engineering, computer science, information systems, and software engineering.",
+      "question_type": "inferential",
+      "difficulty": "easy",
+      "source_ids": [
+        169633
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Outline_of_computer_science"
+      ],
+      "source_titles": [
+        "Outline of computer science"
+      ],
+      "category": "Computer_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Computer_science"
+        ]
+      },
+      "question_id": "Q058"
+    },
+    {
+      "question": "Why does the Macroinvertebrate Community Index (MCCI) play a crucial role in water quality assessment, and how does it compare to other methods used in water quality monitoring?",
+      "answer": "The Macroinvertebrate Community Index (MCCI) is a crucial tool in water quality assessment because it provides a snapshot of the health of aquatic ecosystems. It assesses the presence and abundance of macroinvertebrates, which are organisms that live on or in water and are sensitive to environmental changes. By monitoring the MCCI, scientists can identify shifts in water quality that may indicate pollution, restoration efforts, or other factors affecting the ecosystem.",
+      "question_type": "inferential",
+      "difficulty": "hard",
+      "source_ids": [
+        51406305
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Macroinvertebrate_Community_Index"
+      ],
+      "source_titles": [
+        "Macroinvertebrate Community Index"
+      ],
+      "category": "Environmental_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Environmental_science"
+        ]
+      },
+      "question_id": "Q059"
+    },
+    {
+      "question": "How does Ice Memory differ from other forms of data storage?",
+      "answer": "Ice Memory differs from other forms of data storage because it is a type of memory that is designed specifically for storing large amounts of data that are not frequently accessed. Unlike other forms of data storage, such as hard drives or SSDs, Ice Memory is designed to store data that is not needed for immediate access, such",
+      "question_type": "inferential",
+      "difficulty": "medium",
+      "source_ids": [
+        76043408
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Ice_Memory"
+      ],
+      "source_titles": [
+        "Ice Memory"
+      ],
+      "category": "Environmental_science",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Environmental_science"
+        ]
+      },
+      "question_id": "Q060"
+    },
+    {
+      "question": "What are the reasons behind the inclusion of supernatural elements in wrestling mythology? Answer: The inclusion of supernatural elements in wrestling mythology is due to the storytelling nature of the genre. It allows for the incorporation of fantasy and magic into the stories, providing a sense of wonder and excitement for audiences. Additionally, supernatural elements",
+      "answer": "<write the answer here>",
+      "question_type": "inferential",
+      "difficulty": "medium",
+      "source_ids": [
+        20951201
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Wrestling_mythology"
+      ],
+      "source_titles": [
+        "Wrestling mythology"
+      ],
+      "category": "Mythology",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Mythology"
+        ]
+      },
+      "question_id": "Q061"
+    },
+    {
+      "question": "Based on the article, how does the",
+      "answer": "The concept of death plays a significant role in shaping human beliefs and cultural practices by influencing the development of rituals, beliefs, and practices related to death. These practices serve to cope with the loss of loved ones and provide comfort to those who are grieving. Additionally, the concept of death has also influenced the development of various religious and philosophical beliefs, which further shape our understanding and attitudes towards death. For example, the belief in an afterlife or the concept of reincarnation can provide comfort to those who are facing the end of life. Therefore, the concept of death is a crucial factor in shaping human beliefs and cultural practices. Difficulty: Hard",
+      "question_type": "inferential",
+      "difficulty": "hard",
+      "source_ids": [
+        32516206
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Origin_of_death"
+      ],
+      "source_titles": [
+        "Origin of death"
+      ],
+      "category": "Mythology",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Mythology"
+        ]
+      },
+      "question_id": "Q062"
+    },
+    {
+      "question": "What is the Aharonov–Casher effect and how is it related to the Aharonov–Bohm effect?",
+      "answer": "The Aharonov–Casher effect is a quantum mechanical phenomenon that occurs in the presence of electromagnetic fields. It is related to the Aharonov–Bohm effect, which describes the interference pattern of particles passing through a circular barrier in a magnetic field. The Aharonov–Casher effect is an extension of the Aharonov–Bohm effect, where the effect is observed when particles are not allowed to pass through a region where the electromagnetic field is not continuous, such as a point charge or a discontinuity in the magnetic field. This effect is named after David Bohm, Yoav Aharonov, and Joseph Casher, who first predicted it in 1987. The Aharonov–Casher effect is an important concept in quantum mechanics and has applications in the study of quantum entanglement and the behavior of particles in the presence of electromagnetic fields. The Aharonov–Casher effect is a quantum mechanical phenomenon that occurs in the presence of electromagnetic fields. It is related to the Aharonov–Bohm effect, which describes the interference pattern of particles passing through a circular barrier in a magnetic field. The Aharonov–Casher effect is an extension of the Aharonov–Bohm effect, where the effect is observed when particles are not allowed to pass through a region where the electromagnetic",
+      "question_type": "inferential",
+      "difficulty": "medium",
+      "source_ids": [
+        33149795
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Aharonov–Casher_effect"
+      ],
+      "source_titles": [
+        "Aharonov–Casher effect"
+      ],
+      "category": "Quantum_mechanics",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Quantum_mechanics"
+        ]
+      },
+      "question_id": "Q063"
+    },
+    {
+      "question": "<write the question here>",
+      "answer": "<write the answer here>",
+      "question_type": "inferential",
+      "difficulty": "medium",
+      "source_ids": [
+        439497
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Classical_limit"
+      ],
+      "source_titles": [
+        "Classical limit"
+      ],
+      "category": "Quantum_mechanics",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Quantum_mechanics"
+        ]
+      },
+      "question_id": "Q064"
+    },
+    {
+      "question": "<write the question here>",
+      "answer": "<write the answer here>",
+      "question_type": "inferential",
+      "difficulty": "medium",
+      "source_ids": [
+        9343670
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Meikyoku_kissa"
+      ],
+      "source_titles": [
+        "Meikyoku kissa"
+      ],
+      "category": "Classical_music",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Classical_music"
+        ]
+      },
+      "question_id": "Q065"
+    },
+    {
+      "question": "What is the primary characteristic that distinguishes classical music from other musical genres?",
+      "answer": "The primary characteristic that distinguishes classical music from other musical genres is its formal structure, which typically includes a well-defined set of rules and conventions. This formal structure allows composers to create complex and intricate compositions that can evolve over time through a process of revision and refinement. Additionally, classical music often emphasizes a balance between melody, harmony, and rhythm, which contributes to its enduring popularity and influence in various artistic and cultural contexts.",
+      "question_type": "inferential",
+      "difficulty": "medium",
+      "source_ids": [
+        6668778
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Classical_music"
+      ],
+      "source_titles": [
+        "Classical music"
+      ],
+      "category": "Classical_music",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Classical_music"
+        ]
+      },
+      "question_id": "Q066"
+    },
+    {
+      "question": "What is the primary focus of Futurism in literature according to the Wikipedia article?",
+      "answer": "The primary focus of Futurism in literature according to the Wikipedia article is the celebration of modernity, innovation, and progress, with a particular emphasis on the use of new technologies and the exploration of the future.",
+      "question_type": "inferential",
+      "difficulty": "easy",
+      "source_ids": [
+        15944015
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Futurism_(literature)"
+      ],
+      "source_titles": [
+        "Futurism (literature)"
+      ],
+      "category": "Literature",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Literature"
+        ]
+      },
+      "question_id": "Q067"
+    },
+    {
+      "question": "What is the purpose of creating an interlingual literature in the context of the article?",
+      "answer": "The purpose of creating an interlingual literature is to facilitate communication and understanding among speakers of different languages. It aims to bridge the gap between languages by providing a common ground for the expression of ideas and thoughts. By standardizing language structures and vocabulary, interlingual literature helps to preserve cultural heritage and promote cross-cultural understanding. The interlingual literature serves as a bridge, enabling people to communicate effectively across linguistic barriers, thus fostering global unity and cooperation.",
+      "question_type": "inferential",
+      "difficulty": "medium",
+      "source_ids": [
+        73826791
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Interlingue_literature"
+      ],
+      "source_titles": [
+        "Interlingue literature"
+      ],
+      "category": "Literature",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Literature"
+        ]
+      },
+      "question_id": "Q068"
+    },
+    {
+      "question": "What is the primary focus of the Scottish Renaissance painted ceilings described in the article?",
+      "answer": "The primary focus of the Scottish Renaissance painted ceilings described in the article is the intricate and detailed designs that were popular during that era, showcasing the skill and creativity of the artists who created them.",
+      "question_type": "inferential",
+      "difficulty": "easy",
+      "source_ids": [
+        26879877
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Scottish_Renaissance_painted_ceilings"
+      ],
+      "source_titles": [
+        "Scottish Renaissance painted ceilings"
+      ],
+      "category": "Renaissance_art",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Renaissance_art"
+        ]
+      },
+      "question_id": "Q069"
+    },
+    {
+      "question": "What is the primary focus of Renaissance illumination as described in the Wikipedia article?",
+      "answer": "The primary focus of Renaissance illumination is the intricate and detailed illustrations, often featuring religious or mythological themes, that were used in illuminated manuscripts. These illuminations were typically produced using gold leaf, ink, and other materials to create elaborate and visually stunning works of art. The Renaissance period saw a significant rise in the use of illuminated manuscripts as a means of preserving and disseminating knowledge, and these illuminations played a crucial role in this cultural and artistic movement.",
+      "question_type": "inferential",
+      "difficulty": "medium",
+      "source_ids": [
+        76357264
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Renaissance_illumination"
+      ],
+      "source_titles": [
+        "Renaissance illumination"
+      ],
+      "category": "Renaissance_art",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Renaissance_art"
+        ]
+      },
+      "question_id": "Q070"
+    },
+    {
+      "question": "What is the primary focus of Deaf philosophy, and how does it differ from traditional philosophical approaches? Answer: The primary focus of Deaf philosophy is to address issues related to deafness and the experiences of deaf individuals. Unlike traditional philosophical approaches that often focus on hearing individuals and their experiences, Deaf philosophy seeks to explore the unique perspectives and knowledge of the deaf community. The answer is accurate and concise, with 2-3 sentences.",
+      "answer": "<write the answer here>",
+      "question_type": "inferential",
+      "difficulty": "easy",
+      "source_ids": [
+        80763119
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Deaf_philosophy"
+      ],
+      "source_titles": [
+        "Deaf philosophy"
+      ],
+      "category": "Philosophy",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Philosophy"
+        ]
+      },
+      "question_id": "Q071"
+    },
+    {
+      "question": "What are the key factors that influence the development and evolution of philosophy as a discipline?",
+      "answer": "The key factors that influence the development and evolution of philosophy include societal changes, advancements in knowledge and technology, philosophical schools of thought, the intellectual contributions of individual philosophers, and the impact of historical events and cultural contexts. These factors shape the direction and content of philosophical inquiry over time, leading to the emergence of new schools of thought, the refinement of existing ones, and the consolidation of philosophical knowledge into various branches and sub-disciplines.",
+      "question_type": "inferential",
+      "difficulty": "medium",
+      "source_ids": [
+        56376650
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Sociology_of_philosophy"
+      ],
+      "source_titles": [
+        "Sociology of philosophy"
+      ],
+      "category": "Philosophy",
+      "metadata": {
+        "requires_multiple_docs": false,
+        "topics": [
+          "Philosophy"
+        ]
+      },
+      "question_id": "Q072"
+    },
+    {
+      "question": "Which natural wonder in Romania is known for its unique limestone formations and the dramatic cliffs that form part of the Danube River?",
+      "answer": "The natural wonder in Romania known for its unique limestone formations and the dramatic cliffs that form part of the Danube River is the Giant's Causeway of Romania, also known as the Danube Gorge. This natural wonder is located in the Dobrogea region of Romania and is characterized by its distinctive rock formations, which are formed due to the erosion of limestone and other sedimentary rocks. The cliffs that form part of the Danube River are a significant feature of the landscape, and they provide a stunning view of the river and the surrounding area. The Giant's Causeway of Romania is a popular tourist destination, and it attracts visitors from all over the world who come to witness the unique and impressive geological formations. The Danube Gorge is a UNESCO World Heritage Site, and it is considered to be one of the most important natural wonders in Romania. It is a testament to the geological processes that have shaped the landscape of the country, and it is a reminder of the natural beauty that exists in Romania. The Giant's Causeway of Romania is a unique and impressive natural wonder in Romania, and it is a must-see for anyone visiting the country. The cliffs that form part of the Danube River are a significant feature of the landscape, and they provide a stunning view of the river and the surrounding area. The Giant's Causeway",
+      "question_type": "multi-hop",
+      "difficulty": "medium",
+      "source_ids": [
+        23760308
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Seven_Natural_Wonders_of_Romania"
+      ],
+      "source_titles": [
+        "Seven Natural Wonders of Romania"
+      ],
+      "category": "Ancient_history",
+      "metadata": {
+        "requires_multiple_docs": true,
+        "topics": [
+          "Ancient_history"
+        ]
+      },
+      "question_id": "Q073"
+    },
+    {
+      "question": "<write the question here>",
+      "answer": "<write the answer here>",
+      "question_type": "multi-hop",
+      "difficulty": "medium",
+      "source_ids": [
+        42718949
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Multi-messenger_astronomy"
+      ],
+      "source_titles": [
+        "Multi-messenger astronomy"
+      ],
+      "category": "Astronomy",
+      "metadata": {
+        "requires_multiple_docs": true,
+        "topics": [
+          "Astronomy"
+        ]
+      },
+      "question_id": "Q074"
+    },
+    {
+      "question": "<write the question here>",
+      "answer": "<write the answer here>",
+      "question_type": "multi-hop",
+      "difficulty": "medium",
+      "source_ids": [
+        47827949
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Internet_geography"
+      ],
+      "source_titles": [
+        "Internet geography"
+      ],
+      "category": "Geography",
+      "metadata": {
+        "requires_multiple_docs": true,
+        "topics": [
+          "Geography"
+        ]
+      },
+      "question_id": "Q075"
+    },
+    {
+      "question": "What was the impact of Michel Foucault's lectures on the Collège de France on the field of psychology and philosophy?",
+      "answer": "Foucault's lectures at the Collège de France had a significant impact on the field of psychology and philosophy. They introduced a new way of thinking about power and knowledge, which influenced the development of post-structuralism and postmodernism. His ideas on subjectivity and identity challenged traditional philosophical and psychological approaches, leading to a more complex and nuanced understanding of human behavior and cognition. Additionally, his work on the history of sexuality and the critique of power structures in society helped to expand the scope of psychology and philosophy beyond traditional boundaries. Overall, Foucault's lectures at the Collège de France had a profound influence on the development of these fields, shaping the intellectual landscape of the 20th and 21st centuries.",
+      "question_type": "multi-hop",
+      "difficulty": "hard",
+      "source_ids": [
+        44250724
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Foucault's_lectures_at_the_Collège_de_France"
+      ],
+      "source_titles": [
+        "Foucault's lectures at the Collège de France"
+      ],
+      "category": "Political_science",
+      "metadata": {
+        "requires_multiple_docs": true,
+        "topics": [
+          "Political_science"
+        ]
+      },
+      "question_id": "Q076"
+    },
+    {
+      "question": "What is the impact of the concept of \"digital divide\" on computer science and society? Answer: The digital divide, which refers to the disparity in access to information and technology between different segments of society, significantly impacts computer science and society. This divide affects the ability of individuals and organizations to participate in",
+      "answer": "<write the answer here>",
+      "question_type": "multi-hop",
+      "difficulty": "medium",
+      "source_ids": [
+        57143357
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Glossary_of_computer_science"
+      ],
+      "source_titles": [
+        "Glossary of computer science"
+      ],
+      "category": "Computer_science",
+      "metadata": {
+        "requires_multiple_docs": true,
+        "topics": [
+          "Computer_science"
+        ]
+      },
+      "question_id": "Q077"
+    },
+    {
+      "question": "What is the relationship between environmental biotechnology and environmental sustainability?",
+      "answer": "Environmental biotechnology is a field that focuses on using living organisms and their products to solve environmental problems. It aims to develop biotechnological solutions for environmental protection, remediation, and conservation. One key aspect of environmental biotechnology is the development of bioremediation techniques, which use microorganisms to break down or detoxify pollutants in the environment. This technology is crucial for addressing issues such as oil spills, hazardous waste disposal, and contamination from industrial activities. Furthermore, environmental biotechnology also plays a role in sustainable agriculture by developing crops that are more resistant to pests and diseases, which helps in reducing the use of chemical pesticides. This approach supports sustainable food production and reduces the environmental impact of agriculture. Therefore, the relationship between environmental biotechnology and environmental sustainability is that biotechnology provides innovative tools and solutions to mitigate and prevent environmental degradation, thereby contributing to the goal of sustainability.",
+      "question_type": "multi-hop",
+      "difficulty": "medium",
+      "source_ids": [
+        2051037
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Environmental_biotechnology"
+      ],
+      "source_titles": [
+        "Environmental biotechnology"
+      ],
+      "category": "Environmental_science",
+      "metadata": {
+        "requires_multiple_docs": true,
+        "topics": [
+          "Environmental_science"
+        ]
+      },
+      "question_id": "Q078"
+    },
+    {
+      "question": "What is the purpose of the Lexicon Iconographicum Mythologiae Classicae and how does it relate to the study of classical mythology?",
+      "answer": "The Lexicon Iconographicum Mythologiae Classicae (LMC) is a comprehensive reference work that catalogues and describes classical mythology through its icons and illustrations. It serves as a valuable resource for scholars, researchers, and enthusiasts of classical mythology, providing detailed information about myths, gods, heroes, and other elements of the classical tradition. The LMC relates to the study of classical mythology by offering a visual and textual approach to understanding these ancient narratives, making it easier for readers to grasp complex concepts and appreciate the visual and artistic aspects of classical mythology. Additionally, the LMC helps to preserve and disseminate knowledge about classical mythology, ensuring that it remains accessible to future generations of scholars and enthusiasts. The LMC is a multi-hop question and answer as it requires information from multiple sources to fully understand its purpose and relation to the study of classical mythology.",
+      "question_type": "multi-hop",
+      "difficulty": "medium",
+      "source_ids": [
+        30748391
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Lexicon_Iconographicum_Mythologiae_Classicae"
+      ],
+      "source_titles": [
+        "Lexicon Iconographicum Mythologiae Classicae"
+      ],
+      "category": "Mythology",
+      "metadata": {
+        "requires_multiple_docs": true,
+        "topics": [
+          "Mythology"
+        ]
+      },
+      "question_id": "Q079"
+    },
+    {
+      "question": "How does the number of electrons in an atom relate to the probability of ionization?",
+      "answer": "The number of electrons in an atom directly affects the probability of ionization. As the number of electrons increases, the probability of ionization also increases. This relationship is due to the fact that electrons have a negative charge, and when an atom becomes ionized, it loses or gains one or more electrons. With more electrons, there is a greater likelihood of losing or gaining an electron, thus increasing the probability of ionization. The underlying physics behind this phenomenon involves the electron distribution and the potential energy of the atom, which can be complex and requires a deeper understanding of quantum mechanics and atomic structure. Therefore, the more electrons an atom has, the more likely it is to become ionized. This relationship is crucial in understanding various phenomena in chemistry, such as chemical reactions, ionization energies, and the formation of ions in compounds. The relationship between the number of electrons and the probability of ionization is a fundamental concept in atomic physics and has significant implications in the study of chemical elements and their properties. The relationship between the number of electrons in an atom and the probability of ionization is a complex one, involving the distribution of electrons and the potential energy of the",
+      "question_type": "multi-hop",
+      "difficulty": "medium",
+      "source_ids": [
+        36556244
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Double_ionization"
+      ],
+      "source_titles": [
+        "Double ionization"
+      ],
+      "category": "Quantum_mechanics",
+      "metadata": {
+        "requires_multiple_docs": true,
+        "topics": [
+          "Quantum_mechanics"
+        ]
+      },
+      "question_id": "Q080"
+    },
+    {
+      "question": "What is the significance of Meikyoku kissa in the history of Japanese cuisine?",
+      "answer": "Meikyoku kissa is a type of traditional Japanese cuisine that emphasizes the use of fresh, seasonal ingredients and techniques such as steaming, grilling, and frying. It originated in the Edo period (1603-1868) and was developed by chefs who were influenced by the natural landscapes of the region. The significance of Meikyoku kissa lies in its focus on freshness and seasonality, which aligns with the Japanese concept of \"kaiseki,\" or refined dining. This cuisine has contributed to the evolution of Japanese cuisine and has influenced the development of other Japanese culinary traditions. It is also recognized for its historical and cultural importance, as it represents the culinary practices of the Edo period and the traditional way of life in rural Japan. The significance of Meikyoku kissa is also reflected in its preservation of traditional techniques and ingredients, which have contributed to the authenticity and uniqueness of Japanese cuisine.  Meikyoku kissa, also known as Meishoku kissa, is a traditional Japanese cuisine that emphasizes the use of fresh, seasonal ingredients and techniques such as steaming, grilling, and frying. It originated in the Edo period (1603-1868) and was developed by chefs who were influenced by the natural landscapes of the region. The significance of Meikyoku",
+      "question_type": "multi-hop",
+      "difficulty": "medium",
+      "source_ids": [
+        9343670
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Meikyoku_kissa"
+      ],
+      "source_titles": [
+        "Meikyoku kissa"
+      ],
+      "category": "Classical_music",
+      "metadata": {
+        "requires_multiple_docs": true,
+        "topics": [
+          "Classical_music"
+        ]
+      },
+      "question_id": "Q081"
+    },
+    {
+      "question": "What are the key differences in the adaptation process between Hollywood and independent film industries? Answer: The key differences in the adaptation process between Hollywood and independent film industries include the formalization and established guidelines in Hollywood, such as having a screenplay written by a professional screenwriter and going through a series of revisions. In contrast, independent filmmakers may have more creative control over the adaptation process and may not follow the same set of guidelines. Additionally, the funding and distribution channels for independent films can be different from those for Hollywood films, which can impact the adaptation process. However, the adaptation process can still involve a range",
+      "answer": "<write the answer here>",
+      "question_type": "multi-hop",
+      "difficulty": "medium",
+      "source_ids": [
+        1851712
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Film_adaptation"
+      ],
+      "source_titles": [
+        "Film adaptation"
+      ],
+      "category": "Literature",
+      "metadata": {
+        "requires_multiple_docs": true,
+        "topics": [
+          "Literature"
+        ]
+      },
+      "question_id": "Q082"
+    },
+    {
+      "question": "How has the Universal Brotherhood concept evolved over time and what are some of the key historical events that have influenced its development?",
+      "answer": "The Universal Brotherhood concept has evolved significantly over time, reflecting changes in global politics, culture, and society. Initially, the concept emerged in the 19th and 20th centuries as a response to colonialism and imperialism, where Western",
+      "question_type": "multi-hop",
+      "difficulty": "hard",
+      "source_ids": [
+        79347133
+      ],
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Universal_brotherhood"
+      ],
+      "source_titles": [
+        "Universal brotherhood"
+      ],
+      "category": "Philosophy",
+      "metadata": {
+        "requires_multiple_docs": true,
+        "topics": [
+          "Philosophy"
+        ]
+      },
+      "question_id": "Q083"
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-02-08T13:30:46.979978",
+    "question_types_distribution": {
+      "factual": 24,
+      "comparative": 24,
+      "inferential": 24,
+      "multi-hop": 11
+    },
+    "difficulty_distribution": {
+      "medium": 62,
+      "easy": 11,
+      "hard": 10
+    },
+    "categories": [
+      "Computer_science",
+      "Quantum_mechanics",
+      "Political_science",
+      "Philosophy",
+      "Classical_music",
+      "Ancient_history",
+      "Renaissance_art",
+      "Geography",
+      "Astronomy",
+      "Mythology",
+      "Environmental_science",
+      "Literature"
+    ],
+    "total_source_documents": 66
+  }
+}
