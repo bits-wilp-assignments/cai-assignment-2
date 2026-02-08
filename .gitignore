@@ -71,10 +71,10 @@ Temporary Items
 .env.local
 .env.*.local
 
-# Data & Indexes
-data/bm25_index/
-data/chroma_db/
-data/*.json
+# Data & Indexes (Added indexed data to Git for reference, but can be ignored if not needed)
+# data/bm25_index/
+# data/chroma_db/
+# data/*.json
 
 # Logs
 *.log

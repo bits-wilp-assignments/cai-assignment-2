@@ -558,14 +558,14 @@ class RAGEvaluator:
     ) -> tuple[List[Dict[str, Any]], Dict[str, Dict[str, int]]]:
         """
         Apply stratified sampling to ensure balanced evaluation across question types.
-        
+
         Args:
             qa_dataset: List of Q&A pairs
             max_answer_evaluations: Maximum number for answer evaluation
             max_retrieval_evaluations: Maximum number for retrieval evaluation
             include_answer_generation: Whether answer evaluation is enabled
             answer_only: Whether in answer-only mode
-            
+
         Returns:
             Tuple of (sampled questions to evaluate, evaluation plan by type)
         """
@@ -574,31 +574,32 @@ class RAGEvaluator:
         for qa in qa_dataset:
             qtype = qa.get('question_type', 'unknown')
             questions_by_type[qtype].append(qa)
-        
+
         num_types = len(questions_by_type)
         if num_types == 0:
             return qa_dataset, {}
-        
-        # Determine the limiting factor - use max of both limits to ensure both evaluations get enough samples
+
+        # Determine the maximum limit to use for sampling
+        # Use the larger of the two limits to ensure we have enough questions for both evaluations
         limits = []
         if include_answer_generation and max_answer_evaluations is not None:
             limits.append(max_answer_evaluations)
         if not answer_only and max_retrieval_evaluations is not None:
             limits.append(max_retrieval_evaluations)
-        
+
         active_limit = max(limits) if limits else None
-        
+
         # If no limit, return original dataset
         if active_limit is None or active_limit >= len(qa_dataset):
             return qa_dataset, {}
-        
+
         # Calculate samples per type (stratified)
         samples_per_type = max(1, active_limit // num_types)
-        
+
         # Sample from each type
         sampled_questions = []
         eval_plan = {}
-        
+
         for qtype, questions in sorted(questions_by_type.items()):
             # Take up to samples_per_type from this type
             sample_size = min(samples_per_type, len(questions))
@@ -608,11 +609,11 @@ class RAGEvaluator:
                 'total_available': len(questions),
                 'to_evaluate': sample_size
             }
-        
+
         self.logger.info(f"Stratified sampling applied: {len(sampled_questions)} questions selected")
         for qtype, plan in eval_plan.items():
             self.logger.info(f"  {qtype}: {plan['to_evaluate']}/{plan['total_available']}")
-        
+
         return sampled_questions, eval_plan
 
     def evaluate_dataset(
@@ -667,6 +668,10 @@ class RAGEvaluator:
         answer_count = 0
         retrieval_count = 0
 
+        # Track counts per question type for stratified limits
+        answer_count_by_type = defaultdict(int)
+        retrieval_count_by_type = defaultdict(int)
+
         metrics_by_type = defaultdict(lambda: {
             'count': 0,
             'total_rr': 0.0,
@@ -685,10 +690,37 @@ class RAGEvaluator:
             'semantic_similarities': []
         })
 
+        # Calculate per-type limits for stratified sampling
+        questions_by_type = defaultdict(list)
+        for qa in questions_to_evaluate:
+            qtype = qa.get('question_type', 'unknown')
+            questions_by_type[qtype].append(qa)
+
+        num_types = len(questions_by_type)
+        answer_limit_per_type = None
+        retrieval_limit_per_type = None
+
+        if max_answer_evaluations is not None and include_answer_generation and num_types > 0:
+            answer_limit_per_type = max(1, max_answer_evaluations // num_types)
+        if max_retrieval_evaluations is not None and not answer_only and num_types > 0:
+            retrieval_limit_per_type = max(1, max_retrieval_evaluations // num_types)
+
         for i, qa_pair in enumerate(questions_to_evaluate, 1):
-            # Always evaluate the sampled questions (stratification already applied)
-            should_evaluate_answer = include_answer_generation
-            should_evaluate_retrieval = not answer_only
+            question_type = qa_pair.get('question_type', 'unknown')
+
+            # Apply per-evaluation-type and per-question-type limits (stratified)
+            should_evaluate_retrieval = (not answer_only) and (
+                retrieval_limit_per_type is None or
+                retrieval_count_by_type[question_type] < retrieval_limit_per_type
+            )
+            should_evaluate_answer = include_answer_generation and (
+                answer_limit_per_type is None or
+                answer_count_by_type[question_type] < answer_limit_per_type
+            )
+
+            # Skip if both evaluations are disabled for this question
+            if not should_evaluate_retrieval and not should_evaluate_answer:
+                continue
 
             # Determine the actual answer_only mode for this question
             effective_answer_only = answer_only or not should_evaluate_retrieval
@@ -696,19 +728,17 @@ class RAGEvaluator:
             result = self.evaluate_single_qa(qa_pair, should_evaluate_answer, effective_answer_only)
             individual_results.append(result)
 
-            # Aggregate metrics
-            question_type = qa_pair.get('question_type', 'unknown')
-
             # Track that we've seen this question type
             if question_type not in metrics_by_type:
                 metrics_by_type[question_type]  # Initialize with default values
-            
+
             # Only aggregate retrieval metrics if not in answer_only mode
             if not effective_answer_only and 'reciprocal_rank' in result:
                 rr = result.get('reciprocal_rank', 0.0)
                 total_rr += rr
                 metrics_by_type[question_type]['total_rr'] += rr
                 retrieval_count += 1
+                retrieval_count_by_type[question_type] += 1
 
                 # Aggregate precision, recall, hit rate
                 for k in [3, 5, 10]:
@@ -723,6 +753,7 @@ class RAGEvaluator:
                 total_rouge += result.get('rouge_l', 0.0)
                 total_semantic_sim += result.get('semantic_similarity', 0.0)
                 answer_count += 1
+                answer_count_by_type[question_type] += 1
 
                 metrics_by_type[question_type]['f1_scores'].append(result.get('f1_score', 0.0))
                 metrics_by_type[question_type]['bleu_scores'].append(result.get('bleu_score', 0.0))
@@ -769,10 +800,10 @@ class RAGEvaluator:
             # Count based on retrieval metrics (precision lists) or answer metrics (f1_scores)
             retrieval_count_for_type = len(metrics['precision_at_5']) if metrics['precision_at_5'] else 0
             answer_count_for_type = len(metrics['f1_scores']) if metrics['f1_scores'] else 0
-            
+
             # Use whichever count is available (or max if both)
             count = max(retrieval_count_for_type, answer_count_for_type)
-            
+
             if count > 0:
                 type_summary = {'count': count}
 
