@@ -14,15 +14,15 @@ Components:
 Quick Start:
 -----------
     from src.evaluation import QAGenerator, RAGEvaluator, QAStorage
-    
+
     # Generate Q&A dataset
-    generator = QAGenerator("./data/fixed_wiki_pages.json")
+    generator = QAGenerator("./data/corpus/fixed_wiki_pages.json")
     qa_dataset = generator.generate_dataset(total_questions=100)
-    
+
     # Evaluate RAG system
     evaluator = RAGEvaluator()
     results = evaluator.evaluate_dataset(qa_dataset)
-    
+
     # Save results
     storage = QAStorage()
     storage.save_evaluation_results(results)

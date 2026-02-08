@@ -71,7 +71,7 @@ EVALUATION_RETRIEVAL_TOP_K = 10
 EVALUATION_K_VALUES = [3, 5, 10]
 
 # Default corpus path for Q&A generation
-DEFAULT_CORPUS_PATH = "./data/fixed_wiki_pages.json"
+DEFAULT_CORPUS_PATH = "./data/corpus/fixed_wiki_pages.json"
 
 # ------------------- Q&A Validation Configuration -------------------
 # Required fields for Q&A pairs

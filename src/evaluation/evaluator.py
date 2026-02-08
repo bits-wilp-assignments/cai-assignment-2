@@ -579,12 +579,14 @@ class RAGEvaluator:
         if num_types == 0:
             return qa_dataset, {}
         
-        # Determine the limiting factor
-        active_limit = None
+        # Determine the limiting factor - use max of both limits to ensure both evaluations get enough samples
+        limits = []
         if include_answer_generation and max_answer_evaluations is not None:
-            active_limit = max_answer_evaluations
-        elif not answer_only and max_retrieval_evaluations is not None:
-            active_limit = max_retrieval_evaluations
+            limits.append(max_answer_evaluations)
+        if not answer_only and max_retrieval_evaluations is not None:
+            limits.append(max_retrieval_evaluations)
+        
+        active_limit = max(limits) if limits else None
         
         # If no limit, return original dataset
         if active_limit is None or active_limit >= len(qa_dataset):

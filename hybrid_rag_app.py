@@ -66,6 +66,14 @@ def run_indexing_task(refresh_fixed: bool, refresh_random: bool, limit: int = No
             limit=limit
         )
 
+        # Reload BM25 index after successful indexing
+        logger.info("Reloading BM25 index after indexing completion...")
+        from src.service.retrieval import hybrid_retriever
+        if hybrid_retriever.reload_bm25_index():
+            logger.info("BM25 index reloaded successfully - ready for queries")
+        else:
+            logger.warning("BM25 index reload failed - may need manual restart")
+
         indexing_status["status"] = "completed"
         indexing_status["completed_at"] = datetime.now().isoformat()
         indexing_status["message"] = "Indexing completed successfully"

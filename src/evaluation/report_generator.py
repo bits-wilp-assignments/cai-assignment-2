@@ -45,14 +45,16 @@ def generate_html_report(results: dict, dataset_file: str, output_path: str):
             margin: 0 auto;
         }}
         .header {{
-            border-bottom: 3px solid #2c3e50;
-            padding-bottom: 20px;
+            background: linear-gradient(135deg, #0078d4 0%, #00a2ed 100%);
+            border-radius: 8px;
+            padding: 30px;
             margin-bottom: 40px;
+            box-shadow: 0 4px 6px rgba(0, 120, 212, 0.15);
         }}
         .header h1 {{
             font-size: 2em;
             font-weight: 600;
-            color: #2c3e50;
+            color: #ffffff;
             margin-bottom: 15px;
         }}
         .header-info {{
@@ -63,10 +65,10 @@ def generate_html_report(results: dict, dataset_file: str, output_path: str):
         }}
         .header-info-item {{
             font-size: 0.95em;
-            color: #555;
+            color: #e6f4ff;
         }}
         .header-info-item strong {{
-            color: #2c3e50;
+            color: #ffffff;
             font-weight: 500;
         }}
         .section {{
@@ -199,19 +201,23 @@ def generate_html_report(results: dict, dataset_file: str, output_path: str):
     if not answer_only_mode and summary.get('overall_mrr') is not None:
         mrr_value = summary['overall_mrr']
         mrr_class = 'good' if mrr_value >= 0.7 else 'medium' if mrr_value >= 0.5 else 'poor'
+        retrieval_exec_count = summary.get('questions_evaluated_retrieval', 0)
         html_content += f"""
             <div class="metrics-grid">
                 <div class="metric-card">
                     <div class="label">Mean Reciprocal Rank</div>
                     <div class="value {mrr_class}">{mrr_value:.4f}</div>
+                    <div style="font-size: 0.8em; color: #7f8c8d; margin-top: 8px;">({retrieval_exec_count} executions)</div>
                 </div>
             </div>
 """
 
     # Answer Quality Metrics
     if summary.get('answer_evaluation_enabled'):
-        html_content += """
+        answer_exec_count = summary.get('questions_evaluated_answer', 0)
+        html_content += f"""
             <h3>Answer Quality Metrics</h3>
+            <div style="font-size: 0.9em; color: #555; margin-bottom: 10px;"><strong>Executions:</strong> {answer_exec_count} questions evaluated</div>
             <div class="metrics-grid">
 """
         answer_metrics = [
@@ -238,8 +244,10 @@ def generate_html_report(results: dict, dataset_file: str, output_path: str):
     # Retrieval Metrics Table
     if 'overall_metrics' in summary and not answer_only_mode:
         overall = summary['overall_metrics']
-        html_content += """
+        retrieval_exec_count = summary.get('questions_evaluated_retrieval', 0)
+        html_content += f"""
             <h3>Retrieval Performance</h3>
+            <div style="font-size: 0.9em; color: #555; margin-bottom: 10px;"><strong>Executions:</strong> {retrieval_exec_count} questions evaluated</div>
             <table>
                 <tr>
                     <th>Metric</th>

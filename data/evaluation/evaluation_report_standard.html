@@ -22,16 +22,14 @@
             margin: 0 auto;
         }
         .header {
-            background: linear-gradient(135deg, #0078d4 0%, #00a2ed 100%);
-            border-radius: 8px;
-            padding: 30px;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 20px;
             margin-bottom: 40px;
-            box-shadow: 0 4px 6px rgba(0, 120, 212, 0.15);
         }
         .header h1 {
             font-size: 2em;
             font-weight: 600;
-            color: #ffffff;
+            color: #2c3e50;
             margin-bottom: 15px;
         }
         .header-info {
@@ -42,10 +40,10 @@
         }
         .header-info-item {
             font-size: 0.95em;
-            color: #e6f4ff;
+            color: #555;
         }
         .header-info-item strong {
-            color: #ffffff;
+            color: #2c3e50;
             font-weight: 500;
         }
         .section {
@@ -161,7 +159,7 @@
         <div class="header">
             <h1>RAG System Evaluation Report</h1>
             <div class="header-info">
-                <div class="header-info-item"><strong>Generated:</strong> 2026-02-08 18:30:47</div>
+                <div class="header-info-item"><strong>Generated:</strong> 2026-02-08 18:05:26</div>
                 <div class="header-info-item"><strong>Dataset:</strong> qa_dataset.json</div>
                 <div class="header-info-item"><strong>Total Questions:</strong> 100</div>
                 <div class="header-info-item"><strong>Mode:</strong> Full Evaluation</div>
@@ -174,39 +172,36 @@
             <div class="metrics-grid">
                 <div class="metric-card">
                     <div class="label">Mean Reciprocal Rank</div>
-                    <div class="value good">0.9010</div>
-                    <div style="font-size: 0.8em; color: #7f8c8d; margin-top: 8px;">(32 executions)</div>
+                    <div class="value good">0.9250</div>
                 </div>
             </div>
 
             <h3>Answer Quality Metrics</h3>
-            <div style="font-size: 0.9em; color: #555; margin-bottom: 10px;"><strong>Executions:</strong> 32 questions evaluated</div>
             <div class="metrics-grid">
 
                 <div class="metric-card">
                     <div class="label">F1 Score</div>
-                    <div class="value poor">0.3246</div>
+                    <div class="value poor">0.3182</div>
                 </div>
 
                 <div class="metric-card">
                     <div class="label">BLEU Score</div>
-                    <div class="value poor">0.2340</div>
+                    <div class="value poor">0.2088</div>
                 </div>
 
                 <div class="metric-card">
                     <div class="label">ROUGE-L</div>
-                    <div class="value poor">0.2246</div>
+                    <div class="value poor">0.2301</div>
                 </div>
 
                 <div class="metric-card">
                     <div class="label">Semantic Similarity</div>
-                    <div class="value good">0.7044</div>
+                    <div class="value medium">0.6995</div>
                 </div>
 
             </div>
 
             <h3>Retrieval Performance</h3>
-            <div style="font-size: 0.9em; color: #555; margin-bottom: 10px;"><strong>Executions:</strong> 32 questions evaluated</div>
             <table>
                 <tr>
                     <th>Metric</th>
@@ -216,15 +211,15 @@
                 </tr>
                 <tr>
                     <td><strong>Precision</strong></td>
-                    <td class="good">0.7708</td>                    <td class="medium">0.6812</td>                    <td class="medium">0.5219</td>
+                    <td class="good">0.8000</td>                    <td class="good">0.7100</td>                    <td class="medium">0.5550</td>
                 </tr>
                 <tr>
                     <td><strong>Recall</strong></td>
-                    <td class="good">0.9375</td>                    <td class="good">0.9375</td>                    <td class="good">0.9375</td>
+                    <td class="good">0.9500</td>                    <td class="good">0.9500</td>                    <td class="good">0.9500</td>
                 </tr>
                 <tr>
                     <td><strong>Hit Rate</strong></td>
-                    <td class="good">0.9375</td>                    <td class="good">0.9375</td>                    <td class="good">0.9375</td>
+                    <td class="good">0.9500</td>                    <td class="good">0.9500</td>                    <td class="good">0.9500</td>
                 </tr>
             </table>
 
@@ -233,7 +228,7 @@
         <div class="section">
             <h2>Performance by Question Type</h2>
 
-            <h3>COMPARATIVE (8 questions)</h3>
+            <h3>COMPARATIVE (5 questions)</h3>
             <div class="metrics-grid">
 
                 <div class="metric-card">
@@ -243,112 +238,112 @@
 
                 <div class="metric-card">
                     <div class="label">F1</div>
-                    <div class="value poor">0.3377</div>
+                    <div class="value poor">0.2664</div>
                 </div>
 
                 <div class="metric-card">
                     <div class="label">BLEU</div>
-                    <div class="value poor">0.2831</div>
+                    <div class="value poor">0.2086</div>
                 </div>
 
                 <div class="metric-card">
                     <div class="label">ROUGE-L</div>
+                    <div class="value poor">0.1908</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="label">Semantic</div>
+                    <div class="value medium">0.6162</div>
+                </div>
+
+            </div>
+
+            <h3>FACTUAL (5 questions)</h3>
+            <div class="metrics-grid">
+
+                <div class="metric-card">
+                    <div class="label">MRR</div>
+                    <div class="value good">0.8000</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="label">F1</div>
                     <div class="value poor">0.2354</div>
                 </div>
 
                 <div class="metric-card">
-                    <div class="label">Semantic</div>
-                    <div class="value good">0.7004</div>
-                </div>
-
-            </div>
-
-            <h3>FACTUAL (8 questions)</h3>
-            <div class="metrics-grid">
-
-                <div class="metric-card">
-                    <div class="label">MRR</div>
-                    <div class="value good">0.8750</div>
-                </div>
-
-                <div class="metric-card">
-                    <div class="label">F1</div>
-                    <div class="value poor">0.2645</div>
-                </div>
-
-                <div class="metric-card">
                     <div class="label">BLEU</div>
-                    <div class="value poor">0.1473</div>
+                    <div class="value poor">0.1116</div>
                 </div>
 
                 <div class="metric-card">
                     <div class="label">ROUGE-L</div>
-                    <div class="value poor">0.2088</div>
+                    <div class="value poor">0.1964</div>
                 </div>
 
                 <div class="metric-card">
                     <div class="label">Semantic</div>
-                    <div class="value medium">0.6562</div>
+                    <div class="value medium">0.6245</div>
                 </div>
 
             </div>
 
-            <h3>INFERENTIAL (8 questions)</h3>
+            <h3>INFERENTIAL (5 questions)</h3>
             <div class="metrics-grid">
 
                 <div class="metric-card">
                     <div class="label">MRR</div>
-                    <div class="value good">0.8125</div>
+                    <div class="value good">0.9000</div>
                 </div>
 
                 <div class="metric-card">
                     <div class="label">F1</div>
-                    <div class="value poor">0.3343</div>
+                    <div class="value poor">0.3643</div>
                 </div>
 
                 <div class="metric-card">
                     <div class="label">BLEU</div>
-                    <div class="value poor">0.2577</div>
+                    <div class="value poor">0.2412</div>
                 </div>
 
                 <div class="metric-card">
                     <div class="label">ROUGE-L</div>
-                    <div class="value poor">0.2246</div>
+                    <div class="value poor">0.2670</div>
                 </div>
 
                 <div class="metric-card">
                     <div class="label">Semantic</div>
-                    <div class="value medium">0.6894</div>
+                    <div class="value good">0.7174</div>
                 </div>
 
             </div>
 
-            <h3>MULTI-HOP (8 questions)</h3>
+            <h3>MULTI-HOP (5 questions)</h3>
             <div class="metrics-grid">
 
                 <div class="metric-card">
                     <div class="label">MRR</div>
-                    <div class="value good">0.9167</div>
+                    <div class="value good">1.0000</div>
                 </div>
 
                 <div class="metric-card">
                     <div class="label">F1</div>
-                    <div class="value poor">0.3618</div>
+                    <div class="value poor">0.4067</div>
                 </div>
 
                 <div class="metric-card">
                     <div class="label">BLEU</div>
-                    <div class="value poor">0.2478</div>
+                    <div class="value poor">0.2738</div>
                 </div>
 
                 <div class="metric-card">
                     <div class="label">ROUGE-L</div>
-                    <div class="value poor">0.2297</div>
+                    <div class="value poor">0.2663</div>
                 </div>
 
                 <div class="metric-card">
                     <div class="label">Semantic</div>
-                    <div class="value good">0.7717</div>
+                    <div class="value good">0.8400</div>
                 </div>
 
             </div>
