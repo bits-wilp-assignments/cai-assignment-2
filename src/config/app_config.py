@@ -1,7 +1,5 @@
 import logging
 
-from chromadb.utils.embedding_functions import instructor_embedding_function
-
 # -------------------- Logging configuration -------------------
 DEFAULT_LOG_LEVEL = logging.DEBUG
 DEFAULT_LOG_FORMAT = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'

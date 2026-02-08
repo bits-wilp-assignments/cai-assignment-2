@@ -12,6 +12,7 @@ from datetime import datetime
 from src.config import app_config
 import json
 from pathlib import Path
+import src.config.app_config as app_config
 
 app = FastAPI(title="Hybrid RAG System API")
 
@@ -150,7 +151,15 @@ async def get_all_config():
             value = getattr(app_config, key)
             # Exclude imported modules and functions
             if not callable(value) and not key == "logging":
-                config_dict[key] = value
+                # Convert to JSON-serializable types
+                try:
+                    # Try to convert to string for complex objects
+                    if isinstance(value, (str, int, float, bool, list, dict, type(None))):
+                        config_dict[key] = value
+                    else:
+                        config_dict[key] = str(value)
+                except Exception as e:
+                    config_dict[key] = f"<non-serializable: {type(value).__name__}>"
 
     return {
         "status": "success",
