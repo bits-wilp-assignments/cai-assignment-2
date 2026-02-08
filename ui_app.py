@@ -1,8 +1,6 @@
 import streamlit as st
 import requests
-import json
 from typing import Generator
-import time
 
 # Import page modules from ui_components package
 from streamlit_ui.ui_wiki_page import wiki_pages_page

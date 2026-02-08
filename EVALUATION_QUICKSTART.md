@@ -34,16 +34,6 @@ python run_evaluation.py full \
     --max-eval-questions 10
 ```
 
-### List All Datasets
-```bash
-python run_evaluation.py list --type datasets
-```
-
-### List All Results
-```bash
-python run_evaluation.py list --type results
-```
-
 ## 📊 Interpreting Results
 
 ### MRR (Mean Reciprocal Rank)
@@ -177,8 +167,8 @@ python run_evaluation.py ...
 
 **Issue**: "Dataset file not found"
 ```bash
-# List available datasets first
-python run_evaluation.py list --type datasets
+# Check the data/evaluation/ directory for available datasets
+ls data/evaluation/qa_dataset_*.json
 # Use exact filename
 python run_evaluation.py evaluate --dataset-file qa_dataset_20260208_143022.json
 ```

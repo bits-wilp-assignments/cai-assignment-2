@@ -1,6 +1,6 @@
 from src.util.logging_util import get_logger
 from src.config.app_config import LLM_MODEL_TASK, LLM_MODEL, LLM_CONFIG, MODEL_LOCAL_FILES_ONLY
-from src.core.prompt import format_context, get_rag_prompt, format_context
+from src.core.prompt import format_context, get_rag_prompt
 from src.core.llm import LLMFactory
 from .retrieval import retrieve_contexts
 

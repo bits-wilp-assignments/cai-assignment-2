@@ -8,6 +8,12 @@ from typing import List, Dict, Any
 from src.core.llm import LLMFactory
 from src.util.logging_util import get_logger
 from src.config.app_config import LLM_MODEL
+from src.config.evaluation_config import (
+    QA_GENERATION_CONFIG,
+    QA_PLACEHOLDER_PATTERNS,
+    MIN_QUESTION_LENGTH,
+    MIN_ANSWER_LENGTH
+)
 
 
 class QAGenerator:
@@ -68,11 +74,7 @@ class QAGenerator:
         self.llm = llm_factory.get_instance(
             model_name=self.model_name,
             task="text-generation",
-            max_new_tokens=300,
-            temperature=0.7,
-            top_p=0.9,
-            do_sample=True,
-            is_streaming=False
+            **QA_GENERATION_CONFIG
         )
         self.logger.info(f"QAGenerator initialized with {len(self.corpus)} documents")
 
@@ -198,6 +200,37 @@ Now generate the question and answer:"""
             return {'question': '', 'answer': '', 'difficulty': 'medium'}
 
 
+    def _is_valid_qa(self, question: str, answer: str) -> bool:
+        """
+        Validate that question and answer are not placeholders.
+
+        Args:
+            question: Generated question text
+            answer: Generated answer text
+
+        Returns:
+            True if valid, False if contains placeholders or too short
+        """
+        if not question or not answer:
+            return False
+
+        # Check minimum length
+        if len(question) < MIN_QUESTION_LENGTH or len(answer) < MIN_ANSWER_LENGTH:
+            self.logger.warning(f"Q&A too short: Q={len(question)}, A={len(answer)}")
+            return False
+
+        # Check for placeholder patterns (case-insensitive)
+        question_lower = question.lower()
+        answer_lower = answer.lower()
+
+        for pattern in QA_PLACEHOLDER_PATTERNS:
+            if pattern.lower() in question_lower or pattern.lower() in answer_lower:
+                self.logger.warning(f"Placeholder detected: '{pattern}' in Q&A")
+                return False
+
+        return True
+
+
     def generate_qa_pair(self, doc: Dict, question_type: str) -> Dict[str, Any]:
         """
         Generate a single Q&A pair from a document.
@@ -222,6 +255,11 @@ Now generate the question and answer:"""
             # Validate that we got a question and answer
             if not parsed['question'] or not parsed['answer']:
                 self.logger.warning(f"Failed to generate valid Q&A for {doc.get('page_title')}")
+                return None
+
+            # Validate not placeholders
+            if not self._is_valid_qa(parsed['question'], parsed['answer']):
+                self.logger.warning(f"Generated Q&A contains placeholders for {doc.get('page_title')}")
                 return None
 
             # Create Q&A pair with metadata
@@ -266,6 +304,26 @@ Now generate the question and answer:"""
             # Equal distribution across question types
             per_type = total_questions // len(self.QUESTION_TYPES)
             distribution = {qtype: per_type for qtype in self.QUESTION_TYPES.keys()}
+        else:
+            # Scale distribution to match total_questions
+            dist_total = sum(distribution.values())
+            if dist_total != total_questions:
+                # Calculate scaling factor and distribute questions proportionally
+                scaled_dist = {}
+                remaining = total_questions
+                types = list(distribution.keys())
+
+                for i, qtype in enumerate(types):
+                    if i == len(types) - 1:
+                        # Last type gets remaining questions
+                        scaled_dist[qtype] = remaining
+                    else:
+                        # Scale proportionally and round
+                        scaled = int(round(distribution[qtype] * total_questions / dist_total))
+                        scaled_dist[qtype] = scaled
+                        remaining -= scaled
+
+                distribution = scaled_dist
 
         self.logger.info(f"Starting Q&A generation: {total_questions} total")
         self.logger.info(f"Distribution: {distribution}")
@@ -276,21 +334,35 @@ Now generate the question and answer:"""
         for question_type, count in distribution.items():
             self.logger.info(f"Generating {count} {question_type} questions...")
 
-            # Sample documents for this question type
-            sampled_docs = self._sample_documents(count, strategy="diverse")
+            generated = 0
+            max_attempts = count * 3  # Allow up to 3x attempts for retries
+            attempts = 0
 
-            for doc in sampled_docs:
-                qa_pair = self.generate_qa_pair(doc, question_type)
+            while generated < count and attempts < max_attempts:
+                # Sample documents (with extra buffer for retries)
+                sample_size = min(count - generated + 5, len(self.corpus))
+                sampled_docs = self._sample_documents(sample_size, strategy="diverse")
 
-                if qa_pair:
-                    qa_pair['question_id'] = f"Q{question_id:03d}"
-                    qa_dataset.append(qa_pair)
-                    question_id += 1
+                for doc in sampled_docs:
+                    if generated >= count:
+                        break
 
-                    if len(qa_dataset) % 10 == 0:
-                        self.logger.info(f"Generated {len(qa_dataset)}/{total_questions} Q&A pairs")
+                    attempts += 1
+                    qa_pair = self.generate_qa_pair(doc, question_type)
 
-        self.logger.info(f"Q&A generation complete: {len(qa_dataset)} pairs generated")
+                    if qa_pair:
+                        qa_pair['question_id'] = f"Q{question_id:03d}"
+                        qa_dataset.append(qa_pair)
+                        question_id += 1
+                        generated += 1
+
+                        if len(qa_dataset) % 10 == 0:
+                            self.logger.info(f"Generated {len(qa_dataset)}/{total_questions} Q&A pairs")
+
+            if generated < count:
+                self.logger.warning(f"Only generated {generated}/{count} {question_type} questions after {attempts} attempts")
+
+        self.logger.info(f"Q&A generation complete: {len(qa_dataset)} pairs generated (target: {total_questions})")
         return qa_dataset
 
 
@@ -341,7 +413,8 @@ Now generate the question and answer:"""
                 response = self.llm.invoke(prompt)
                 parsed = self._parse_llm_response(response)
 
-                if parsed['question'] and parsed['answer']:
+                # Validate Q&A is not placeholder
+                if parsed['question'] and parsed['answer'] and self._is_valid_qa(parsed['question'], parsed['answer']):
                     qa_pair = {
                         'question_id': f"Q{question_id_start + i:03d}",
                         'question': parsed['question'],

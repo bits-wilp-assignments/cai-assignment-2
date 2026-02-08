@@ -6,13 +6,12 @@ from src.service.indexing import triggr_indexing
 from src.service.inference import rag_inference
 from src.config.app_config import FIXED_WIKI_PAGE_FILE, RANDOM_WIKI_PAGE_FILE
 from src.util.logging_util import get_logger
-from typing import Optional, Dict, Any, Union
-import asyncio
-from datetime import datetime
-from src.config import app_config
-import json
-from pathlib import Path
 import src.config.app_config as app_config
+from datetime import datetime
+from typing import Optional
+from pathlib import Path
+import asyncio
+import json
 
 app = FastAPI(title="Hybrid RAG System API")
 

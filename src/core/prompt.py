@@ -1,4 +1,3 @@
-from math import log
 from langchain_core.prompts import PromptTemplate
 from src.util.logging_util import get_logger
 

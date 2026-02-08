@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "total_questions": 100,
+    "questions_evaluated": 8,
+    "questions_evaluated_retrieval": 0,
+    "questions_evaluated_answer": 8,
+    "overall_mrr": null,
+    "overall_f1": 0.38789720241335696,
+    "overall_bleu": 0.281603662836477,
+    "overall_rouge_l": 0.2529144884684793,
+    "overall_semantic_similarity": 0.7651488823518664,
+    "answer_evaluation_enabled": true,
+    "answer_only_mode": true,
+    "metrics_by_question_type": {
+      "comparative": {
+        "count": 2,
+        "f1_score": 0.4407823252444767,
+        "bleu_score": 0.35507889865775427,
+        "rouge_l": 0.27182180369431364,
+        "semantic_similarity": 0.8460736307487919
+      },
+      "factual": {
+        "count": 2,
+        "f1_score": 0.2122872872872873,
+        "bleu_score": 0.0873383189571757,
+        "rouge_l": 0.16674174174174175,
+        "semantic_similarity": 0.7306169093589452
+      },
+      "inferential": {
+        "count": 2,
+        "f1_score": 0.3959033613445378,
+        "bleu_score": 0.24873047218815197,
+        "rouge_l": 0.27605042016806725,
+        "semantic_similarity": 0.6629585792528314
+      },
+      "multi-hop": {
+        "count": 2,
+        "f1_score": 0.5026158357771261,
+        "bleu_score": 0.43526696154282596,
+        "rouge_l": 0.29704398826979467,
+        "semantic_similarity": 0.8209464100468976
+      }
+    }
+  },
+  "individual_results": [
+    {
+      "question_id": "Q031",
+      "question": "What is the difference between the concept of a \"Cradle of Civilization\" and the concept of a \"Birthplace of Civilization\"?",
+      "question_type": "comparative",
+      "ground_truth_urls": [
+        "https://en.wikipedia.org/wiki/Cradle_of_civilization"
+      ],
+      "generated_answer": "The concept of a \"Cradle of Civilization\" refers to a location and culture where civilization was developed independently of other civilizations in other locations. It is a term used in the study of human prehistory and the development of complex, sedentary societies. On the other hand, the concept of a \"Birthplace of Civilization\" is a more general term that can refer to the origin-point of a particular cultural group or as the basis for a national mysticism or the origin myth of a nation.\n",
+      "ground_truth_answer": "The \"Cradle of Civilization\" refers to a specific geographic area where the earliest known human civilizations emerged and developed, such as Mesopotamia. It typically refers to a particular region, such as the Fertile Crescent, where the development of agriculture, writing, and complex social structures occurred around 5000 BCE",
+      "f1_score": 0.36363636363636365,
+      "bleu_score": 0.2857142857142857,
+      "rouge_l": 0.2727272727272727,
+      "semantic_similarity": 0.8690316487512798
+    },
+    {
+      "question_id": "Q032",
+      "question": "How does the rank-size distribution relate to the concept of power laws in urban geography?",
+      "question_type": "comparative",
+      "ground_truth_urls": [
+        "https://en.wikipedia.org/wiki/Rank–size_distribution"
+      ],
+      "generated_answer": "The rank-size distribution in urban geography is closely related to the concept of power laws. This distribution describes the regularity in the sizes of cities, businesses, particles, and other phenomena, where the sizes of these entities follow a power law distribution. This means that as the rank (or size) increases, the population size decreases in a predictable manner. This relationship is often observed in Zipf's law, the Yule distribution, and the Pareto distribution, which are all examples of power laws. The rank-size distribution is a key concept in understanding the statistical regularity in urban geography and other fields where phenomena vary significantly in scales. [Source 1](https://en.wikipedia.org/wiki/Rank–size_distribution).\n",
+      "ground_truth_answer": "The rank-size distribution is a statistical relationship that describes how the size of cities or regions is distributed across different ranks or sizes. In urban geography, this distribution often follows a power law, where larger cities or regions are more common than smaller ones. Power laws are observed in various natural and social phenomena, including the distribution of cities in a country, the size of earthquakes, and the frequency of large financial transactions. This relationship suggests that there is a tendency for cities to grow larger as they become more developed or have better access to resources, which aligns with the principle of increasing returns to scale in urban economics. The rank-size distribution, therefore, provides a theoretical framework for understanding and predicting the distribution of urban areas, and it is a key concept in urban geography that helps explain the uneven spatial distribution of cities.",
+      "f1_score": 0.5179282868525897,
+      "bleu_score": 0.42444351160122284,
+      "rouge_l": 0.2709163346613546,
+      "semantic_similarity": 0.8231156127463042
+    },
+    {
+      "question_id": "Q001",
+      "question": "What are the seven natural wonders of Romania?",
+      "question_type": "factual",
+      "ground_truth_urls": [
+        "https://en.wikipedia.org/wiki/Seven_Natural_Wonders_of_Romania"
+      ],
+      "generated_answer": "The Seven Natural Wonders of Romania are the seven natural wonders of Romania, which were chosen in the Seven Natural Wonders of Romania contest held in July, 2008. The voting consisted of two parts: experts in Romania voted for their seven best sites, and internet users voted for their seven favorite sites on the official website. The internet voting on the 16 possible candidates was opened on July 1, 2008 at the program's web-site. A total of around 60,000 internet users voted in the campaign. The voting was closed on July 24, 2008 and the results were officially announced two days later on July 26. The whole campaign was initiated in 2008 by the Evenimentul Zilei newspaper in an effort to teach Romanians about the beauty of the natural surroundings of their country.\n",
+      "ground_truth_answer": "The seven natural wonders of Romania are the Danube Bend, the Carpathian Mountains, the Black Sea Coast, the Transylvanian Saddle, the Maramures Plain, the Danube Delta, and the Siret Valley. These natural wonders are located in various regions of Romania and showcase the country's diverse landscapes, from its rivers to its mountains.",
+      "f1_score": 0.24864864864864863,
+      "bleu_score": 0.17293233082706766,
+      "rouge_l": 0.1945945945945946,
+      "semantic_similarity": 0.7434430324809302
+    },
+    {
+      "question_id": "Q002",
+      "question": "What was Jack B. Newton's occupation before he became a renowned jazz musician and educator?",
+      "question_type": "factual",
+      "ground_truth_urls": [
+        "https://en.wikipedia.org/wiki/Jack_B._Newton"
+      ],
+      "generated_answer": "Jack B. Newton's occupation before he became a renowned jazz musician and educator was a store manager. He worked for Sears Canada and Marks & Spencer in Winnipeg.\n",
+      "ground_truth_answer": "Before he became a renowned jazz musician and educator, Jack B. Newton was a commercial pilot. This occupation allowed him to travel extensively, which was crucial for his early development as a musician and his later work as a teacher. Newton's experience as a pilot included flying for the United States Air Force and other commercial airlines, which provided him with the opportunity to perform in various settings and meet a diverse group of people, contributing to his unique musical style and his ability to connect with students. His background in aviation also influenced his teaching methods, as he emphasized the importance of understanding music from a technical standpoint, a skill he acquired during his pilot training. Throughout his career, Newton's pilot experience served as a foundation for his music, as well as for his pedagogical approach. He was known for his ability to inspire students and his innovative teaching methods, which were rooted in his deep understanding of music and his firsthand experience as a performer and educator. [1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19] [2",
+      "f1_score": 0.17592592592592596,
+      "bleu_score": 0.0017443070872837337,
+      "rouge_l": 0.1388888888888889,
+      "semantic_similarity": 0.7177907862369601
+    },
+    {
+      "question_id": "Q056",
+      "question": "What is the significance of the Yajnavalkya 95 Years Cycle in Hindu mythology and philosophy?",
+      "question_type": "inferential",
+      "ground_truth_urls": [
+        "https://en.wikipedia.org/wiki/Yajnavalkya_95_Years_Cycle"
+      ],
+      "generated_answer": "The Yajnavalkya 95 Years Cycle is a method of harmonizing the lunar and solar calendars, proposed by the ancient Indian sage Yajnavalkya. It was described as the greatest Brahmajnyani by all the sages at the philosophical function organized by king Janaka. This cycle of reconciliation is also known as Yajnavalkya Cycle. Yajnavalkya was an Indian astronomer who studied about the motion of the Sun and mentioned these theories in his work Shatapatha Brahmana. He invented a method of reconciling the lunar calendar and the solar calendar. He described the 95-year cycle to synchronize the motions of the sun and the moon. [Source 1](https://en.wikipedia.org/wiki/Yajnavalkya_95_Years_Cycle).\n",
+      "ground_truth_answer": "The Yajnavalkya 95 Years Cycle is a significant concept in Hindu mythology and philosophy that symbolizes the cycle of birth, death, and rebirth, also known as samsara. It represents the continuous struggle of the soul to achieve liberation from the cycle of rebirth through various actions and spiritual practices. The cycle is often associated with the cycle of karma, where actions (karma) lead to consequences, and the soul's journey towards enlightenment or moksha. This cycle is considered a fundamental aspect of Hindu teachings and is closely linked to the concept of dharma and karma. The Yajnavalkya 95 Years Cycle emphasizes the importance of moral conduct, spiritual practice, and devotion to achieve liberation and transcend the cycle of rebirth. The cycle serves as a metaphorical representation of the eternal nature of existence and the continuous process of transformation and evolution. It also highlights the interconnectedness of all living beings and the need for ethical living to achieve spiritual progress. Therefore, understanding the Yajnavalkya 95 Years Cycle is crucial for comprehending the broader philosophical and spiritual teachings of Hinduism.",
+      "f1_score": 0.32857142857142857,
+      "bleu_score": 0.2177224497412756,
+      "rouge_l": 0.22857142857142856,
+      "semantic_similarity": 0.5773975362699533
+    },
+    {
+      "question_id": "Q057",
+      "question": "Why does the coordinate system used in astronomy need to be consistent with the International Astronomical Union (IAU) guidelines?",
+      "question_type": "inferential",
+      "ground_truth_urls": [
+        "https://en.wikipedia.org/wiki/Planetary_coordinate_system"
+      ],
+      "generated_answer": "The coordinate system used in astronomy needs to be consistent with the International Astronomical Union (IAU) guidelines because it ensures that astronomical observations and computations are standardized and reliable. The IAU's recommendations, such as the IAU (1976) System of Astronomical Constants, provide a set of constants and expressions that are widely accepted and used in the field. By adhering to these guidelines, astronomers can ensure that their data and calculations are consistent and comparable across different studies and regions. This consistency is crucial for the accuracy and reliability of astronomical research and applications. [Source 1](https://en.wikipedia.org/wiki/IAU_(1976)_System_of_Astronomical_Constants).\n",
+      "ground_truth_answer": "The coordinate system used in astronomy needs to be consistent with the International Astronomical Union (IAU) guidelines because it ensures standardization and clarity in the representation of celestial objects and their positions in the sky. The IAU has established guidelines for various aspects of celestial coordinate systems, such as the choice of origin, axes, and reference directions, which are crucial for accurate and reproducible astronomical observations and measurements. Following these guidelines helps in avoiding confusion and ensures that astronomers from different parts of the world can communicate effectively and consistently about celestial positions and movements. Without these guidelines, the accuracy and reliability of astronomical data could be compromised, leading to errors in scientific studies and potentially affecting the development of space missions and other space-related endeavors. Additionally, the use of consistent coordinate systems is essential for the proper interpretation of astronomical data, which is vital for understanding the structure and dynamics of the universe. Therefore, adhering to IAU guidelines is not just a matter of convention but a requirement for the scientific integrity and advancement of astronomy.",
+      "f1_score": 0.463235294117647,
+      "bleu_score": 0.27973849463502837,
+      "rouge_l": 0.3235294117647059,
+      "semantic_similarity": 0.7485196222357094
+    },
+    {
+      "question_id": "Q081",
+      "question": "How do ancient text corpora contribute to our understanding of the historical development of languages?",
+      "question_type": "multi-hop",
+      "ground_truth_urls": [
+        "https://en.wikipedia.org/wiki/Ancient_text_corpora"
+      ],
+      "generated_answer": "Ancient text corpora contribute to our understanding of the historical development of languages by providing a comprehensive collection of texts from the period of ancient history, up to 300 AD. These corpora offer valuable insights into the evolution of language and culture over time, as they include both transmitted and original texts. Through the analysis of these texts, scholars can study the development of vocabulary, grammar, and semantics, and gain a deeper understanding of how languages have changed and developed over centuries. Additionally, ancient text corpora provide a window into the cultural and social contexts in which languages were used, allowing researchers to explore the relationship between language and society. [Source 1](https://en.wikipedia.org/wiki/Ancient_text_corpora), [Source 2](https://en.wikipedia.org/wiki/Ancient_text_corpora).\n",
+      "ground_truth_answer": "Ancient text corpora contribute to our understanding of the historical development of languages by providing a large and diverse collection of written texts from various periods and regions. These corpora allow linguists to analyze and compare the linguistic features of different languages and historical stages, which can shed light on the evolution of language over time. For example, by studying ancient texts, linguists can identify patterns of vocabulary, grammar, and phonology that may have changed or remained constant over long periods of time. Additionally, ancient texts can provide insights into the social, cultural, and political contexts in which languages were used, which can further enhance our understanding of the historical development of languages. Overall, the analysis of ancient text corpora offers a valuable resource for linguists seeking to study and understand the evolution of human language.",
+      "f1_score": 0.6239999999999999,
+      "bleu_score": 0.564129142379283,
+      "rouge_l": 0.42399999999999993,
+      "semantic_similarity": 0.9328079277455211
+    },
+    {
+      "question_id": "Q082",
+      "question": "What is the relationship between geographical contiguity and transportation networks, and how does it affect trade routes?",
+      "question_type": "multi-hop",
+      "ground_truth_urls": [
+        "https://en.wikipedia.org/wiki/Geographic_contiguity"
+      ],
+      "generated_answer": "Geographic contiguity is a characteristic in geography where political or geographical land divisions are not interrupted by other land or water. This concept is important in various fields, including biology, animal ranges, human transportation studies, and electoral geography. In the context of transportation networks, geographic contiguity affects trade routes by determining the ease of movement and connectivity between different regions. For example, in the United States, the \"48 contiguous states\" excludes Hawaii and Alaska, which do not share borders with other U.S. states. This non-contiguity can lead to challenges in transportation and trade, as goods and people may need to travel through other states or countries to reach their destination. The same concept of geographic continuity is also relevant in the context of real property and mineral rights law, where touching of two tracts at a common corner is generally considered contiguous.\n",
+      "ground_truth_answer": "Geographical contiguity refers to the proximity of geographical features, such as countries or regions, that facilitates easier movement of goods and people. This proximity allows for the development of transportation networks, such as roads, railways, and ports, which in turn facilitate trade routes. By providing a direct path for goods to move from one location to another, geographical contiguity can greatly enhance trade opportunities and economic growth. However, it is important to note that geographical contiguity alone is not sufficient for the development of trade routes, as other factors such as political stability, infrastructure, and cultural exchange also play a significant role. Additionally, the impact of geographical contiguity on trade routes can vary depending on the specific geographic features and transportation infrastructure of the region. In some cases, geographical contiguity may facilitate easier trade routes, while in other cases, it may hinder trade opportunities due to the complexity of the transportation network or the challenges posed by political or economic factors. Overall, geographical contiguity is a crucial factor in the development of transportation networks and trade routes, and understanding its impact is essential for policymakers and businesses seeking to optimize their operations and maximize their trade opportunities. Difficulty: medium",
+      "f1_score": 0.38123167155425225,
+      "bleu_score": 0.3064047807063689,
+      "rouge_l": 0.17008797653958943,
+      "semantic_similarity": 0.7090848923482741
+    }
+  ]
+}

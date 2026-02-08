@@ -3,14 +3,18 @@ RAG Evaluation Runner
 Main script to generate Q&A pairs and evaluate RAG system
 """
 import argparse
-import json
-from datetime import datetime
+import os
 from src.evaluation.qa_generator import QAGenerator
 from src.evaluation.evaluator import RAGEvaluator
 from src.evaluation.qa_storage import QAStorage
 from src.evaluation.report_generator import generate_html_report
 from src.util.logging_util import get_logger
 from src.config.app_config import LLM_MODEL
+from src.config.evaluation_config import (
+    DEFAULT_CORPUS_PATH,
+    DEFAULT_TOTAL_QUESTIONS,
+    DEFAULT_QUESTION_DISTRIBUTION
+)
 
 
 def print_evaluation_summary(results: dict):
@@ -21,7 +25,18 @@ def print_evaluation_summary(results: dict):
     print("RAG SYSTEM EVALUATION RESULTS")
     print("="*80)
 
-    print(f"\nTotal Questions Evaluated: {summary['total_questions']}")
+    print(f"\nTotal Questions in Dataset: {summary['total_questions']}")
+
+    # Show actual evaluation counts if limits were applied
+    retrieval_count = summary.get('questions_evaluated_retrieval', 0)
+    answer_count = summary.get('questions_evaluated_answer', 0)
+
+    if retrieval_count > 0 or answer_count > 0:
+        print(f"Questions Evaluated:")
+        if retrieval_count > 0:
+            print(f"  - Retrieval Quality: {retrieval_count}")
+        if answer_count > 0:
+            print(f"  - Answer Quality: {answer_count}")
 
     answer_only_mode = summary.get('answer_only_mode', False)
 
@@ -30,8 +45,6 @@ def print_evaluation_summary(results: dict):
 
         # Show answer quality metrics if evaluated
         if summary.get('answer_evaluation_enabled'):
-            if summary.get('overall_exact_match') is not None:
-                print(f"  Exact Match (EM):               {summary['overall_exact_match']:.4f}")
             if summary.get('overall_f1') is not None:
                 print(f"  F1 Score:                       {summary['overall_f1']:.4f}")
             if summary.get('overall_bleu') is not None:
@@ -50,8 +63,6 @@ def print_evaluation_summary(results: dict):
         # Show answer quality metrics if evaluated
         if summary.get('answer_evaluation_enabled'):
             print(f"\n  Answer Quality Metrics:")
-            if summary.get('overall_exact_match') is not None:
-                print(f"    Exact Match (EM):             {summary['overall_exact_match']:.4f}")
             if summary.get('overall_f1') is not None:
                 print(f"    F1 Score:                     {summary['overall_f1']:.4f}")
             if summary.get('overall_bleu') is not None:
@@ -90,10 +101,8 @@ def print_evaluation_summary(results: dict):
             if 'hit_rate_at_5' in metrics:
                 print(f"    Hit Rate@5:   {metrics['hit_rate_at_5']:.4f}")
 
-        if 'answer_similarity' in metrics or 'exact_match' in metrics:
+        if 'answer_similarity' in metrics or 'f1_score' in metrics:
             print(f"    Answer Quality:")
-            if 'exact_match' in metrics:
-                print(f"      EM:           {metrics['exact_match']:.4f}")
             if 'f1_score' in metrics:
                 print(f"      F1:           {metrics['f1_score']:.4f}")
             if 'bleu_score' in metrics:
@@ -131,13 +140,8 @@ def generate_qa_dataset(args):
             'multi-hop': per_type
         }
     else:
-        # Custom distribution
-        distribution = {
-            'factual': 30,
-            'comparative': 25,
-            'inferential': 25,
-            'multi-hop': 20
-        }
+        # Custom distribution from config
+        distribution = DEFAULT_QUESTION_DISTRIBUTION.copy()
 
     # Generate dataset
     qa_dataset = generator.generate_dataset(
@@ -180,11 +184,28 @@ def evaluate_rag_system(args):
     qa_dataset = storage.load_dataset(args.dataset_file)
 
     logger.info(f"Loaded {len(qa_dataset)} Q&A pairs for evaluation")
+    
+    # Show original distribution
+    original_distribution = storage.get_type_distribution(qa_dataset)
+    logger.info(f"Original dataset distribution: {original_distribution}")
 
-    # Limit number of questions if specified
+    # Apply stratified sampling when limiting questions
     if args.max_questions and args.max_questions < len(qa_dataset):
-        logger.info(f"Limiting evaluation to {args.max_questions} questions")
-        qa_dataset = qa_dataset[:args.max_questions]
+        num_types = len(original_distribution)
+        samples_per_type = args.max_questions // num_types
+        
+        if samples_per_type > 0:
+            logger.info(f"Using stratified sampling: {samples_per_type} questions per type (total: {samples_per_type * num_types})")
+            qa_dataset = storage.sample_stratified_by_type(
+                qa_dataset, 
+                samples_per_type=samples_per_type,
+                seed=42  # Fixed seed for reproducibility
+            )
+            sampled_distribution = storage.get_type_distribution(qa_dataset)
+            logger.info(f"Sampled dataset distribution: {sampled_distribution}")
+        else:
+            logger.info(f"Limiting evaluation to {args.max_questions} questions (too small for stratified sampling)")
+            qa_dataset = qa_dataset[:args.max_questions]
 
     # Determine evaluation mode
     answer_only_mode = getattr(args, 'answer_only', False)
@@ -202,7 +223,8 @@ def evaluate_rag_system(args):
         include_answer_generation=include_answer_eval,
         answer_only=answer_only_mode,
         save_individual_results=args.save_individual_results,
-        max_answer_evaluations=getattr(args, 'max_answer_evaluations', None)
+        max_answer_evaluations=getattr(args, 'max_answer_evaluations', None),
+        max_retrieval_evaluations=getattr(args, 'max_retrieval_evaluations', None)
     )
 
     # Print summary
@@ -217,11 +239,11 @@ def evaluate_rag_system(args):
     logger.info(f"Evaluation results saved to: {output_file}")
 
     # Generate HTML report
-    report_path = output_file.replace('.json', '_report.html')
+    report_path = os.path.join(os.path.dirname(output_file), 'evaluation_report.html')
     generate_html_report(results, args.dataset_file, report_path)
     logger.info(f"HTML report generated: {report_path}")
 
-    print(f"\n📄 Report saved to: {report_path}")
+    print(f"\nReport saved to: {report_path}")
 
     return output_file
 
@@ -239,13 +261,13 @@ def main():
     gen_parser.add_argument(
         '--corpus-path',
         type=str,
-        default='./data/fixed_wiki_pages.json',
+        default=DEFAULT_CORPUS_PATH,
         help='Path to Wikipedia corpus JSON file'
     )
     gen_parser.add_argument(
         '--total-questions',
         type=int,
-        default=100,
+        default=DEFAULT_TOTAL_QUESTIONS,
         help='Total number of Q&A pairs to generate'
     )
     gen_parser.add_argument(
@@ -279,7 +301,9 @@ def main():
         type=int,
         default=None,
         dest='max_questions',
-        help='Maximum number of questions to evaluate (for testing)'
+        help='Maximum number of questions to evaluate. Uses stratified sampling to '
+             'ensure balanced representation across question types. '
+             'Example: --max-questions 20 will select 5 from each of 4 question types.'
     )
     eval_parser.add_argument(
         '--skip-answer-generation',
@@ -296,6 +320,12 @@ def main():
         type=int,
         default=None,
         help='Maximum number of questions to evaluate for answer quality (None = all)'
+    )
+    eval_parser.add_argument(
+        '--max-retrieval-evaluations',
+        type=int,
+        default=None,
+        help='Maximum number of questions to evaluate for retrieval quality (None = all)'
     )
     eval_parser.add_argument(
         '--save-individual-results',
@@ -315,13 +345,13 @@ def main():
     full_parser.add_argument(
         '--corpus-path',
         type=str,
-        default='./data/fixed_wiki_pages.json',
+        default=DEFAULT_CORPUS_PATH,
         help='Path to Wikipedia corpus JSON file'
     )
     full_parser.add_argument(
         '--total-questions',
         type=int,
-        default=100,
+        default=DEFAULT_TOTAL_QUESTIONS,
         help='Total number of Q&A pairs to generate'
     )
     full_parser.add_argument(
@@ -344,15 +374,6 @@ def main():
         '--answer-only',
         action='store_true',
         help='Run only answer quality evaluation (skip retrieval metrics calculation)'
-    )
-
-    # List datasets command
-    list_parser = subparsers.add_parser('list', help='List available datasets and results')
-    list_parser.add_argument(
-        '--type',
-        choices=['datasets', 'results', 'both'],
-        default='both',
-        help='What to list'
     )
 
     args = parser.parse_args()
@@ -392,32 +413,6 @@ def main():
             output_file=None
         )
         evaluate_rag_system(eval_args)
-
-    elif args.command == 'list':
-        storage = QAStorage()
-
-        if args.type in ['datasets', 'both']:
-            datasets = storage.list_datasets()
-            print(f"\n{'AVAILABLE Q&A DATASETS':-^60}")
-            if datasets:
-                for i, dataset in enumerate(datasets, 1):
-                    info = storage.get_dataset_info(dataset)
-                    print(f"\n{i}. {dataset}")
-                    print(f"   Questions: {info['total_questions']}")
-                    if 'created_at' in info['metadata']:
-                        print(f"   Created: {info['metadata']['created_at']}")
-            else:
-                print("  No datasets found")
-
-        if args.type in ['results', 'both']:
-            results = storage.list_evaluation_results()
-            print(f"\n{'EVALUATION RESULTS':-^60}")
-            if results:
-                for i, result in enumerate(results, 1):
-                    print(f"{i}. {result}")
-            else:
-                print("  No evaluation results found")
-        print()
 
     else:
         parser.print_help()

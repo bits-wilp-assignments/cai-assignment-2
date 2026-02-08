@@ -8,19 +8,19 @@ from datetime import datetime
 
 def generate_html_report(results: dict, dataset_file: str, output_path: str):
     """Generate HTML evaluation report.
-    
+
     Args:
         results: Evaluation results dictionary
         dataset_file: Path to the dataset file used for evaluation
         output_path: Path where the HTML report will be saved
-        
+
     Returns:
         str: Path to the generated HTML report
     """
     summary = results['summary']
     answer_only_mode = summary.get('answer_only_mode', False)
     timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-    
+
     html_content = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,305 +28,356 @@ def generate_html_report(results: dict, dataset_file: str, output_path: str):
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RAG System Evaluation Report</title>
     <style>
+        * {{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }}
         body {{
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            max-width: 1200px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #ffffff;
+            padding: 40px 20px;
+        }}
+        .container {{
+            max-width: 1100px;
             margin: 0 auto;
-            padding: 20px;
-            background-color: #f5f5f5;
         }}
         .header {{
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 30px;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
         }}
         .header h1 {{
-            margin: 0 0 10px 0;
-            font-size: 2.5em;
+            font-size: 2em;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
         }}
-        .header p {{
-            margin: 5px 0;
-            opacity: 0.9;
+        .header-info {{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }}
+        .header-info-item {{
+            font-size: 0.95em;
+            color: #555;
+        }}
+        .header-info-item strong {{
+            color: #2c3e50;
+            font-weight: 500;
         }}
         .section {{
-            background: white;
-            padding: 25px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
         }}
         .section h2 {{
-            color: #667eea;
-            border-bottom: 2px solid #667eea;
+            font-size: 1.5em;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 20px;
             padding-bottom: 10px;
-            margin-top: 0;
+            border-bottom: 2px solid #e0e0e0;
+        }}
+        .section h3 {{
+            font-size: 1.2em;
+            font-weight: 500;
+            color: #34495e;
+            margin: 25px 0 15px 0;
         }}
         .metrics-grid {{
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
             margin: 20px 0;
         }}
         .metric-card {{
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            padding: 15px;
-            border-radius: 8px;
+            background: #f8f9fa;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
             text-align: center;
         }}
         .metric-card .label {{
-            font-size: 0.9em;
-            color: #666;
-            margin-bottom: 5px;
+            font-size: 0.85em;
+            color: #7f8c8d;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 10px;
+            font-weight: 500;
         }}
         .metric-card .value {{
-            font-size: 2em;
-            font-weight: bold;
-            color: #333;
-        }}
-        .answer-metrics {{
-            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            font-size: 1.8em;
+            font-weight: 600;
+            color: #2c3e50;
         }}
         table {{
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
-        }}
-        th, td {{
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
+            border: 1px solid #e0e0e0;
         }}
         th {{
-            background-color: #667eea;
-            color: white;
+            background-color: #f8f9fa;
+            padding: 12px;
+            text-align: left;
             font-weight: 600;
+            color: #2c3e50;
+            border-bottom: 2px solid #e0e0e0;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }}
+        td {{
+            padding: 12px;
+            border-bottom: 1px solid #e0e0e0;
+        }}
+        tr:last-child td {{
+            border-bottom: none;
         }}
         tr:hover {{
-            background-color: #f5f5f5;
+            background-color: #f8f9fa;
         }}
-        .good {{ color: #27ae60; font-weight: bold; }}
-        .medium {{ color: #f39c12; font-weight: bold; }}
-        .poor {{ color: #e74c3c; font-weight: bold; }}
+        .good {{ color: #27ae60; font-weight: 600; }}
+        .medium {{ color: #f39c12; font-weight: 600; }}
+        .poor {{ color: #e74c3c; font-weight: 600; }}
         .info-box {{
-            background-color: #e3f2fd;
-            border-left: 4px solid #2196f3;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 4px;
+            background-color: #f8f9fa;
+            border-left: 3px solid #3498db;
+            padding: 20px;
+            margin: 20px 0;
+        }}
+        .info-box h4 {{
+            font-size: 1em;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 12px;
+        }}
+        .info-box ul {{
+            list-style: none;
+            padding-left: 0;
+        }}
+        .info-box li {{
+            padding: 6px 0;
+            color: #555;
+            font-size: 0.95em;
+        }}
+        .info-box li strong {{
+            color: #2c3e50;
+            font-weight: 500;
         }}
         .footer {{
             text-align: center;
-            color: #666;
-            margin-top: 30px;
-            padding: 20px;
-            border-top: 2px solid #ddd;
+            color: #7f8c8d;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 0.9em;
         }}
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>🎯 RAG System Evaluation Report</h1>
-        <p><strong>Generated:</strong> {timestamp}</p>
-        <p><strong>Dataset:</strong> {os.path.basename(dataset_file)}</p>
-        <p><strong>Total Questions:</strong> {summary['total_questions']}</p>
-        <p><strong>Evaluation Mode:</strong> {'Answer Quality Only' if answer_only_mode else 'Full Evaluation (Retrieval + Answer Quality)'}</p>
-    </div>
+    <div class="container">
+        <div class="header">
+            <h1>RAG System Evaluation Report</h1>
+            <div class="header-info">
+                <div class="header-info-item"><strong>Generated:</strong> {timestamp}</div>
+                <div class="header-info-item"><strong>Dataset:</strong> {os.path.basename(dataset_file)}</div>
+                <div class="header-info-item"><strong>Total Questions:</strong> {summary['total_questions']}</div>
+                <div class="header-info-item"><strong>Mode:</strong> {'Answer Quality Only' if answer_only_mode else 'Full Evaluation'}</div>
+            </div>
+        </div>
 """
 
     # Overall Metrics Section
     html_content += """
-    <div class="section">
-        <h2>📊 Overall Performance Metrics</h2>
+        <div class="section">
+            <h2>Overall Performance Metrics</h2>
 """
 
     if not answer_only_mode and summary.get('overall_mrr') is not None:
         mrr_value = summary['overall_mrr']
         mrr_class = 'good' if mrr_value >= 0.7 else 'medium' if mrr_value >= 0.5 else 'poor'
         html_content += f"""
-        <div class="metrics-grid">
-            <div class="metric-card">
-                <div class="label">Mean Reciprocal Rank</div>
-                <div class="value {mrr_class}">{mrr_value:.4f}</div>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="label">Mean Reciprocal Rank</div>
+                    <div class="value {mrr_class}">{mrr_value:.4f}</div>
+                </div>
             </div>
-        </div>
 """
 
     # Answer Quality Metrics
     if summary.get('answer_evaluation_enabled'):
         html_content += """
-        <h3>Answer Quality Metrics</h3>
-        <div class="metrics-grid">
+            <h3>Answer Quality Metrics</h3>
+            <div class="metrics-grid">
 """
         answer_metrics = [
-            ('overall_exact_match', 'Exact Match (EM)'),
             ('overall_f1', 'F1 Score'),
             ('overall_bleu', 'BLEU Score'),
             ('overall_rouge_l', 'ROUGE-L'),
             ('overall_semantic_similarity', 'Semantic Similarity')
         ]
-        
+
         for key, label in answer_metrics:
             if summary.get(key) is not None:
                 value = summary[key]
                 value_class = 'good' if value >= 0.7 else 'medium' if value >= 0.5 else 'poor'
                 html_content += f"""
-            <div class="metric-card answer-metrics">
-                <div class="label">{label}</div>
-                <div class="value {value_class}">{value:.4f}</div>
-            </div>
+                <div class="metric-card">
+                    <div class="label">{label}</div>
+                    <div class="value {value_class}">{value:.4f}</div>
+                </div>
 """
         html_content += """
-        </div>
+            </div>
 """
 
     # Retrieval Metrics Table
     if 'overall_metrics' in summary and not answer_only_mode:
         overall = summary['overall_metrics']
         html_content += """
-        <h3>Retrieval Performance</h3>
-        <table>
-            <tr>
-                <th>Metric</th>
-                <th>@3</th>
-                <th>@5</th>
-                <th>@10</th>
-            </tr>
-            <tr>
-                <td><strong>Precision</strong></td>
+            <h3>Retrieval Performance</h3>
+            <table>
+                <tr>
+                    <th>Metric</th>
+                    <th>@3</th>
+                    <th>@5</th>
+                    <th>@10</th>
+                </tr>
+                <tr>
+                    <td><strong>Precision</strong></td>
 """
         for k in [3, 5, 10]:
             val = overall[f'precision_at_{k}']
             val_class = 'good' if val >= 0.7 else 'medium' if val >= 0.5 else 'poor'
-            html_content += f'<td class="{val_class}">{val:.4f}</td>'
-        
+            html_content += f'                    <td class="{val_class}">{val:.4f}</td>'
+
         html_content += """
-            </tr>
-            <tr>
-                <td><strong>Recall</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Recall</strong></td>
 """
         for k in [3, 5, 10]:
             val = overall[f'recall_at_{k}']
             val_class = 'good' if val >= 0.7 else 'medium' if val >= 0.5 else 'poor'
-            html_content += f'<td class="{val_class}">{val:.4f}</td>'
-        
+            html_content += f'                    <td class="{val_class}">{val:.4f}</td>'
+
         html_content += """
-            </tr>
-            <tr>
-                <td><strong>Hit Rate</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Hit Rate</strong></td>
 """
         for k in [3, 5, 10]:
             val = overall[f'hit_rate_at_{k}']
             val_class = 'good' if val >= 0.7 else 'medium' if val >= 0.5 else 'poor'
-            html_content += f'<td class="{val_class}">{val:.4f}</td>'
-        
+            html_content += f'                    <td class="{val_class}">{val:.4f}</td>'
+
         html_content += """
-            </tr>
-        </table>
+                </tr>
+            </table>
 """
 
     html_content += """
-    </div>
+        </div>
 """
 
     # Per-Question-Type Metrics
     if summary.get('metrics_by_question_type'):
         html_content += """
-    <div class="section">
-        <h2>📋 Performance by Question Type</h2>
+        <div class="section">
+            <h2>Performance by Question Type</h2>
 """
         for qtype, metrics in summary['metrics_by_question_type'].items():
             html_content += f"""
-        <h3>{qtype.upper()} ({metrics['count']} questions)</h3>
-        <div class="metrics-grid">
+            <h3>{qtype.upper()} ({metrics['count']} questions)</h3>
+            <div class="metrics-grid">
 """
             if not answer_only_mode and 'mrr' in metrics:
                 mrr_val = metrics['mrr']
                 mrr_class = 'good' if mrr_val >= 0.7 else 'medium' if mrr_val >= 0.5 else 'poor'
                 html_content += f"""
-            <div class="metric-card">
-                <div class="label">MRR</div>
-                <div class="value {mrr_class}">{mrr_val:.4f}</div>
-            </div>
+                <div class="metric-card">
+                    <div class="label">MRR</div>
+                    <div class="value {mrr_class}">{mrr_val:.4f}</div>
+                </div>
 """
-            
+
             # Answer quality metrics for this type
-            if 'exact_match' in metrics:
+            if 'f1_score' in metrics:
                 type_answer_metrics = [
-                    ('exact_match', 'EM'),
                     ('f1_score', 'F1'),
                     ('bleu_score', 'BLEU'),
                     ('rouge_l', 'ROUGE-L'),
                     ('semantic_similarity', 'Semantic')
                 ]
-                
+
                 for key, label in type_answer_metrics:
                     if key in metrics:
                         val = metrics[key]
                         val_class = 'good' if val >= 0.7 else 'medium' if val >= 0.5 else 'poor'
                         html_content += f"""
-            <div class="metric-card answer-metrics">
-                <div class="label">{label}</div>
-                <div class="value {val_class}">{val:.4f}</div>
-            </div>
+                <div class="metric-card">
+                    <div class="label">{label}</div>
+                    <div class="value {val_class}">{val:.4f}</div>
+                </div>
 """
-            
+
             html_content += """
-        </div>
+            </div>
 """
 
         html_content += """
-    </div>
+        </div>
 """
 
     # Interpretation Guide
     html_content += """
-    <div class="section">
-        <h2>📖 Metrics Interpretation Guide</h2>
-        <div class="info-box">
-            <h4>Answer Quality Metrics:</h4>
-            <ul>
-                <li><strong>Exact Match (EM):</strong> Percentage of predictions that match ground truth exactly (after normalization)</li>
-                <li><strong>F1 Score:</strong> Harmonic mean of precision and recall at token level</li>
-                <li><strong>BLEU:</strong> Measures n-gram overlap between prediction and reference</li>
-                <li><strong>ROUGE-L:</strong> Longest common subsequence based metric</li>
-                <li><strong>Semantic Similarity:</strong> Cosine similarity between answer embeddings</li>
-            </ul>
-        </div>
+        <div class="section">
+            <h2>Metrics Interpretation</h2>
+            <div class="info-box">
+                <h4>Answer Quality Metrics:</h4>
+                <ul>
+                    <li><strong>F1 Score:</strong> Harmonic mean of precision and recall at token level</li>
+                    <li><strong>BLEU:</strong> Measures n-gram overlap between prediction and reference</li>
+                    <li><strong>ROUGE-L:</strong> Longest common subsequence based metric</li>
+                    <li><strong>Semantic Similarity:</strong> Cosine similarity between answer embeddings</li>
+                </ul>
+            </div>
 """
 
     if not answer_only_mode:
         html_content += """
-        <div class="info-box">
-            <h4>Retrieval Metrics:</h4>
-            <ul>
-                <li><strong>MRR (Mean Reciprocal Rank):</strong> Average of reciprocal ranks of first relevant result</li>
-                <li><strong>Precision@K:</strong> Proportion of relevant documents in top K results</li>
-                <li><strong>Recall@K:</strong> Proportion of all relevant documents found in top K</li>
-                <li><strong>Hit Rate@K:</strong> Percentage of queries with at least one relevant result in top K</li>
-            </ul>
-        </div>
+            <div class="info-box">
+                <h4>Retrieval Metrics:</h4>
+                <ul>
+                    <li><strong>MRR:</strong> Mean Reciprocal Rank - average of reciprocal ranks of first relevant result</li>
+                    <li><strong>Precision@K:</strong> Proportion of relevant documents in top K results</li>
+                    <li><strong>Recall@K:</strong> Proportion of all relevant documents found in top K</li>
+                    <li><strong>Hit Rate@K:</strong> Percentage of queries with at least one relevant result in top K</li>
+                </ul>
+            </div>
 """
 
     html_content += """
-        <div class="info-box">
-            <h4>Score Interpretation:</h4>
-            <ul>
-                <li><span class="good">≥ 0.70:</span> Good performance</li>
-                <li><span class="medium">0.50 - 0.69:</span> Moderate performance</li>
-                <li><span class="poor">< 0.50:</span> Needs improvement</li>
-            </ul>
+            <div class="info-box">
+                <h4>Score Interpretation:</h4>
+                <ul>
+                    <li><span class="good">≥ 0.70:</span> Good performance</li>
+                    <li><span class="medium">0.50 - 0.69:</span> Moderate performance</li>
+                    <li><span class="poor">< 0.50:</span> Needs improvement</li>
+                </ul>
+            </div>
         </div>
-    </div>
 """
 
     # Footer
     html_content += f"""
-    <div class="footer">
-        <p>Generated by RAG Evaluation System</p>
-        <p>Report saved to: {output_path}</p>
+        <div class="footer">
+            <p>Generated by RAG Evaluation System</p>
+        </div>
     </div>
 </body>
 </html>
@@ -335,5 +386,5 @@ def generate_html_report(results: dict, dataset_file: str, output_path: str):
     # Write HTML file
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write(html_content)
-    
+
     return output_path

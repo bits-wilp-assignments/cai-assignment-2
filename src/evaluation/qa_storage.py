@@ -4,37 +4,40 @@ Handles saving, loading, and validating Q&A datasets
 """
 import json
 import os
+import random
 from datetime import datetime
 from typing import List, Dict, Any, Optional
+from collections import defaultdict
 from src.util.logging_util import get_logger
+from src.config.evaluation_config import (
+    EVALUATION_STORAGE_DIR,
+    QA_REQUIRED_FIELDS,
+    QA_OPTIONAL_FIELDS,
+    VALID_QUESTION_TYPES,
+    VALID_DIFFICULTIES,
+    DEFAULT_QA_DATASET_FILENAME
+)
 
 
 class QAStorage:
     """Manages Q&A dataset storage and validation."""
 
-    REQUIRED_FIELDS = [
-        'question_id', 'question', 'answer', 'question_type',
-        'source_ids', 'source_urls'
-    ]
+    REQUIRED_FIELDS = QA_REQUIRED_FIELDS
+    OPTIONAL_FIELDS = QA_OPTIONAL_FIELDS
+    VALID_QUESTION_TYPES = VALID_QUESTION_TYPES
+    VALID_DIFFICULTIES = VALID_DIFFICULTIES
 
-    OPTIONAL_FIELDS = [
-        'source_titles', 'category', 'difficulty', 'metadata'
-    ]
-
-    VALID_QUESTION_TYPES = ['factual', 'comparative', 'inferential', 'multi-hop']
-    VALID_DIFFICULTIES = ['easy', 'medium', 'hard']
-
-    def __init__(self, storage_dir: str = "./data/evaluation"):
+    def __init__(self, storage_dir: str = None):
         """
         Initialize QA storage.
 
         Args:
-            storage_dir: Directory to store Q&A datasets
+            storage_dir: Directory to store Q&A datasets (defaults to config)
         """
         self.logger = get_logger(__name__)
-        self.storage_dir = storage_dir
-        os.makedirs(storage_dir, exist_ok=True)
-        self.logger.info(f"QAStorage initialized with directory: {storage_dir}")
+        self.storage_dir = storage_dir or EVALUATION_STORAGE_DIR
+        os.makedirs(self.storage_dir, exist_ok=True)
+        self.logger.info(f"QAStorage initialized with directory: {self.storage_dir}")
 
     def validate_qa_pair(self, qa_pair: Dict[str, Any]) -> tuple[bool, Optional[str]]:
         """
@@ -135,8 +138,7 @@ class QAStorage:
 
         # Generate filename if not provided
         if filename is None:
-            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            filename = f"qa_dataset_{timestamp}.json"
+            filename = DEFAULT_QA_DATASET_FILENAME
 
         filepath = os.path.join(self.storage_dir, filename)
 
@@ -223,13 +225,9 @@ class QAStorage:
             Path to saved file
         """
         if filename is None:
-            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            filename = f"evaluation_results_{timestamp}.json"
+            filename = "evaluation_results.json"
 
         filepath = os.path.join(self.storage_dir, filename)
-
-        # Add timestamp
-        results['evaluated_at'] = datetime.now().isoformat()
 
         with open(filepath, 'w', encoding='utf-8') as f:
             json.dump(results, f, indent=2, ensure_ascii=False)
@@ -370,3 +368,83 @@ class QAStorage:
 
         self.logger.info(f"Exported dataset to CSV: {csv_path}")
         return csv_path
+
+    def sample_stratified_by_type(
+        self,
+        qa_dataset: List[Dict[str, Any]],
+        samples_per_type: int = 5,
+        seed: int = None
+    ) -> List[Dict[str, Any]]:
+        """
+        Sample questions with stratified sampling by question type.
+
+        This ensures equal representation of all question types in the sample.
+        For example, with 4 question types and samples_per_type=5, you get
+        exactly 5 questions from each type for a total of 20 questions.
+
+        Args:
+            qa_dataset: List of Q&A pairs
+            samples_per_type: Number of samples to take from each question type
+            seed: Random seed for reproducibility (optional)
+
+        Returns:
+            Stratified sample of Q&A pairs
+
+        Raises:
+            ValueError: If there aren't enough questions of a particular type
+        """
+        if seed is not None:
+            random.seed(seed)
+
+        # Group questions by type
+        questions_by_type = defaultdict(list)
+        for qa in qa_dataset:
+            qtype = qa.get('question_type')
+            if qtype:
+                questions_by_type[qtype].append(qa)
+
+        # Check if we have enough questions of each type
+        available_types = list(questions_by_type.keys())
+        for qtype in available_types:
+            count = len(questions_by_type[qtype])
+            if count < samples_per_type:
+                self.logger.warning(
+                    f"Question type '{qtype}' has only {count} questions, "
+                    f"but {samples_per_type} were requested"
+                )
+
+        # Sample from each type
+        stratified_sample = []
+        for qtype in sorted(available_types):  # Sort for deterministic order
+            available = questions_by_type[qtype]
+            sample_size = min(samples_per_type, len(available))
+            sampled = random.sample(available, sample_size)
+            stratified_sample.extend(sampled)
+            self.logger.info(f"Sampled {sample_size} questions of type '{qtype}'")
+
+        # Shuffle the final sample to mix question types
+        random.shuffle(stratified_sample)
+
+        self.logger.info(
+            f"Stratified sampling complete: {len(stratified_sample)} total questions "
+            f"({samples_per_type} per type × {len(available_types)} types)"
+        )
+
+        return stratified_sample
+
+    def get_type_distribution(self, qa_dataset: List[Dict[str, Any]]) -> Dict[str, int]:
+        """
+        Get the distribution of question types in the dataset.
+
+        Args:
+            qa_dataset: List of Q&A pairs
+
+        Returns:
+            Dictionary mapping question types to their counts
+        """
+        distribution = defaultdict(int)
+        for qa in qa_dataset:
+            qtype = qa.get('question_type', 'unknown')
+            distribution[qtype] += 1
+
+        return dict(distribution)
