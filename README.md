@@ -39,7 +39,13 @@ python hybrid_rag_app.py
 streamlit run ui_app.py
 ```
 
-**First-time setup**: Navigate to Settings → Check "Refresh Fixed" and "Refresh Random" → Click "Start Indexing" (10-20 minutes)
+**First-time setup (via UI)**:
+1. Open the Streamlit UI at http://localhost:8501
+2. Navigate to **Settings** page (see [frontend/ui_settings_page.py](frontend/ui_settings_page.py))
+3. Check "Refresh Fixed" and "Refresh Random" options
+4. Click "Start Indexing" (10-20 minutes for ~500 articles)
+
+This triggers data collection from Wikipedia and builds both vector (ChromaDB) and BM25 indices.
 
 ### Local Testing Using test_response
 
