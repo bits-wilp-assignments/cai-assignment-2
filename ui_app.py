@@ -3,10 +3,10 @@ import requests
 from typing import Generator
 
 # Import page modules from ui_components package
-from streamlit_ui.ui_wiki_page import wiki_pages_page
-from streamlit_ui.ui_settings_page import settings_page
-from streamlit_ui.ui_about_page import about_page
-from streamlit_ui.ui_config import API_BASE_URL
+from frontend.ui_wiki_page import wiki_pages_page
+from frontend.ui_settings_page import settings_page
+from frontend.ui_about_page import about_page
+from frontend.ui_config import API_BASE_URL
 
 # Page configuration
 st.set_page_config(
